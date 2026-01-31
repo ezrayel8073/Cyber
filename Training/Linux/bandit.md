@@ -4,3 +4,8 @@
 ```bash
 bandit0
 ```
+
+## Level 1
+```bash
+bandit1
+``` 
