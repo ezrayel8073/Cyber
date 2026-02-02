@@ -37,10 +37,10 @@
 
 What you Need to do :
 
- + Username: bandit0   
-  +  Password:bandit0         
-  + Domain:bandit.labs.overthewire.org   
- + Port Num:2220
+ + Username : bandit0   
+  +  Password : bandit0         
+  + Domain : bandit.labs.overthewire.org   
+ + Port Num : 2220
 
 
 ### Commands
