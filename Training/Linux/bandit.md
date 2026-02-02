@@ -35,6 +35,7 @@
 
     8. Finally you can start the Terminal
 
+## Level 0
 
 What you Need to do :
 
