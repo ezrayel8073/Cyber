@@ -24,3 +24,5 @@ cat = read file
 commands + explination
 ls = list files                 
 hidden file  - 
+
+password: 
