@@ -644,9 +644,9 @@ Yes — Bandit trick approved.
 ### Commands
 ls = list files
 
-
  cd = change directory 
 
+ls -a =
 
   find = Find the files and directories Based on    Name, size, Modification time
 ### Explination
