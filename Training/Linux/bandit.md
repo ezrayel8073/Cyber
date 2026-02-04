@@ -337,7 +337,7 @@ XXXXXXXXXXXXXXXXXXXX
 
 
 
-### explination
+### Explination
 
 
 Step-by-step (from your terminal)
@@ -642,11 +642,67 @@ Yes — Bandit trick approved.
 
 ## Level-3
 ### Commands
+ls = list files
+
+
+ cd = change directory 
+
+
+  find = Find the files and directories Based on    Name, size, Modification time
 ### Explination
 
+List files in the home directory:
 
+ls
      
+You type ls and the output literally says:
 
+inhere
+
+
+So the file is inside a directory named inhere, not directly in your home folder.
+Here is the 100% correct command sequence you need.
+
+Correct commands (type exactly in this order)
+
+Go into the directory shown by ls:
+
+cd inhere
+
+
+When your prompt changes to:
+
+~/inhere$
+
+
+it means:
+➡️ You are now inside the inhere directory
+
+
+Run this command instead:
+
+ls -a
+
+
+When ls shows:
+
+Hiding from you
+
+
+Type exactly this while you are in ~/inhere:
+
+find . -type f -exec cat {} \;
+
+
+👉 Press ENTER
+
+Why this works
+
+find . -type f → finds the file no matter how strange its name is
+
+-exec cat {} \; → prints the contents directly
+
+No quotes, no guessing, no typing the filename
 
 
 ## Level-4
