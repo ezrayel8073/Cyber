@@ -174,67 +174,116 @@ exit
  
 
 
+What the level is asking you to do
 
-🎯 Goal (Level 0 → Level 1)
+👉 The password for bandit1 is inside a file called readme
+👉 That file is in bandit0’s home directory
+👉 Read it, copy the password, then SSH into bandit1
 
-Read the password stored in a file called readme in the home directory, then use it to log into bandit1 via SSH.
+Step-by-step solution
+Step 1: Make sure you are logged in as bandit0
 
-📁 Step 1: List files in the home directory
+If you are not logged in yet, do:
 
-You should already be logged in as bandit0.
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+
+
+Password:
+
+bandit0
+
+
+You should see:
+
+bandit0@bandit:~$
+
+Step 2: List files in the home directory
 
 Run:
 
 ls
 
 
-You’ll see:
+Output:
 
 readme
 
-📄 Step 2: Read the file
 
-Use cat to print the contents:
+✔️ That’s the file we need.
+
+Step 3: Read the readme file
+
+Use cat to display its contents:
 
 cat readme
 
 
-➡️ This will output the password for bandit1.
-Copy it somewhere safe (notes file, password manager, etc.).
+You’ll see something like:
 
-🔐 Step 3: Log into bandit1
+The password for bandit1 is: XXXXXXXXXXXXX
 
-Exit the current session (or open a new terminal):
+
+📌 This string is the password for bandit1
+
+Step 4: SAVE THE PASSWORD (important!)
+
+On your own computer, save it somewhere safe:
+
+Notes app
+
+Text file
+
+Password manager
+
+Example:
+
+Bandit Level 1 password: XXXXXXXXXXXXX
+
+
+If you lose it, you must start over.
+
+Step 5: Log out from bandit0
+
+Type:
 
 exit
 
+Step 6: Log in as bandit1
 
-Now log in using the password you just found:
+Now use the password you just found:
 
 ssh bandit1@bandit.labs.overthewire.org -p 2220
 
 
-Paste the password when prompted.
+When prompted, paste/type the password from readme.
 
-✅ What success looks like
+Step 7: Confirm success
 
-You’ll land at:
+If login works, you’ll see:
 
 bandit1@bandit:~$
 
 
-Congrats — Level 1 unlocked 🗝️
+🎉 Congrats — Level 1 unlocked!
 
-📝 Pro tip (seriously, do this)
+Commands you used (and what they mean)
+Command	Purpose
+ssh	Connect to a remote server
+ls	List files
+cat	Read a file
+exit	Log out
+What’s next?
 
-On your local machine, create a notes file like:
+Level 1 introduces a tricky filename problem that confuses many beginners 😈
+If you want, I can:
 
-Bandit0 → Bandit1: <password>
-How: cat readme
+Walk you through Level 1 → Level 2
 
+Explain why Linux filenames can be “weird”
 
-Future-you will thank present-you. Trust me.
+Help you build a clean notes template for all Bandit levels
 
+Just say the word 👊
 
 
 
