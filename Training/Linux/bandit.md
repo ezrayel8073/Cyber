@@ -803,7 +803,41 @@ cat -- -file02
 
 -- means: stop reading options after this
 
+It shows diamond symboles along with charecteres in a password
 
+Run:
+
+cat ./-file02 | od -An -tx1
+
+
+This shows the password in hex bytes, proving it’s longer than 4 characters.
+
+You’ll see output like:
+
+61 7f 9a e2 ...
+
+1️⃣ Go to the right place
+cd ~/inhere
+
+2️⃣ Identify the ONLY valid password file
+
+Run:
+
+file ./*
+
+
+You must see exactly ONE line like:
+
+./-file07: ASCII text
+
+
+⚠️ If it does NOT say ASCII text, it is NOT the password.
+
+3️⃣ Read ONLY that ASCII file
+
+Example:
+
+cat ./-file07
 
 ## Level-5
 ### Commands
