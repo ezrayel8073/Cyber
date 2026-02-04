@@ -162,7 +162,7 @@ exit
 
 
 
-## Level 0 - Level 1
+##  Level 1
 
 ### Commands
 
@@ -302,7 +302,7 @@ Just say the word 👊
 
 
 
-## Level 1 - Level 2
+##  Level 2
 + commands 
 + explination
 
@@ -311,7 +311,7 @@ Level 1 → Level 2: What’s the trick?
 
 👉 The password for bandit2 is stored in a file named:
 
--
+    -
 
 
 Yes — the filename is literally a dash (-).
@@ -340,7 +340,7 @@ ls
 
 Output:
 
--
+    -
 
 
 That’s the file containing the password.
@@ -410,7 +410,7 @@ Pro tip (you’ll use this a LOT later)
 
 Whenever a filename starts with:
 
--
+     -
 
 spaces
 
@@ -441,4 +441,4 @@ or quote it:
 
 
 
-## 
+## Level-3
