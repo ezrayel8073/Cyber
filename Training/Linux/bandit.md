@@ -55,7 +55,19 @@ What you Need to do :
  
 
  
+3️⃣ Accept the host key (first time only)
 
+You’ll see something like:
+
+Are you sure you want to continue connecting (yes/no)?
+
+
+Type:
+
+yes
+
+
+and press Enter.
 
 If you want, tell me:
 
