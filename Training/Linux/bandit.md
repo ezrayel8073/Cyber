@@ -303,89 +303,135 @@ Just say the word 👊
 
 
 ## Level 1 - Level 2
-commands + explination
-ls = list files                 
-hidden file  - 
-
-password: 
++ commands 
++ explination
 
 
+Level 1 → Level 2: What’s the trick?
+
+👉 The password for bandit2 is stored in a file named:
+
+-
 
 
+Yes — the filename is literally a dash (-).
+
+Step-by-step solution
+Step 1: Confirm you are bandit1
+
+Your prompt should look like this:
+
+bandit1@bandit:~$
 
 
+If not, log in:
 
-🎯 Goal (Level 1 → Level 2)
-
-The password is stored in a file named - in the home directory.
-
-🧠 Why this is tricky
-
-In Linux, a leading dash (-) usually means “this is an option/flag”.
-
-So if you try the obvious:
-
-cat -
+ssh bandit1@bandit.labs.overthewire.org -p 2220
 
 
-❌ That doesn’t work the way you expect — cat thinks - is a special argument (stdin), not a filename.
+(use the password you got from Level 0 → 1)
 
-📁 Step 1: Verify the file exists
+Step 2: List files
 
 Run:
 
 ls
 
 
-You should see something like:
+Output:
 
 -
 
 
-Yep. That’s the filename. Linux is being rude on purpose.
+That’s the file containing the password.
 
-✅ Step 2: Read the file correctly
+⚠️ Common mistake (DO NOT do this)
+cat -
 
-You have two clean solutions. Either one works.
 
-✅ Option 1: Use ./ (recommended)
+❌ This makes cat wait for keyboard input because - means stdin.
 
-This tells the shell: “I mean the file in this directory”.
+Step 3: Correct way to read the file
 
+You have two correct options.
+
+✅ Option 1 (recommended): Use ./
 cat ./-
 
-✅ Option 2: Use -- to end options
 
--- tells commands: “stop parsing flags after this”.
+Explanation:
 
-cat -- -
+./ means “current directory”
 
-🔑 Result
+It tells Linux: “this is a filename, not an option”
 
-One of those commands will print the password for bandit2.
+✅ Option 2: Use full path
+cat /home/bandit1/-
 
-Copy it exactly.
+Step 4: Get the password
 
-➡️ Next Step
+You’ll see output like:
 
-Log into the next level:
+XXXXXXXXXXXXXXXXXXXX
+
+
+📌 This is the password for bandit2
+➡️ SAVE IT immediately
+
+Step 5: Log into Level 2
+
+Exit bandit1:
+
+exit
+
+
+Now log in as bandit2:
 
 ssh bandit2@bandit.labs.overthewire.org -p 2220
 
 
-Paste the password you just found when prompted.
+Paste the password you just found.
 
-🧠 Pro tip (this will come up again)
+Step 6: Confirm success
 
-Any time a filename starts with -, remember:
+If correct, you’ll see:
+
+bandit2@bandit:~$
+
+
+🎉 Level 2 unlocked
+
+Commands used & why they matter
+Command	Why it matters
+ls	See hidden/tricky filenames
+cat ./-	Read a file starting with -
+exit	Leave the current level
+Pro tip (you’ll use this a LOT later)
+
+Whenever a filename starts with:
+
+-
+
+spaces
+
+weird characters
+
+Use:
 
 ./filename
 
-or -- filename
 
-Linux loves testing whether you really understand what you’re typing 😄
+or quote it:
 
-Ready for Level 2 → Level 3? That one introduces spaces in filenames… which is another classic trap 👀
+"filename"
+
+
+
+
+
+
+
+
 
 
 
