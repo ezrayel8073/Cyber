@@ -707,12 +707,101 @@ No quotes, no guessing, no typing the filename
 
 ## Level-4
 ### Commands
+
+ls = list files  
++ cd = change directory
+ls or ls -a = list files
+
+  find = Find the files and directories Based on    Name, size, Modification time
+
 ### Explination
 
+What’s going on
+
+The password is inside the inhere directory
+
+The file is hidden, meaning its name starts with a .
+
+Normal ls won’t show it unless you ask nicely
 
 
+ls
+
+Step-by-step solution
+1️⃣ Go into the inhere directory
+cd inhere
+
+2️⃣ List all files, including hidden ones
+ls -a
+
+Step 1️⃣ Check where you are
+
+Run:
+
+pwd
 
 
+You must see:
+
+/home/bandit4/inhere
+
+
+If you do not, then run:
+
+cd inhere
+
+Step 2️⃣ Confirm the files really exist
+
+Now run:
+
+ls
+
+
+You must see something like:
+
+file00  file01  file02  file03  file04  file05  file06  file07  file08  file09
+
+Why ls -1 helps
+ls -1
+
+
+This lists one filename per line, making copy-paste and reading easier.
+You should see something like:
+
+-file00
+-file01
+-file02
+-file03
+...
+
+
+⚠️ Important detail:
+Notice the filenames actually start with a dash (-).
+
+That’s the trap in this level 😈
+
+Why cat file02 does NOT work
+
+Because the real filename is:
+
+-file02
+
+
+Linux thinks file02 (without -) does not exist, so cat fails.
+
+✅ Correct way to read the file
+Option 1 (best & cleanest)
+cat ./-file02
+
+
+The ./ tells Linux:
+👉 “This is a file in the current directory, not an option”
+
+Option 2 (also valid)
+cat -- -file02
+
+
+-- means: stop reading options after this
 
 
 
