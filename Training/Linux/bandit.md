@@ -56,13 +56,101 @@ What you Need to do :
 
  
 
+
+If you want, tell me:
+
+what OS you’re on (Linux/macOS/Windows), or
+
+whether you’re using PowerShell, WSL, or a Linux VM
+
+and I’ll tailor the commands exactly for your setup.
+
+
+Perfect 😄 Linux makes this nice and clean.
+
+You can do everything for Bandit straight from your terminal.
+
+Bandit Level 0 (Linux)
+
+Step-by-step (from your terminal)
+
+1.Open a terminal.
+
+2.Run this command:
+
+
+Run this command:
+
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+
+
+-p 2220 is important — SSH defaults to port 22 otherwise.
+
+When prompted for a password, type:
+
+bandit0
+
+
+(You won’t see the password as you type — that’s normal.)
+
+What success looks like
+
+If it works, you’ll see something like a welcome banner and land in a shell that looks roughly like:
+
+bandit0@bandit:~$
+
+
+Congrats 🎉 — you’re logged in.
+
+Next step
+
+Once logged in:
+
+Read the on-screen message (or just know this)
+
+Go to the Level 1 page on OverTheWire to see what to do next
+
+Or list files with:
+
+ls
+
+
+You’ll see a file called readme.
+
+Read it:
+
+cat readme
+
+
+That file gives you the password for Level 1.
+
+Pro tip (you’ll use this a lot)
+
+To log out later:
+
+exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
  
 
 
 
 
 
-## Level 1
+## Level 0 - Level 1
 
 ### Commands
 
@@ -71,13 +159,179 @@ What you Need to do :
 + cat = read file
 
 ### Explination
- password:  
+ 
 
 
-## Level 2
+
+🎯 Goal (Level 0 → Level 1)
+
+Read the password stored in a file called readme in the home directory, then use it to log into bandit1 via SSH.
+
+📁 Step 1: List files in the home directory
+
+You should already be logged in as bandit0.
+
+Run:
+
+ls
+
+
+You’ll see:
+
+readme
+
+📄 Step 2: Read the file
+
+Use cat to print the contents:
+
+cat readme
+
+
+➡️ This will output the password for bandit1.
+Copy it somewhere safe (notes file, password manager, etc.).
+
+🔐 Step 3: Log into bandit1
+
+Exit the current session (or open a new terminal):
+
+exit
+
+
+Now log in using the password you just found:
+
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+
+
+Paste the password when prompted.
+
+✅ What success looks like
+
+You’ll land at:
+
+bandit1@bandit:~$
+
+
+Congrats — Level 1 unlocked 🗝️
+
+📝 Pro tip (seriously, do this)
+
+On your local machine, create a notes file like:
+
+Bandit0 → Bandit1: <password>
+How: cat readme
+
+
+Future-you will thank present-you. Trust me.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Level 1 - Level 2
 commands + explination
 ls = list files                 
 hidden file  - 
 
 password: 
+
+
+
+
+
+
+
+🎯 Goal (Level 1 → Level 2)
+
+The password is stored in a file named - in the home directory.
+
+🧠 Why this is tricky
+
+In Linux, a leading dash (-) usually means “this is an option/flag”.
+
+So if you try the obvious:
+
+cat -
+
+
+❌ That doesn’t work the way you expect — cat thinks - is a special argument (stdin), not a filename.
+
+📁 Step 1: Verify the file exists
+
+Run:
+
+ls
+
+
+You should see something like:
+
+-
+
+
+Yep. That’s the filename. Linux is being rude on purpose.
+
+✅ Step 2: Read the file correctly
+
+You have two clean solutions. Either one works.
+
+✅ Option 1: Use ./ (recommended)
+
+This tells the shell: “I mean the file in this directory”.
+
+cat ./-
+
+✅ Option 2: Use -- to end options
+
+-- tells commands: “stop parsing flags after this”.
+
+cat -- -
+
+🔑 Result
+
+One of those commands will print the password for bandit2.
+
+Copy it exactly.
+
+➡️ Next Step
+
+Log into the next level:
+
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+
+
+Paste the password you just found when prompted.
+
+🧠 Pro tip (this will come up again)
+
+Any time a filename starts with -, remember:
+
+./filename
+
+or -- filename
+
+Linux loves testing whether you really understand what you’re typing 😄
+
+Ready for Level 2 → Level 3? That one introduces spaces in filenames… which is another classic trap 👀
+
+
+
+
+
+
+
+
+
 ## 
