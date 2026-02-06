@@ -165,7 +165,7 @@ exit
 ##  Level 1
 + Username : bandit1   
 +  Password :                        
-+ Domain : bandit0.labs.overthewire.org   
++ Domain :    
 + Port Num : 2220
 ### Commands
 
@@ -327,9 +327,9 @@ XXXXXXXXXXXXXXXXXXXX
 
 
 ##  Level 2
-+ Username : bandit0   
-+  Password : bandit0                        
-+ Domain : bandit0.labs.overthewire.org   
++ Username : bandit2   
++  Password :                       
++ Domain :    
 + Port Num : 2220
 ### commands 
 
@@ -648,9 +648,9 @@ Yes — Bandit trick approved.
 
 
 ## Level-3
-+ Username : bandit0   
-+  Password : bandit0                        
-+ Domain : bandit0.labs.overthewire.org   
++ Username : bandit3   
++  Password :                 
++ Domain :   
 + Port Num : 2220
 ### Commands
 ls = list files
@@ -717,9 +717,9 @@ No quotes, no guessing, no typing the filename
 
 
 ## Level-4
-+ Username : bandit0   
-+  Password : bandit0                        
-+ Domain : bandit0.labs.overthewire.org   
++ Username : bandit4   
++  Password :                        
++ Domain :    
 + Port Num : 2220
 ### Commands
 
@@ -729,7 +729,7 @@ ls or ls -a = list files
 
   find = Find the files and directories Based on    Name, size, Modification time
 
-  Cat =
+  cat = read file
 
 ### Explination
 
@@ -857,9 +857,9 @@ Example:
 cat ./-file07
 
 ## Level-5
-+ Username : bandit0   
-+  Password : bandit0                        
-+ Domain : bandit0.labs.overthewire.org   
++ Username : bandit5   
++  Password :                         
++ Domain :    
 + Port Num : 2220
 
 ### Commands
@@ -870,7 +870,7 @@ ls or ls -1 = list files
 
   find = Find the files and directories Based on    Name, size, Modification time
 
-  cat = 
+  cat = read file
 
 ### Explination
 
@@ -941,6 +941,18 @@ Run this exact command:
 
 find . -type f -size 1033c ! -executable
 
+
+Why this works
+
+-type f → files only
+
+-size 1033c → exactly 1033 bytes
+
+! -executable → excludes executable files
+
+find → searches recursively under inhere 
+
+
 3️⃣ You should get ONE result
 
 Example:
@@ -959,9 +971,80 @@ cat ./maybehere07/.file2
 
 
 ## Level-6
-+ Username : bandit0   
-+  Password : bandit0                        
-+ Domain : bandit0.labs.overthewire.org   
++ Username : bandit6   
++  Password :                     
++ Domain :   
 + Port Num : 2220
 ### Commands
+
+find = Find the files and directories Based on    Name, size, Modification time
+
+  cat = Display the file contents on terminal
+
+### Explination
+
+Level 6 has a completely different task:
+
+The password for the next level is stored somewhere on the server and has all of the following properties:
+
+owned by user bandit7
+
+owned by group bandit6
+
+33 bytes in size
+
+Correct solution for Level 6 → 7
+
+Run this from your home directory:
+
+find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
+
+
+This will return one file, usually:
+
+/var/lib/dpkg/info/bandit7.password
+
+Read it
+cat /var/lib/dpkg/info/bandit7.password
+
+
+That output is your password for Level 7 🎉
+
+Why inhere disappeared
+
+inhere exists only in Level 5
+
+Each level’s filesystem is different
+
+Being “one level off” breaks every instruction
+
+
+
+## Level-7
++ Username : bandit7   
++  Password :                     
++ Domain :   
++ Port Num : 2220
+### Commands
+
+find = Find the files and directories Based on    Name, size, Modification time
+
+  cat = Display the file contents on terminal
+
+### Explination
+
+
+
+
+## Level-8
++ Username : bandit6   
++  Password :                     
++ Domain :   
++ Port Num : 2220
+### Commands
+
+find = Find the files and directories Based on    Name, size, Modification time
+
+  cat = Display the file contents on terminal
+
 ### Explination
