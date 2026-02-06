@@ -41,7 +41,7 @@ What you Need to do :
 
 + Username : bandit0   
 +  Password : bandit0                        
-+ Domain : bandit.labs.overthewire.org   
++ Domain : bandit0.labs.overthewire.org   
 + Port Num : 2220
 
 
@@ -163,7 +163,10 @@ exit
 
 
 ##  Level 1
-
++ Username : bandit1   
++  Password :                        
++ Domain : bandit0.labs.overthewire.org   
++ Port Num : 2220
 ### Commands
 
 + ls = list files  
@@ -324,6 +327,10 @@ XXXXXXXXXXXXXXXXXXXX
 
 
 ##  Level 2
++ Username : bandit0   
++  Password : bandit0                        
++ Domain : bandit0.labs.overthewire.org   
++ Port Num : 2220
 ### commands 
 
   ls = list files
@@ -641,6 +648,10 @@ Yes — Bandit trick approved.
 
 
 ## Level-3
++ Username : bandit0   
++  Password : bandit0                        
++ Domain : bandit0.labs.overthewire.org   
++ Port Num : 2220
 ### Commands
 ls = list files
 
@@ -706,6 +717,10 @@ No quotes, no guessing, no typing the filename
 
 
 ## Level-4
++ Username : bandit0   
++  Password : bandit0                        
++ Domain : bandit0.labs.overthewire.org   
++ Port Num : 2220
 ### Commands
 
 ls = list files  
@@ -713,6 +728,8 @@ ls = list files
 ls or ls -a = list files
 
   find = Find the files and directories Based on    Name, size, Modification time
+
+  Cat =
 
 ### Explination
 
@@ -823,7 +840,7 @@ cd ~/inhere
 
 Run:
 
-file ./*
+file ./* or file ./-*
 
 
 You must see exactly ONE line like:
@@ -840,22 +857,111 @@ Example:
 cat ./-file07
 
 ## Level-5
++ Username : bandit0   
++  Password : bandit0                        
++ Domain : bandit0.labs.overthewire.org   
++ Port Num : 2220
+
 ### Commands
+
+ls = list files  
++ cd = change directory
+ls or ls -1 = list files
+
+  find = Find the files and directories Based on    Name, size, Modification time
+
+  cat = 
+
 ### Explination
 
 
 
+ls
+
+Step-by-step solution
+1️⃣ Go into the inhere directory
+cd inhere
+
+2️⃣ List all files, including hidden ones
+ls -a
+
+Step 1️⃣ Check where you are
+
+Run:
+
+pwd
+
+
+You must see:
+
+/home/bandit4/inhere
+
+
+If you do not, then run:
+
+cd inhere
+
+Step 2️⃣ Confirm the files really exist
+
+Now run:
+
+ls
+
+
+You must see something like:
+
+file00  file01  file02  file03  file04  file05  file06  file07  file08  file09
+
+Why ls -1 helps
+ls -1
+
+
+This lists one filename per line, making copy-paste and reading easier.
+You should see something like:
+
+-file00
+-file01
+-file02
+-file03
+...
+
+Then use this command it will shows the inner file names.
+ 
+file ./*
+
+
+But this time it shows directories.
+Because it has num of files in their directories thats why file ./* command cannot find exact one 
 
 
 
+2️⃣ Use find to search smartly
+
+Run this exact command:
+
+find . -type f -size 1033c ! -executable
+
+3️⃣ You should get ONE result
+
+Example:
+
+./maybehere07/.file2
 
 
+(Your path may differ slightly, but there will be only one.)
+
+4️⃣ Read the file
+cat ./maybehere07/.file2
 
 
-
+💥 That output is the password for bandit6.
 
 
 
 ## Level-6
++ Username : bandit0   
++  Password : bandit0                        
++ Domain : bandit0.labs.overthewire.org   
++ Port Num : 2220
 ### Commands
 ### Explination
