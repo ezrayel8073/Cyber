@@ -1061,11 +1061,12 @@ millionth abcdefghijklmnopqrstuvwxyz
 abcdefghijklmnopqrstuvwxyz
 
 ## Level-8
-+ Username : bandit6   
++ Username : bandit8   
 +  Password :                     
 + Domain :   
 + Port Num : 2220
 ### Commands
+ls = list files 
 
 sort = 
 
@@ -1113,3 +1114,159 @@ Key concept learned
 
 🔹 Pipes (|) let you pass the output of one command directly into another.
 🔹 sort + uniq is a very common pattern for frequency-based text analysis in Linux.
+
+
+## Level-9
++ Username : bandit9   
++  Password :                     
++ Domain :   
++ Port Num : 2220
+### Commands
+ls = list files 
+
+strings = 
+
+grep =
+
+### Explination
+
+The hint tells you exactly what to look for: a human-readable string in data.txt that is preceded by several = characters.
+
+
+Inspect data.txt
+data.txt is mostly binary, so opening it with cat won’t help.
+
+Use strings to extract human-readable text:
+
+strings data.txt
+
+
+This will output all readable character sequences from the file.
+
+Filter for lines with = characters
+The password is preceded by several = characters, so pipe the output to grep:
+
+strings data.txt | grep "==="
+
+
+(You can also use "==" if you want broader matching.)
+
+Find the password
+Among the results, you’ll see something like:
+
+========== thePasswordIsHere
+
+
+The password is the readable text after the = signs.
+
+One-liner solution (clean and common)
+strings data.txt | grep "==="
+
+Why this works
+
+strings → extracts readable ASCII text from a binary file
+
+grep "===" → narrows results to lines matching the level hint
+
+The password is intentionally easy to spot once filtered correctly
+
+
+
+
+
+
+
+## Level-10
++ Username : bandit10   
++  Password :                     
++ Domain :   
++ Port Num : 2220
+### Commands
+ls = list files 
+
+cat = Display the file contents on terminal
+
+ base64 =  
+
+### Explination
+
+List files
+
+ls
+
+
+You should see:
+
+data.txt
+
+
+Decode the Base64 data
+
+base64 -d data.txt
+
+
+or equivalently:
+
+cat data.txt | base64 --decode
+
+
+Output
+The command prints the password for Level 11 directly to the terminal.
+
+Why this works
+
+base64 is a reversible encoding (not encryption)
+
+-d / --decode tells the command to convert it back to plain text
+
+## Level-11
++ Username : bandit11   
++  Password :                     
++ Domain :   
++ Port Num : 2220
+### Commands
+
+sort = 
+
+uniq =
+
+### Explination
+
+What’s going on
+
+The password is in data.txt.
+
+All letters (a–z, A–Z) are rotated by 13 positions (ROT13).
+
+Numbers and symbols are unchanged.
+
+ROT13 is symmetric: applying it once decodes the text.
+
+How to solve it
+
+Use tr to rotate the characters back:
+
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+
+
+This command:
+
+Reads the file
+
+Translates:
+
+A–Z → N–Z A–M
+
+a–z → n–z a–m
+
+Prints the decoded password to the terminal
+
+Why this works
+
+ROT13 shifts each letter 13 places:
+
+a ↔ n, b ↔ o, …, m ↔ z
+
+Same logic for uppercase letters
+
+Because the alphabet has 26 letters, rotating by 13 twice returns the original text.
