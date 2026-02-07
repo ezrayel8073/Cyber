@@ -1027,14 +1027,38 @@ Being “one level off” breaks every instruction
 + Port Num : 2220
 ### Commands
 
-find = Find the files and directories Based on    Name, size, Modification time
-
-  cat = Display the file contents on terminal
+grep = 
 
 ### Explination
 
 
+🧠 Key Idea
 
+data.txt contains many words/lines. One of them includes the word millionth, and the password is on that same line.
+
+The fastest way to do this is with grep.
+
+✅ Solution Command
+
+Run this in the Bandit Level 7 shell:
+
+grep millionth data.txt
+
+📌 What This Does
+
+grep searches through data.txt
+
+It prints the entire line containing the word millionth
+
+That line looks something like:
+
+🧪 Example Output (yours will differ)
+millionth abcdefghijklmnopqrstuvwxyz
+
+
+👉 The password would be:
+
+abcdefghijklmnopqrstuvwxyz
 
 ## Level-8
 + Username : bandit6   
