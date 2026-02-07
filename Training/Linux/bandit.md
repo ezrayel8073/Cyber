@@ -1067,8 +1067,49 @@ abcdefghijklmnopqrstuvwxyz
 + Port Num : 2220
 ### Commands
 
-find = Find the files and directories Based on    Name, size, Modification time
+sort = 
 
-  cat = Display the file contents on terminal
+uniq =
 
 ### Explination
+
+Goal (rephrased)
+
+Find the only line in data.txt that appears exactly once. That line is the password for the next level.
+
+Solution
+
+The classic UNIX pipeline for this task is:
+
+sort data.txt | uniq -u
+
+Why this works
+
+sort data.txt
+Groups identical lines together (required for uniq to work correctly).
+
+uniq -u
+Prints only lines that occur once.
+
+The output of this command is the password for Bandit Level 9.
+
+Optional: Step-by-step inspection
+
+If you want to see what’s happening at each stage:
+
+sort data.txt
+
+
+Then:
+
+sort data.txt | uniq
+
+
+And finally:
+
+sort data.txt | uniq -u
+
+Key concept learned
+
+🔹 Pipes (|) let you pass the output of one command directly into another.
+🔹 sort + uniq is a very common pattern for frequency-based text analysis in Linux.
