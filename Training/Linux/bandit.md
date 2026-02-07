@@ -1226,9 +1226,9 @@ base64 is a reversible encoding (not encryption)
 + Port Num : 2220
 ### Commands
 
-sort = 
+cat = Display the file contents on terminal
 
-uniq =
+tr = 
 
 ### Explination
 
@@ -1270,3 +1270,17 @@ a ↔ n, b ↔ o, …, m ↔ z
 Same logic for uppercase letters
 
 Because the alphabet has 26 letters, rotating by 13 twice returns the original text.
+
+
+## Level-12
++ Username : bandit12   
++  Password :                     
++ Domain :   
++ Port Num : 2220
+### Commands
+
+sort = 
+
+uniq =
+
+### Explination
