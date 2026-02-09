@@ -1284,3 +1284,6 @@ sort =
 uniq =
 
 ### Explination
+
+
+![alt text](image.png)
