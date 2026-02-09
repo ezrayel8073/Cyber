@@ -2,6 +2,7 @@
 ## Important Points 
     1.ctrl+1 = " commit "
     1.1 Ctrl+shift+i = " inspect "
+    
 
     2.ctrl+k then leave them thenpress v = you can able to see the updated git 
     that means your not goto the git otherthan you will able see updated git by your own correctons on Vs code 
@@ -1288,5 +1289,4 @@ uniq =
 
 
 
-\images\![alt text](image.png)
 
