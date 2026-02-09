@@ -1273,7 +1273,7 @@ Because the alphabet has 26 letters, rotating by 13 twice returns the original t
 
 
 ## Level-12
-+ Username : bandit12   
++ Username : bandit12TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI   
 +  Password :                     
 + Domain :   
 + Port Num : 2220
