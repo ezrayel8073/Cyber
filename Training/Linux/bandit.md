@@ -1288,4 +1288,5 @@ uniq =
 
 
 
-![alt text](image.png)
+\images\![alt text](image.png)
+
