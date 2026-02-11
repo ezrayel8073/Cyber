@@ -59,6 +59,7 @@ Goal: get root/admin access and capture the flag
 
 
 
+
 🛠 Skills You Learn in CTFs
 
 Linux & command line
@@ -73,7 +74,7 @@ Malware and file analysis
 
 Scripting (Python, Bash)
 
-
+   
 
 
 📂 Beginner-Friendly CTF Categories
@@ -83,17 +84,25 @@ Decode hidden messages
 
 Learn Base64, Caesar cipher, hashes
 
+
+
 🌐 Web
 
 Inspect web pages
 
 Learn about login bypass, hidden files, form manipulation
 
+
+
+
 🕵️ Forensics
 
 Analyze images, PDFs, logs
 
 Find hidden data (steganography)
+
+
+
 
 🧩 General Skills
 
