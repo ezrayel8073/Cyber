@@ -19,6 +19,7 @@ Prepare students and professionals for real-world cybersecurity work
 
 
 🧩 Common Types of CTFs
+
 1. Jeopardy-Style CTF
 
   Most common format
@@ -62,22 +63,23 @@ Goal: get root/admin access and capture the flag
 
 🛠 Skills You Learn in CTFs
 
-Linux & command line
+- Linux & command line
 
-Networking fundamentals
+- Networking fundamentals
 
-Web vulnerabilities (SQL injection, XSS, etc.)
+- Web vulnerabilities (SQL injection, XSS, etc.)
 
-Cryptography basics
+- Cryptography basics
 
-Malware and file analysis
+- Malware and file analysis
 
-Scripting (Python, Bash)
+- Scripting (Python, Bash)
 
    
 
 
 📂 Beginner-Friendly CTF Categories
+
 🔐 Cryptography
 
 Decode hidden messages
@@ -114,7 +116,7 @@ Pattern recognition
 
 
 ### Best Beginner CTF Platforms
-
+-------------------------------
 TryHackMe
 
 picoCTF
@@ -126,7 +128,7 @@ Hack The Box Academy
 
 ## Linux environment understanding.
 
-10. Why Linux is powerful
+- Why Linux is powerful . . ?
 
 Strong security model
 
@@ -138,13 +140,14 @@ Open-source and customizable
 
 Example : 
 
-you will get 4GB Ram in 400 rupees at Windows.
-But In Linux you will get 4GB Ram in 100 rupees 
+   you will get 4GB Ram in 400 rupees at Windows.
+  But In Linux you will get 4GB Ram in 100 rupees 
  
  Most of Coders are developing web applications By using Linux environment That's why we are also using that Linux environment for better result 
 
 
 ### Basic commands:
+------------------------------
 
 ls        # list files
 
@@ -167,6 +170,7 @@ Linux uses a single-root filesystem (/).
 
 
 ### Key directories:
+------------------------------
 
 /        → root of everything
 
@@ -189,13 +193,17 @@ Linux uses a single-root filesystem (/).
 
 
 ### Users, groups & permissions:
+---------------------------
 
 Linux is multi-user by design.
 
 Permissions
-r = read
-w = write
-x = execute
+
+    r = read
+
+    w = write
+
+    x = execute
 
 
 Example:
@@ -205,21 +213,21 @@ Example:
 
 Meaning:
 
-Owner: read/write/execute
+     Owner: read/write/execute
 
-Group: read/execute
+     Group: read/execute
 
-Others: read only
+     Others: read only
 
-Important users
+     Important users
 
-root → superuser (full control)
+     root → superuser (full control)
 
-Normal users → limited permissions
+     Normal users → limited permissions
 
 Use:
 
-sudo command
+      sudo command
 
 
 ## creating directory/folder.
@@ -561,7 +569,7 @@ Task	Command
 Example output:
 
 
-         -rw-r--r-- 1 user user 1234 file.txt
+    -rw-r--r-- 1 user user 1234 file.txt
 
 2. Using symbolic mode (easiest to read)
 
@@ -569,9 +577,9 @@ Example output:
 
 Symbols:
 
-         u → user (owner)
+        u → user (owner)
 
-         g → group
+        g → group
 
         o → others
 
@@ -583,21 +591,25 @@ Symbols:
 
 Examples:
 
-    
+  add execute to owner
+
     chmod u+x file.txt 
-                          # add execute to owner
+                         
+  remove write from group
 
+    chmod g-w file.txt      
 
-      chmod g-w file.txt      # remove write from group
+ others can only read
 
+    chmod o=r file.txt      
 
-      chmod o=r file.txt      # others can only read
+ everyone can read
 
+     chmod a+r file.txt      
 
-     chmod a+r file.txt      # everyone can read
+  owner full permissions
 
-
-     chmod u=rwx file.txt    # owner full permissions
+     chmod u=rwx file.txt   
 
 3. Using numeric (octal) mode (most common)
 
@@ -1353,7 +1365,7 @@ You don’t need to master Vim immediately—just learn:
 
 
 
-##    nano and vim are diffrent or same    
+##    Difference between Nanotool and Vim tool    
 
 Nano and Vim are NOT the same.
 
