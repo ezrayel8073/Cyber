@@ -117,13 +117,13 @@ Pattern recognition
 
 ### Best Beginner CTF Platforms
 -------------------------------
-TryHackMe
+- TryHackMe
 
-picoCTF
+- picoCTF
 
-OverTheWire
+- OverTheWire
 
-Hack The Box Academy
+- Hack The Box Academy
 
 
 ## Linux environment understanding.
