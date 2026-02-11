@@ -757,4 +757,663 @@ Task	Command
      Verbose output	       cp -v
 
 
+##  Cut /Move a file and directory/folder to any folder/directory
 
+
+✂️ Move (cut) a file
+
+       mv file.txt /path/to/destination/
+
+
+Example:
+
+      mv file.txt ~/Documents/
+
+✂️ Move and rename a file
+
+        mv file.txt ~/Documents/newname.txt
+
+📁 Move a directory (folder)
+
+       mv folder_name /path/to/destination/
+
+
+✔ No -r needed — directories move by default.
+
+📁 Move multiple files
+
+        mv file1.txt file2.txt ~/Backup/
+
+📁 Move multiple folders
+
+     mv dir1 dir2 ~/Projects/
+
+🛑 Move with confirmation (safer)
+
+      mv -i file.txt ~/Documents/
+
+🔁 Overwrite existing files
+
+        mv -f file.txt ~/Documents/
+
+
+⚠️ Use carefully.
+
+🔒 Permission denied? Fix it
+
+    sudo mv file.txt /etc/
+
+     sudo mv folder_name /opt/
+
+❗ Common mistakes & fixes
+File/folder name with spaces
+mv "My File.txt" ~/Documents/
+
+Destination folder must exist
+
+❌
+
+mv file.txt ~/Docs/
+
+
+(if ~/Docs doesn’t exist)
+
+✅ Create it first:
+
+mkdir ~/Docs
+mv file.txt ~/Docs/
+
+📌 Quick reference
+Task	Command
+
+    Move file	            mv file dest/
+
+    Move & rename	        mv file dest/newname
+
+     Move folder	        mv dir dest/
+
+     Ask before overwrite	mv -i
+
+     Force overwrite	    mv -f
+
+
+## Copy a  directory/folder to any folder/directory
+
+📁 Copy a directory (with all contents)
+
+       cp -r source_folder destination_folder
+
+
+Example:
+
+      cp -r project ~/Backup/
+
+
+This copies:
+
+       project  →  ~/Backup/project
+
+📁 Copy directory and rename it
+
+         cp -r project ~/Backup/project_copy
+
+📁 Copy directory to an absolute path
+
+        cp -r project /home/user/Documents/
+
+📁 Copy multiple directories
+
+        cp -r dir1 dir2 ~/Projects/
+
+🧾 Preserve permissions & timestamps
+
+        cp -rp project ~/Backup/
+
+🔍 Show what is being copied (verbose)
+
+      cp -rv project ~/Backup/
+
+🛑 Ask before overwriting
+
+     cp -ri project ~/Backup/
+
+🔒 Permission denied? Use sudo
+
+      sudo cp -r project /opt/
+
+
+
+📌 Quick summary
+Task	Command
+
+    Copy directory	cp -r src dest
+
+    Preserve permissions	cp -rp src dest
+
+    Show progress	cp -rv src dest
+
+    Confirm overwrite	cp -ri src dest
+
+
+##  Cut /Move a directory/folder to any folder/directory
+
+✂️ Move (cut) a directory
+
+    mv source_folder destination_folder
+
+
+Example:
+
+      mv project ~/Documents/
+
+
+Result:
+
+      project  →  ~/Documents/project
+
+✂️ Move and rename a directory
+
+    mv project ~/Documents/project_backup
+
+✂️ Move directory to an absolute path
+
+      mv project /home/user/Projects/
+
+✂️ Move multiple directories
+
+       mv dir1 dir2 ~/Work/
+
+🛑 Ask before overwriting (safer)
+
+     mv -i project ~/Documents/
+
+🔁 Force overwrite
+
+     mv -f project ~/Documents/
+
+
+⚠️ Use carefully.
+
+🔒 Permission denied? Use sudo
+
+     sudo mv project /opt/
+
+❗ Common mistakes & fixes
+Destination folder must exist
+
+❌
+
+mv project ~/Docs/
+
+
+(if ~/Docs doesn’t exist)
+
+✅ Fix:
+
+    mkdir ~/Docs
+ 
+      mv project ~/Docs/
+
+Folder name with spaces
+ 
+     mv "My Folder" ~/Documents/
+
+📌 Quick summary
+Task	Command
+
+     Move folder	     mv src dest
+
+    Move & rename	     mv src dest/newname
+
+    Multiple folders	 mv d1 d2 dest/
+
+    Confirm	             mv -i
+
+     Force	             mv -f
+
+
+## selecting all files at once in a folder/directory.
+
+
+📌 1. Select all files in the terminal (CLI)
+✅ Using wildcard * (most common)
+
+        ls *
+
+
+Select all files & folders:
+
+         rm -r *
+
+         cp * ~/Backup/
+
+         mv * ~/Documents/
+
+
+⚠️ Be careful — * acts on everything in the directory.
+
+📌 2. Include hidden files (dotfiles)
+
+Hidden files start with . and are not included by *.
+
+       ls -a
+
+
+Select everything including hidden files:
+
+      rm -r * .*
+
+
+⚠️ Dangerous — may include . and ..
+
+✅ Safer method:
+
+         shopt -s dotglob
+
+         rm -r *
+
+          shopt -u dotglob
+
+📌 3. Select only files (not directories)
+
+      ls -p | grep -v /
+
+
+Or:
+
+     find . -maxdepth 1 -type f
+
+📌 4. Select only directories
+
+    ls -d */
+
+📌 5. Select specific file types
+
+       ls *.txt
+
+       cp *.pdf ~/Documents/
+
+📌 6. Select everything except one file
+
+       rm -r !(important.txt)
+
+
+Enable first:
+
+      shopt -s extglob
+
+
+📌 Quick summary
+Task	Command
+
+    Select all	    *
+
+    Include hidden	shopt -s dotglob
+
+    Only files	    find . -type f
+
+    Only folders	 */
+
+    By extension	 *.ext
+
+    GUI select all	 Ctrl + A
+
+##  Finding a required file or directory.
+    
+    .
+
+🔍 1. Find using find (most powerful)
+
+Search by name:
+
+    find /path/to/search -name "file.txt"
+
+
+Example:
+
+    find ~/Documents -name "notes.txt"
+
+
+🔹 Case-insensitive:
+
+     find ~/Documents -iname "Notes.txt"
+
+
+🔹 Find a directory only:
+
+    find / -type d -name "projects"
+
+
+🔹 Find a file only:
+
+        find / -type f -name "*.txt"
+
+⚡ 2. Find quickly using locate (fastest)
+
+         locate file.txt
+
+
+If it doesn’t work:
+
+         sudo updatedb
+
+
+✔ Very fast (uses an index)
+❌ May not show newly created files immediately
+
+🔎 3. Search in current directory only
+
+        find . -name "file.txt"
+
+🧭 4. Find by file size
+
+          find . -size +100M
+
+🕒 5. Find by modification time
+
+       find . -mtime -1
+
+
+(find files modified in last 1 day)
+
+🧾 6. Find and perform action
+
+Delete found files:
+
+         find . -name "*.tmp" -delete
+
+
+List details:
+
+          find . -name "*.log" -ls
+
+
+
+📌 Quick summary
+Task	Command
+
+    Find file	    find /path -name file
+
+    Case-insensitive	find -iname file
+ 
+    Directory only	    find -type d
+
+    Fast search      	locate file
+
+   Recent files	         find -mtime -1
+
+⚠️ Safety tip
+
+Searching entire / may show permission denied errors. Use:
+
+     find / -name file.txt 2>/dev/null
+
+
+##  Editing using Nano tool.     
+
+
+📝 1. Open (or create) a file with Nano
+
+     nano file.txt
+
+
+If file.txt exists → it opens for editing
+
+If it doesn’t exist → Nano creates it
+
+⌨️ 2. Start editing
+
+Just start typing — Nano is already in edit mode.
+
+No special insert mode is needed.
+
+💾 3. Save the file
+
+Press:
+
+        Ctrl + O
+
+
+Press Enter to confirm the filename
+
+❌ 4. Exit Nano
+          
+          Ctrl + X
+
+
+If there are unsaved changes, Nano will ask:
+
+Y → Yes, save
+
+N → No, discard changes
+
+🔍 5. Useful Nano shortcuts
+Action	Shortcut
+
+    Save	Ctrl + O
+
+    Exit	Ctrl + X
+
+    Cut line	Ctrl + K
+
+    Paste line	Ctrl + U
+
+    Search	Ctrl + W
+
+    Replace	Ctrl + \
+
+    Go to line	Ctrl + _
+
+    Undo	Alt + U
+
+    Redo	Alt + E
+
+📄 6. Edit a file with sudo (protected files)
+
+     sudo nano /etc/hosts
+
+📌 7. Open Nano with options
+
+Open at a specific line:
+
+       nano +10 file.txt
+
+
+Show line numbers:
+
+         nano -l file.txt
+
+❗ Common mistakes & tips
+
+^ means Ctrl (shown at bottom of Nano)
+
+Use arrow keys to move (not mouse)
+
+Always save before exiting
+
+
+## vim tool
+
+🧑‍💻 1. On servers & remote systems
+
+When you connect to a server using:
+
+        ssh user@server
+
+
+👉 Vim is almost always available, while GUI editors are not.
+
+Used for:
+
+Editing config files
+     
+      (/etc/nginx/nginx.conf)
+
+Fixing server issues quickly
+
+Emergency edits when Nano is not installed
+
+⚙️ 2. Editing system & configuration files
+
+Vim is preferred because it:
+
+Loads fast
+
+Handles large files well
+
+Works safely over SSH
+
+Examples:
+
+     sudo vim /etc/ssh/sshd_config
+ 
+     sudo vim /etc/fstab
+
+🧠 3. Software development
+
+Developers use Vim for:
+
+Writing code (C, Python, Java, etc.)
+
+Editing logs
+
+Refactoring text
+
+With plugins, Vim becomes a full IDE:
+
+Syntax highlighting
+
+Code completion
+
+Git integration
+
+🚀 4. When speed & efficiency matter
+
+Vim lets you:
+
+Edit without mouse
+
+Jump across files instantly
+
+Automate edits with commands/macros
+
+Example:
+
+     :%s/old/new/g
+
+
+(Replace text everywhere in the file)
+
+🖥️ 5. Low-resource environments
+
+Vim works well when:
+
+RAM/CPU is limited
+
+No desktop environment is installed
+
+Running inside containers
+
+🆘 6. Emergency situations
+
+If a system boots into recovery mode, Vim may be the only editor available.
+
+
+📌 Summary
+
+Use Vim when:
+
+✔ Working on servers
+
+✔ Editing system files
+
+✔ Writing code professionally
+
+✔ Working over SSH
+
+✔ In emergency or minimal systems
+
+Use Nano when:
+✔ You are a beginner
+
+✔ Quick simple edits are needed
+
+
+💡 Tip
+
+You don’t need to master Vim immediately—just learn:
+
+       i     → insert
+
+       Esc   → command mode
+
+       :wq   → save & quit
+
+       :q!   → quit without saving
+
+
+
+##    nano and vim are diffrent or same    
+
+Nano and Vim are NOT the same.
+
+They are both text editors, but they work very differently.
+
+🧾 Simple answer
+
+Point	Nano	Vim
+
+Same tool?	❌ No	❌ No
+
+Same purpose?	✅ Yes (edit text files)	✅ Yes (edit text files)
+
+🧠 Key differences
+🟢 Nano
+
+Beginner-friendly
+
+One mode (just type)
+
+Shortcuts shown on screen
+
+Easy to learn
+
+Example:
+
+    nano file.txt
+
+🔵 Vim
+
+Professional / advanced editor
+
+Multiple modes (normal, insert, command)
+
+Very powerful & fast
+
+Steep learning curve
+
+Example:
+
+       vim file.txt
+
+🧭 When to use which?
+
+    Use Nano → learning Linux, quick edits
+
+    Use Vim → servers, DevOps, coding, professionals
+
+📌 Final conclusion
+
+✔ Nano and Vim are different tools
+
+✔ Both edit text files
+
+✔ Vim is more powerful but harder
+
+✔ Nano is easier but limited
+
+💡 Think of it like this:
+
+    Nano = Notepad
+
+    Vim = Professional code editor
