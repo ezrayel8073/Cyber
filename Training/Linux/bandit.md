@@ -1275,8 +1275,8 @@ Because the alphabet has 26 letters, rotating by 13 twice returns the original t
 
 
 ## Level-12
-+ Username : bandit12TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI   
-+  Password :                     
++ Username : bandit12
++  Password : TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI                       
 + Domain :   
 + Port Num : 2220
 ### Commands
@@ -1290,11 +1290,12 @@ uniq =
 
 ## Level-13
 + Username : bandit13   
-+  Password :                     
++  Password : FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn                     
 + Domain :
 
 below is the image of level-13
-[image](./images/image-1.png)
+
+[image](./images/image-13.png)
 
 
 
