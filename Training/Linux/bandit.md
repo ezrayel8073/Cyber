@@ -1383,4 +1383,24 @@ bandit14@localhost → you’re logging into the same machine, just as a differe
 
 
 #### 2nd Method
+
 [image](./images/image-13-1.png)
+
+
+✅ DOWNLOAD SSH KEY FROM BANDIT TO KALI (FINAL)
+📌 Run this ON YOUR KALI TERMINAL, not on Bandit:
+
+    scp -P 2220 bandit13@bandit.labs.overthewire.org:/home/bandit13/sshkey.private .
+
+
+When asked, enter the bandit13 password.
+
+The file will appear in your current Kali directory.
+
+✅ FIX PERMISSIONS ON KALI (IMPORTANT)
+
+    chmod 600 sshkey.private
+
+✅ LOGIN TO BANDIT14 USING THE KEY
+
+    ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
