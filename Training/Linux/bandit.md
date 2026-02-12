@@ -1295,7 +1295,7 @@ uniq =
 
 below is the image of level-13
 
-[images](./images/image.png)
+[image](./images/image.png)
 
 
 
