@@ -1300,3 +1300,87 @@ below is the image of level-13
 
 
 
+### Commands
+
+ls = list files
+cat = Display the file contents on terminal
+nano =
+chmod =
+
+### Explination
+
+What’s different in this level?
+
+You do not get a password for bandit14.
+
+Instead, you are given a private SSH key.
+
+You must use that key to log in as bandit14.
+
+Step-by-step solution
+1. Log in to Bandit Level 13 (as usual)
+
+       ssh bandit13@bandit.labs.overthewire.org -p 2220
+
+2. Find the private SSH key
+
+Once logged in, list the files:
+
+        ls
+
+
+You should see a file named:
+
+     sshkey.private
+
+
+This is the private key you must use to log in to the next level.
+
+  it will shows the key
+
+      cat sshkey.private
+
+copy the entire key 
+Paste the key into a text editor means nano tool
+
+      
+     nano key 
+
+then save it and rename it to key
+
+key rename name is also a key
+
+
+
+3. Fix the key’s permissions (important!)
+
+SSH will refuse to use a private key if it’s too open.
+
+      chmod 600 key
+
+
+This means:
+
+Read/write for you
+
+No access for anyone else
+
+4. Use the private key to log in as bandit14
+
+From inside bandit13, Example run:
+
+      ssh -i sshkey.private bandit14@localhost
+
+Correct command:
+
+    ssh -i key bandit14@bandit.labs.overthewire.org -p 2220
+
+Explanation:
+
+-i sshkey.private → tells SSH which private key to use
+
+bandit14@localhost → you’re logging into the same machine, just as a different user
+
+
+#### 2nd Method
+[image](./images/image-13-1.png)
