@@ -1288,5 +1288,11 @@ uniq =
 ### Explination
 
 
+## Level-13
++ Username : bandit13   
++  Password :                     
++ Domain :
+
+
 
 
