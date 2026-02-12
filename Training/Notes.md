@@ -1430,3 +1430,4 @@ Example:
 
     Vim = Professional code editor
 
+--------------------------------------------------
