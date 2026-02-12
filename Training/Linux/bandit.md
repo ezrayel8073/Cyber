@@ -1293,7 +1293,8 @@ uniq =
 +  Password :                     
 + Domain :
 
-in thie lab 
+below is the image of level-13
+[image](./images/image-1.png)
 
 
 
