@@ -770,3 +770,13 @@ Step 7: Read the password
 
     cat /tmp/8169b67bd894ddbb4412f91573b38db3
 
+## Level-22
++ Username : bandit22
++  Password :  tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
++ Domain : ssh bandit22@bandit.labs.overthewire.org -p 2220
++ Port Num : 2220
+### Commands
+
+### Explination
+[image](./images/image-22.png)
+
