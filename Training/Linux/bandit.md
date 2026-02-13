@@ -875,6 +875,7 @@ nc keeps one open TCP connection, which is exactly what the daemon wants
 ## Level-25
 + Username : bandit25
 +  Password :  8ZjyCRiBWFYkW8qN1MqTaXa8UkYzA3ey
++  Password :  
 + Domain : ssh bandit25@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
