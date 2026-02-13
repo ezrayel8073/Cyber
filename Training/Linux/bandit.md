@@ -872,5 +872,3 @@ Why this works
 seq -w keeps the PINs 4 digits (0001 instead of 1)
 The loop sends all attempts at once
 nc keeps one open TCP connection, which is exactly what the daemon wants
-
-    
