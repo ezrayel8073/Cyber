@@ -7,150 +7,46 @@
     1.4 Ctrl+shift+0 = " reset zoom "
     1.5 ctrl+c = " exit "
     1.6 ctrl+X = " save and exit "
-
-
-    
-
-    2.ctrl+k then leave them thenpress v = you can able to see the updated git 
+2.ctrl+k then leave them thenpress v = you can able to see  the updated git 
     that means your not goto the git otherthan you will able see updated git by your own correctons on Vs code 
-
-    3.In a system you have file Like in a Notepad there is a resume file then you can able to see the resume file
-
-    4.It has a properties. In a File properties you can able to see that 3 types  modules
+3.In a system you have file Like in a Notepad there is a resume file then you can able to see the resume file
+ 4.It has a properties. In a File properties you can able to see that 3 types  modules
 
         1.System
         2.You (your mail)
         3.Administrator
-
-    5.These 3 have right on a file Authorization  
-
-    6.Like  The Root is a Administrator in Linux setup
-
-
+ 5.These 3 have right on a file Authorization  
+ 6.Like  The Root is a Administrator in Linux setup
 ## Terminal
-    1.First you can start the terminal you will see the starting stage of terminal the you need to go that terminal you can access that terminal by " sudo su " 
-
-    2.After that terninal can ask you the password 
-
-    3. Password : " kali "
-
-    4. then you enter the password you will not able to see that password but it can automatically access
-
-    5. It will navigate Home that means Root
-
-    6. Looks like  " root@kali "
-
-    7. It will shows in red color. It is the simple checking that  you are in root or not and below that root you will see " #  " in red color 
-
-    8. Finally you can start the Terminal
-
+1.First you can start the terminal you will see the starting stage of terminal the you need to go that terminal you can access that terminal by " sudo su " 
+2.After that terninal can ask you the password 
+3. Password : " kali "
+4. then you enter the password you will not able to see that password but it can automatically access
+ 5. It will navigate Home that means Root
+6. Looks like  " root@kali "
+ 7. It will shows in red color. It is the simple checking that  you are in root or not and below that root you will see " #  " in red color 
+   8. Finally you can start the Terminal
 ## Level 0
-
 What you Need to do :
-
 + Username : bandit0   
 +  Password : bandit0                        
-+ Domain : bandit0.labs.overthewire.org   
++ Domain : ssh bandit0@bandit.labs.overthewire.org -p 2220   
 + Port Num : 2220
-
-
 ### Commands
-
 + ls = list files  
 + cd = change directory  
 + cat = read file
- 
-### Explination
- 
+### Explination 
+ list files with:
 
- 
-3️⃣ Accept the host key (first time only)
-
-You’ll see something like:
-
-Are you sure you want to continue connecting (yes/no)?
-
-
-Type:
-
-yes
-
-
-and press Enter.
-
-If you want, tell me:
-
-what OS you’re on (Linux/macOS/Windows), or
-
-whether you’re using PowerShell, WSL, or a Linux VM
-
-and I’ll tailor the commands exactly for your setup.
-
-
-Perfect 😄 Linux makes this nice and clean.
-
-You can do everything for Bandit straight from your terminal.
-
-Bandit Level 0 (Linux)
-
-Step-by-step (from your terminal)
-
-1.Open a terminal.
-
-2.Run this command:
-
-
-Run this command:
-
-ssh bandit0@bandit.labs.overthewire.org -p 2220
-
-
--p 2220 is important — SSH defaults to port 22 otherwise.
-
-When prompted for a password, type:
-
-bandit0
-
-
-(You won’t see the password as you type — that’s normal.)
-
-What success looks like
-
-If it works, you’ll see something like a welcome banner and land in a shell that looks roughly like:
-
-bandit0@bandit:~$
-
-
-Congrats 🎉 — you’re logged in.
-
-Next step
-
-Once logged in:
-
-Read the on-screen message (or just know this)
-
-Go to the Level 1 page on OverTheWire to see what to do next
-
-Or list files with:
-
-ls
-
-
+    ls
 You’ll see a file called readme.
-
 Read it:
 
-cat readme
-
-
+    cat readme
 That file gives you the password for Level 1.
-
-Pro tip (you’ll use this a lot)
-
 To log out later:
-
 exit
-
 ##  Level 1
 + Username : bandit1   
 +  Password :                        
@@ -261,7 +157,7 @@ No quotes, no guessing, no typing the filename
 ## Level-4
 + Username : bandit4   
 +  Password :                        
-+ Domain :    
++ Domain :   ssh bandit4@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### Commands
 ls = list files  
@@ -336,7 +232,7 @@ Example:
 ## Level-5
 + Username : bandit5   
 +  Password :                         
-+ Domain :    
++ Domain :  ssh bandit5@bandit.labs.overthewire.org -p 2220  
 + Port Num : 2220
 ### Commands
 ls = list files  
@@ -401,7 +297,7 @@ Example:
 ## Level-6
 + Username : bandit6   
 +  Password :                     
-+ Domain :   
++ Domain :  ssh bandit6@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### Commands
 find = Find the files and directories Based on    Name, size, Modification time
@@ -425,7 +321,7 @@ Read it
 ## Level-7
 + Username : bandit7   
 +  Password :                     
-+ Domain :   
++ Domain : ssh bandit7@bandit.labs.overthewire.org -p 2220  
 + Port Num : 2220
 ### Commands
 grep = 
@@ -440,7 +336,7 @@ It prints the entire line containing the word millionth
 ## Level-8
 + Username : bandit8   
 +  Password :                     
-+ Domain :   
++ Domain : ssh bandit8@bandit.labs.overthewire.org -p 2220  
 + Port Num : 2220
 ### Commands
 ls = list files 
@@ -467,7 +363,7 @@ And finally:
 ## Level-9
 + Username : bandit9   
 +  Password :                     
-+ Domain :   
++ Domain : ssh bandit9@bandit.labs.overthewire.org -p 2220  
 + Port Num : 2220
 ### Commands
 ls = list files 
@@ -492,7 +388,7 @@ The password is intentionally easy to spot once filtered correctly
 ## Level-10
 + Username : bandit10   
 +  Password :                     
-+ Domain :   
++ Domain :  ssh bandit10@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### Commands
 ls = list files 
@@ -514,7 +410,7 @@ or equivalently:
 ## Level-11
 + Username : bandit11   
 +  Password :                     
-+ Domain :   
++ Domain :  ssh bandit11@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### Commands
 cat = Display the file contents on terminal
@@ -542,7 +438,7 @@ Because the alphabet has 26 letters, rotating by 13 twice returns the original t
 ## Level-12
 + Username : bandit12
 +  Password : TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI                       
-+ Domain :   
++ Domain :  ssh bandit12@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### Commands
 sort = 
@@ -551,7 +447,7 @@ uniq =
 ## Level-13
 + Username : bandit13   
 +  Password : FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn          
-+ Domain :
++ Domain : ssh bandit13@bandit.labs.overthewire.org -p 2220
 below is the image of level-13
 [image](./images/image-13.png)
 ### Commands
@@ -613,7 +509,7 @@ The file will appear in your current Kali directory.
  ## Level-14
 + Username : bandit14
 +  Password : 
-+ Domain : 
++ Domain : ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
 cat = Display the file contents on terminal
