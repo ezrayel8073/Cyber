@@ -455,8 +455,9 @@ Once you get a text file:like password.txt
         cat data
 ## Level-13
 + Username : bandit13   
-+  Password : FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn          
-+ Domain : ssh bandit13@bandit.labs.overthewire.org -p 2220
++  Password : FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn 
++  Domain : ssh bandit13@bandit.labs.overthewire.org -p 2220     [or]
++ Domain 1: scp -P 2220 bandit13@bandit.labs.overthewire.org:/home/bandit13/sshkey.private .
 below is the image of level-13
 [image](./images/image-13.png)
 ### Commands
@@ -551,6 +552,12 @@ Step 3: Send the current password to port 30001. Paste the Bandit 15 password an
 + Domain : ssh bandit16@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
+cat = Display the file contents on terminal
+nmap =
+openssl =
+-quit =
+nano =
+chmod = change permission
 
 ### Explination
 [image](./images/image-16.png)
@@ -601,3 +608,100 @@ and Save it to a file Create a file called bandit17.key:
 ✅ This will log you in without a password. Once logged in, You are now bandit17. To continue later:
 
        cat /etc/bandit_pass/bandit17
+
+## Level-17
++ Username : bandit17
++  Password :
++ Domain : ssh bandit17@bandit.labs.overthewire.org -p 2220
++ Port Num : 2220
+### Commands
+ls = list files
+diff = compare files
+grep = 
+### Explination
+[image](./images/image-17.png)
+
+    ls
+You should see:
+ passwords.old  passwords.new
+Compare the two files using diff:
+
+     diff passwords.old passwords.new
+You’ll see something like:
+        < oldpasswordline
+           ---
+        > newpasswordline
+
+    Lines starting with < come from passwords.old
+
+    Lines starting with > come from passwords.new
+Alternative (cleaner output)
+
+    diff passwords.old passwords.new | grep ">"
+^> → only lines starting with >
+cut -c3- → removes > (greater-than + space)
+
+    diff passwords.old passwords.new | grep "^>" | cut -c3-
+## Level-18
++ Username : bandit18
++  Password :
++ Domain : ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
++ Port Num : 2220
+### Commands
+cat = Display the file contents on terminal
+### Explination
+[image](./images/image-18.png)
+Why it immediately exits (“Byebye!”)
+In Bandit18, your .bashrc is modified so that as soon as you log in, it prints:
+
+    Byebye!
+
+    ssh bandit18@bandit.labs.overthewire.org -p 2220
+and it immediately exits, that means:
+👉 Your password is correct 👉 You are now officially on Bandit18 👉 This behavior belongs to Level 18 → 19. How to actually stay in Bandit18. You must bypass .bashrc.
+What you’re seeing now is normal SSH behavior, not a crash.
+This is intentional for security.
+ 
+    ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+SSH logs in and prompts for a password. Enter Password: Does NOT start an interactive shell. Runs cat readme
+Prints the password for bandit19
+Immediately exits (this is normal)
+    
+    Can’t stay logged in    -	Bandit18 trap
+    Blank screen	        -    Shell killed
+    SSH works but exits	     -  Normal
+    Best solution	         -   ssh ... cat readme
+## Level-19
++ Username : bandit19
++  Password :
++ Domain : ssh bandit19@bandit.labs.overthewire.org -p 2220
++ Port Num : 2220
+### Commands
+ls -1 = list files
+cat = Display the file contents on terminal
+### Explination
+[image](./images/image-19.png)
+
+      ls -l
+You’ll see something like:
+-rwsr-x--- 1 bandit20 bandit19 7296 bandit20-do Owned by bandit20 Executing it runs as bandit20
+3. Run the binary without arguments
+
+       ./bandit20-do
+Output :
+Run a command as another user.
+Usage: ./bandit20-do <command>
+4. Use the binary to read the password
+Tell it to run cat as bandit20:
+
+    ./bandit20-do cat /etc/bandit_pass/bandit20
+
+## Level-20
++ Username : bandit20
++  Password :
++ Domain : ssh bandit20@bandit.labs.overthewire.org -p 2220
++ Port Num : 2220
+### Commands
+### Explination
+
+
