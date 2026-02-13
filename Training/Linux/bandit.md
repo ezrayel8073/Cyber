@@ -702,6 +702,71 @@ Tell it to run cat as bandit20:
 + Domain : ssh bandit20@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
+nc = netcat
 ### Explination
+[image](./images/image-20.png)
+[image](./images/image-20-1.png)
+🔹 Terminal 1
 
+    nc -l -p 4444
+(wait — cursor blinking)
+🔹 Terminal 2 (new SSH window)
+
+    ./suconnect 4444
+🔹 BACK TO TERMINAL 1
+Now PASTE ONLY THIS LINE and press ENTER:That means bandit20 password
+
+      0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+✅ You will now see TWO lines:
+
+    0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+    <bandit21_password_here>
+## Level-21
++ Username : bandit21
++  Password :  EeoULMCra2q0dSkYj561DX7s1CpBuOBt
++ Domain : ssh bandit21@bandit.labs.overthewire.org -p 2220
++ Port Num : 2220
+### Commands
+ls = list files
+cat = Display the file contents on terminal
+echo = Display a string
+### Explination
+[image](./images/image-21.png)
+List the files in /etc/cron.d/:
+
+    ls /etc/cron.d/
+You should see something like:
+
+    cronjob_bandit22
+Step 3: Read the cron job
+    
+    cat /etc/cron.d/cronjob_bandit22
+Typical output:
+    * * * * * bandit22 /usr/bin/cronjob_bandit22.sh
+Meaning:
+    * * * * * → runs every minute Runs as user bandit22
+Executes /usr/bin/cronjob_bandit22.sh
+Step 4: Read the script being executed
+
+      cat /usr/bin/cronjob_bandit22.sh
+You’ll see something like:
+#!/bin/bash
+chmod 644 /tmp/$(echo I am user bandit22 | md5sum | cut -d ' ' -f 1)
+cat /etc/bandit_pass/bandit22 > /tmp/$(echo I am user bandit22 | md5sum | cut -d ' ' -f 1)
+Step 5: Understand what it does
+
+It computes:
+
+    echo I am user bandit22 | md5sum
+Uses the MD5 hash as a filename in /tmp/
+Writes the bandit22 password into that file
+Makes it readable
+Example output:
+
+    8169b67bd894ddbb4412f91573b38db3  -
+The filename is:
+/tmp/8169b67bd894ddbb4412f91573b38db3
+Step 7: Read the password
+
+    cat /tmp/8169b67bd894ddbb4412f91573b38db3
 
