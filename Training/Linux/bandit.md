@@ -695,7 +695,6 @@ Usage: ./bandit20-do <command>
 Tell it to run cat as bandit20:
 
     ./bandit20-do cat /etc/bandit_pass/bandit20
-
 ## Level-20
 + Username : bandit20
 +  Password :  0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
@@ -769,14 +768,115 @@ The filename is:
 Step 7: Read the password
 
     cat /tmp/8169b67bd894ddbb4412f91573b38db3
-
 ## Level-22
 + Username : bandit22
 +  Password :  tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
 + Domain : ssh bandit22@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
-
+ls = list files
+cat = Display the file contents on terminal
+echo = Display a string
 ### Explination
 [image](./images/image-22.png)
+List the files in /etc/cron.d/:
 
+    ls /etc/cron.d/
+You should see something like:
+
+    cronjob_bandit23
+Step 3: Read the cron job
+    
+    cat /etc/cron.d/cronjob_bandit23
+Typical output:
+    * * * * * bandit23 /usr/bin/cronjob_bandit23.sh
+Meaning:
+    * * * * * → runs every minute Runs as user bandit23
+Executes /usr/bin/cronjob_bandit23.sh
+Step 4: Read the script being executed
+
+      cat /usr/bin/cronjob_bandit23.sh
+You’ll see something like:
+#!/bin/bash
+chmod 644 /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)
+cat /etc/bandit_pass/bandit23 > /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)
+Step 5: Understand what it does
+
+It computes:
+
+    echo I am user bandit23 | md5sum
+Uses the MD5 hash as a filename in /tmp/
+Writes the bandit23 password into that file
+Makes it readable
+Example output:
+
+    8ca319486bfbbc3663ea0fbe81326349  -
+The filename is:
+/tmp/8ca319486bfbbc3663ea0fbe81326349
+Step 7: Read the password
+
+    cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+## Level-23
++ Username : bandit23
++  Password :  0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
++ Domain : ssh bandit23@bandit.labs.overthewire.org -p 2220
++ Port Num : 2220
+### Commands
+ls = list files
+cat = Display the file contents on terminal
+nano = Edit a file
+chmod = Change file permissions
+### Explination
+[image](./images/image-23.png)
+2️⃣ Inspect the cron configuration
+
+     ls /etc/cron.d/
+You should see something like: bandit24
+
+     cat /etc/cron.d/bandit24
+Output will look similar to:
+     * * * * * bandit24 /usr/bin/cronjob_bandit24.sh
+This means:
+Every minute (* * * * *) User bandit24
+Executes /usr/bin/cronjob_bandit24.sh
+3️⃣ Read the cron script
+
+    cat /usr/bin/cronjob_bandit24.sh
+
+     export NANO_DISABLE_HISTORY=1
+Quick check that your script is fine. After saving, verify:
+
+     cat /tmp/getpass.sh
+ Change the permissions:
+
+    chmod +x /tmp/getpass.sh
+Use it to get the password:
+    
+    cat /tmp/bandit24_pass
+## Level-24
++ Username : bandit24
++  Password :  gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
++ Domain : ssh bandit24@bandit.labs.overthewire.org -p 2220
++ Port Num : 2220
+### Commands
+### Explination
+Strategy:
+Generate all PINs from 0000 → 9999
+Prefix each with the bandit24 password
+Pipe everything into one nc (netcat) connection
+Watch for the line that contains the bandit25 password
+[image](./images/image-24-1.png)
+👉 Replace BANDIT24_PASSWORD with the actual password for bandit24
+[image](./images/image-24.png)
+Why this works
+seq -w keeps the PINs 4 digits (0001 instead of 1)
+The loop sends all attempts at once
+nc keeps one open TCP connection, which is exactly what the daemon wants
+## Level-25
++ Username : bandit25
++  Password :  8ZjyCRiBWFYkW8qN1MqTaXa8UkYzA3ey
++ Domain : ssh bandit25@bandit.labs.overthewire.org -p 2220
++ Port Num : 2220
+### Commands
+### Explination
+    
