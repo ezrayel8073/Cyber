@@ -698,7 +698,7 @@ Tell it to run cat as bandit20:
 
 ## Level-20
 + Username : bandit20
-+  Password :
++  Password :  0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
 + Domain : ssh bandit20@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
