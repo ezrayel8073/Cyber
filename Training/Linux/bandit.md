@@ -7,25 +7,22 @@
     1.4 Ctrl+shift+0 = " reset zoom "
     1.5 ctrl+c = " exit "
     1.6 ctrl+X = " save and exit "
-2.ctrl+k then leave them thenpress v = you can able to see  the updated git 
-    that means your not goto the git otherthan you will able see updated git by your own correctons on Vs code 
+2.ctrl+k then leave them thenpress v 
+ you can able to see  the updated git that means your not goto the git otherthan you will able see updated git by your own correctons on Vs code 
 3.In a system you have file Like in a Notepad there is a resume file then you can able to see the resume file
  4.It has a properties. In a File properties you can able to see that 3 types  modules
 
         1.System
         2.You (your mail)
         3.Administrator
- 5.These 3 have right on a file Authorization  
- 6.Like  The Root is a Administrator in Linux setup
+ 5.These 3 have right on a file Authorization , Like  The Root is a Administrator in Linux setup
 ## Terminal
 1.First you can start the terminal you will see the starting stage of terminal the you need to go that terminal you can access that terminal by " sudo su " 
 2.After that terninal can ask you the password 
 3. Password : " kali "
 4. then you enter the password you will not able to see that password but it can automatically access
- 5. It will navigate Home that means Root
-6. Looks like  " root@kali "
- 7. It will shows in red color. It is the simple checking that  you are in root or not and below that root you will see " #  " in red color 
-   8. Finally you can start the Terminal
+ 5. It will navigate Home that means Root, it will shows " root@kali " 
+ 6. It will shows in red color. It is the simple checking that  you are in root or not and below that root you will see " #  " in red color that means Finally you can start the Terminal
 ## Level 0
 What you Need to do :
 + Username : bandit0   
@@ -90,7 +87,8 @@ Step 4: Get the password
 
     ls
 You should see something like:
-spaces in this filename
+
+     spaces in this filename
 ###### ✅ Step 1: List files exactly
 Run this first and copy what you see character-for-character:
 
@@ -108,8 +106,7 @@ cd ~
 This bypasses the filename entirely.
 
      ls -i
-You’ll see something like:
-1234567 spaces in this file name
+You’ll see something like:1234567 spaces in this file name
 Now run:
 
     find . -inum 1234567 -exec cat {} \;
@@ -127,21 +124,17 @@ ls -a =
 ### Explination
 List files in the home directory:
 
-     ls
-     
+     ls    
 You type ls and the output literally says:
       
       inhere
 So the file is inside a directory named inhere, not directly in your home folder.
-Here is the 100% correct command sequence you need.
 
     cd inhere
 When your prompt changes to:
 
      ~/inhere$
-it means:
 ➡️ You are now inside the inhere directory
-Run this command instead:
 
      ls -a
 When ls shows:
@@ -150,7 +143,6 @@ When ls shows:
 Type exactly this while you are in ~/inhere:
 
     find . -type f -exec cat {} \;
-Why this works
 find . -type f → finds the file no matter how strange its name is
 -exec cat {} \; → prints the contents directly
 No quotes, no guessing, no typing the filename
@@ -166,20 +158,14 @@ ls or ls -a = list files
   find = Find the files and directories Based on    Name, size, Modification time
   cat = read file
 ### Explination
-What’s going on
-The password is inside the inhere directory
-The file is hidden, meaning its name starts with a .
-Normal ls won’t show it unless you ask nicely
 
-    ls
-Step-by-step solution
+      ls
 1️⃣ Go into the inhere directory
 
         cd inhere
 2️⃣ List all files, including hidden ones
 
           ls -a
-Step 1️⃣ Check where you are
 Run:
 
     pwd
@@ -189,11 +175,9 @@ If you do not, then run:
 
       cd inhere
 Step 2️⃣ Confirm the files really exist
-Now run:
 
     ls
-You must see something like:
-file00  file01  file02  file03  file04  file05  file06  file07  file08  file09
+You must see something like: file00  file01  file02  file03  file04  file05  file06  file07  file08  file09
 Why ls -1 helps
 
       ls -1
@@ -204,28 +188,20 @@ You should see something like:
 -file03
 ...
 ✅ Correct way to read the file
-Option 1 (best & cleanest)
 
     cat ./-file02
 Option 2 (also valid)
 
      cat -- -file02
--- means: stop reading options after this
-It shows diamond symboles along with charecteres in a password
-Run:
+-- means: stop reading options after this, so It shows diamond symboles along with charecteres in a password
 
     cat ./-file02 | od -An -tx1
-This shows the password in hex bytes, proving it’s longer than 4 characters.
-You’ll see output like:
-61 7f 9a e2 ...
+This shows the password in hex bytes, proving it’s longer than 4 characters.You’ll see output like:61 7f 9a e2 ...
 2️⃣ Identify the ONLY valid password file
-Run:
 
       file ./* or file ./-*
 You must see exactly ONE line like:
 ./-file07: ASCII text
-⚠️ If it does NOT say ASCII text, it is NOT the password.
-3️⃣ Read ONLY that ASCII file
 Example:
 
      cat ./-file07
@@ -242,7 +218,7 @@ ls or ls -1 = list files
   cat = read file
 ### Explination
 
-ls
+     ls
 1️⃣ Go into the inhere directory
 
         cd inhere
@@ -263,13 +239,11 @@ Step 2️⃣ Confirm the files really exist
 Now run:
 
         ls
-You must see something like:
-file00  file01  file02  file03  file04  file05  file06  file07  file08  file09
+You must see something like: file00  file01  file02  file03  file04  file05  file06  file07  file08  file09
 Why ls -1 helps
 
          ls -1
-This lists one filename per line, making copy-paste and reading easier.
-You should see something like:
+This lists one filename per line, making copy-paste and reading easier.You should see something like:
 -file00
 -file01
 -file02
@@ -279,19 +253,16 @@ Then use this command it will shows the inner file names.
  
     file ./*
 But this time it shows directories.
-Because it has num of files in their directories thats why file ./* command cannot find exact one 
-Run this exact command:
+Because it has num of files in their directories thats why file ./* command cannot find exact one file.
 
     find . -type f -size 1033c ! -executable
-Why this works
 -type f → files only
 -size 1033c → exactly 1033 bytes
 ! -executable → excludes executable files
 find → searches recursively under inhere 
 Example:
 
-./maybehere07/.file2
-4️⃣ Read the file
+./maybehere07/.file2 Read the file
 
        cat ./maybehere07/.file2
 ## Level-6
@@ -303,13 +274,6 @@ Example:
 find = Find the files and directories Based on    Name, size, Modification time
   cat = Display the file contents on terminal
 ### Explination
-Level 6 has a completely different task:
-The password for the next level is stored somewhere on the server and has all of the following properties:
-owned by user bandit7
-owned by group bandit6
-33 bytes in size
-Correct solution for Level 6 → 7
-Run this from your home directory:
 
      find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
 This will return one file, usually:
@@ -326,10 +290,9 @@ Read it
 ### Commands
 grep = 
 ### Explination
-data.txt contains many words/lines. One of them includes the word millionth, and the password is on that same line.
-The fastest way to do this is with grep.
-Run this in the Bandit Level 7 shell:
 
+          ls
+     
      grep millionth data.txt
 grep searches through data.txt
 It prints the entire line containing the word millionth
@@ -343,10 +306,6 @@ ls = list files
 sort = 
 uniq =
 ### Explination
-Goal (rephrased)
-Find the only line in data.txt that appears exactly once. That line is the password for the next level.
-The classic UNIX pipeline for this task is:
-
 sort data.txt | uniq -u
 
      sort data.txt
@@ -354,8 +313,7 @@ Groups identical lines together (required for uniq to work correctly).
 
      uniq -u
 Prints only lines that occur once.
-Then:
-   
+
     sort data.txt | uniq
 And finally:
 
@@ -370,18 +328,13 @@ ls = list files
 strings = 
 grep =
 ### Explination
-Inspect data.txt
-data.txt is mostly binary, so opening it with cat won’t help.
-
-Use strings to extract human-readable text:
+Inspect data.txt Use strings to extract human-readable text:
 
     strings data.txt
-
 Filter for lines with = characters
 The password is preceded by several = characters, so pipe the output to grep:
 
     strings data.txt | grep "==="
-Why this works
 strings → extracts readable ASCII text from a binary file
 grep "===" → narrows results to lines matching the level hint
 The password is intentionally easy to spot once filtered correctly
@@ -417,10 +370,7 @@ cat = Display the file contents on terminal
 tr = 
 ### Explination
 The password is in data.txt.
-All letters (a–z, A–Z) are rotated by 13 positions (ROT13).
-Numbers and symbols are unchanged.
-ROT13 is symmetric: applying it once decodes the text.
-How to solve it
+All letters (a–z, A–Z) are rotated by 13 positions (ROT13). Numbers and symbols are unchanged. ROT13 is symmetric: applying it once decodes the text.
 Use tr to rotate the characters back:
 
     cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
@@ -428,12 +378,8 @@ This command:
 Reads the file
 Translates:
 A–Z → N–Z A–M
-a–z → n–z a–m
-Prints the decoded password to the terminal
-Why this works
-ROT13 shifts each letter 13 places:
-a ↔ n, b ↔ o, …, m ↔ z
-Same logic for uppercase letters
+a–z → n–z a–m  Prints the decoded password to the terminal . ROT13 shifts each letter 13 places:
+a ↔ n, b ↔ o, …, m ↔ z Same logic for uppercase letters
 Because the alphabet has 26 letters, rotating by 13 twice returns the original text.
 ## Level-12
 + Username : bandit12
@@ -441,9 +387,72 @@ Because the alphabet has 26 letters, rotating by 13 twice returns the original t
 + Domain :  ssh bandit12@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### Commands
-sort = 
-uniq =
+cp = copy
+mv = move
+xxd = 
+-r = 
+ls = list files
+file =
+file * = 
+cat =  read the contents of a file
 ### Explination
+[image](./images/image-12.png)
+1️⃣ Use a random temp directory (recommended):
+
+     cd /tmp
+
+     mktemp -d
+Example output:
+
+     /tmp/tmp.ABC123xyz
+Move into it:
+
+       cd /tmp/tmp.ABC123xyz
+2️⃣ Copy the data file into your workspace
+   
+     cp ~/data.txt .
+Rename it so it’s easier to work with:
+
+      mv data.txt data.hex
+3️⃣ Convert the hex dump back into a binary file
+
+     xxd -r data.hex > data.bin
+Now check what kind of file it is:
+
+      file data.bin
+You’ll see something like:
+
+     data.bin: gzip compressed data
+Example sequence (your exact order may vary):
+
+       mv data.bin data.gz
+
+         gunzip data.gz
+
+         file data
+You might then see:
+
+      data: bzip2 compressed data
+
+      mv data data.bz2
+
+     bunzip2 data.bz2
+
+     file data
+Then:
+
+       data: POSIX tar archive
+
+        tar -xf data
+2️⃣ Immediately list files
+        
+        ls
+        file *
+You may encounter gzip, bzip2, and tar multiple times. Just keep looping until file says something like: ASCII text
+4️⃣ Repeatedly, Check file type, Rename with correct extension, Decompress, Repeat
+Once you get a text file:like password.txt
+
+        cat data
 ## Level-13
 + Username : bandit13   
 +  Password : FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn          
@@ -456,7 +465,6 @@ cat = Display the file contents on terminal
 nano =
 chmod =
 ### Explination
-What’s different in this level?
 You do not get a password for bandit14.
 Instead, you are given a private SSH key.
 You must use that key to log in as bandit14.
@@ -472,21 +480,15 @@ You should see a file named:
   it will shows the key
 
       cat sshkey.private
-copy the entire key 
-Paste the key into a text editor means nano tool
+copy the entire key and Paste the key into a text editor means nano tool
 
      nano key 
-then save it and rename it to key
-key rename name is also a key
+then save it and rename it to key, the key rename name is also a key
 3. Fix the key’s permissions (important!)
 SSH will refuse to use a private key if it’s too open.
 
       chmod 600 key
-4. Use the private key to log in as bandit14
-From inside bandit13, Example run:
-
-      ssh -i sshkey.private bandit14@localhost
-Correct command:
+4. Use the private key to log in as bandit14, From inside bandit13, Example run:
 
     ssh -i key bandit14@bandit.labs.overthewire.org -p 2220
 Explanation:
@@ -498,8 +500,7 @@ bandit14@localhost → you’re logging into the same machine, just as a differe
 📌 Run this ON YOUR KALI TERMINAL, not on Bandit:
 
     scp -P 2220 bandit13@bandit.labs.overthewire.org:/home/bandit13/sshkey.private .
-When asked, enter the bandit13 password.
-The file will appear in your current Kali directory.
+When asked, enter the bandit13 password. The file will appear in your current Kali directory.
 ✅ FIX PERMISSIONS ON KALI (IMPORTANT)
 
     chmod 600 sshkey.private
@@ -543,8 +544,7 @@ Step 2: Connect securely to port 30001
 
     openssl s_client -connect localhost:30001
 You should see a lot of SSL-related output — this is normal.
-Step 3: Send the current password
-Paste the Bandit 15 password and press Enter.
+Step 3: Send the current password to port 30001. Paste the Bandit 15 password and press Enter.
 ## Level-16
 + Username : bandit16
 +  Password :
@@ -552,3 +552,52 @@ Paste the Bandit 15 password and press Enter.
 + Port Num : 2220
 ### Commands
 
+### Explination
+[image](./images/image-16.png)
+✅ Step 0: Get the current password
+
+     cat /etc/bandit_pass/bandit16 
+🔍 Step 1: Scan for open ports (31000–32000)
+Use nmap to find listening services:
+[image](./images/image-16-1.png)
+🔐 Step 2: Identify which port uses SSL/TLS
+Example:
+
+    openssl s_client -connect localhost:31046
+✅ Correct SSL service:
+You see certificate details
+Connection completes successfully
+❌ Not SSL:
+Errors like: wrong version number or handshake failure
+Repeat this for each open port until one clearly supports SSL.
+You wiil see the Difference between them
+   But i found two ports are same How can i find that Correct one
+✅ Correct:
+If you find this one Protocol  : TLSv1.3
+At the TLSv1.3 protocol, is also same in two ports. How can i find that Correct one
+🔐Run exactly this:
+
+    echo "$(cat /etc/bandit_pass/bandit16)" | openssl s_client -connect localhost:31518 -quiet
+Does not show the password
+
+    echo "$(cat /etc/bandit_pass/bandit16)" | openssl s_client -connect localhost:31790 -quiet
+I found “RSA PRIVATE KEY” mean here
+1️⃣ Copy the ENTIRE RSA key
+Copy everything, including:
+-----BEGIN RSA PRIVATE KEY-----
+...
+-----END RSA PRIVATE KEY-----
+No missing lines. No extra spaces.
+2️⃣ Before paste that we will do one thing exit that current domain 
+
+          nano bandit17.key
+and Save it to a file Create a file called bandit17.key:
+3️⃣ Fix file permissions (VERY IMPORTANT)
+
+       chmod 600 bandit17.key
+4️⃣ Log in using the private key
+
+        ssh -i bandit17.key bandit17@bandit.labs.overthewire.org -p 2220
+✅ This will log you in without a password. Once logged in, You are now bandit17. To continue later:
+
+       cat /etc/bandit_pass/bandit17
