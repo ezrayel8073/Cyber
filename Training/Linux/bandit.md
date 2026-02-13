@@ -1041,3 +1041,29 @@ The file will appear in your current Kali directory.
 ✅ LOGIN TO BANDIT14 USING THE KEY
 
     ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
+
+
+ ## Level-14
+
++ Username : bandit14
++  Password : 
++ Domain :
++ Port Num : 2220
+
+[image](./images/image-14-1.png)
+[image](./images/image-14.png)
+
+Login: 
+
+    ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
+
+
+2️⃣ Get the current password
+
+     cat /etc/bandit_pass/bandit14
+
+3️⃣ Send it to port 30000 using nc
+
+    cat /etc/bandit_pass/bandit14 | nc localhost 30000
+
+
