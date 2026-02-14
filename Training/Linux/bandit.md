@@ -1,6 +1,6 @@
 # BANDIT LABS
 ## Important Points 
-    1.ctrl+1 = " commit "
+    1.ctrl+1 = " commit "                                        
     1.1 Ctrl+shift+i = " inspect "
     1.2 Ctrl+shift++ = " zoom in "
     1.3 Ctrl+shift+- = " zoom out "
