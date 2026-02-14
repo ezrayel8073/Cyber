@@ -7,6 +7,8 @@
     1.4 Ctrl+shift+0 = " reset zoom "
     1.5 ctrl+c = " exit "
     1.6 ctrl+X = " save and exit "
+    1.7 ctrl+f = " find the all matching names at selected name "
+    1.8 ctrl+h = " edit all in one modification at selected name "
 2.ctrl+k then leave them thenpress v 
  you can able to see  the updated git that means your not goto the git otherthan you will able see updated git by your own correctons on Vs code 
 3.In a system you have file Like in a Notepad there is a resume file then you can able to see the resume file
@@ -396,7 +398,7 @@ Because the alphabet has 26 letters, rotating by 13 twice returns the original t
 - file * = 
 - cat =  read the contents of a file
 ### Explination
-[image](./images/image-12.png)
+![image](./images/image-12.png)
 1️⃣ Use a random temp directory (recommended):
 
      cd /tmp
@@ -459,7 +461,7 @@ Once you get a text file:like password.txt
 +  Domain : ssh bandit13@bandit.labs.overthewire.org -p 2220     [or]
 + Domain 1: scp -P 2220 bandit13@bandit.labs.overthewire.org:/home/bandit13/sshkey.private .
 below is the image of level-13
-[image](./images/image-13.png)
+![image](./images/image-13.png)
 ### Commands
 - ls = list files
 - cat = Display the file contents on terminal
@@ -497,7 +499,7 @@ Explanation:
 -i sshkey.private → tells SSH which private key to use
 bandit14@localhost → you’re logging into the same machine, just as a different user
 #### 2nd Method
-[image](./images/image-13-1.png)
+![image](./images/image-13-1.png)
 ✅ DOWNLOAD SSH KEY FROM BANDIT TO KALI (FINAL)
 📌 Run this ON YOUR KALI TERMINAL, not on Bandit:
 
@@ -518,8 +520,8 @@ When asked, enter the bandit13 password. The file will appear in your current Ka
 - cat = Display the file contents on terminal
 - nc =
 ### Explination
-[image](./images/image-14-1.png)
-[image](./images/image-14.png)
+![image](./images/image-14-1.png)
+![image](./images/image-14.png)
 Login: 
 
     ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
@@ -538,7 +540,7 @@ Login:
 ### Commands
 - openssl = encrypt and decrypt
 ### Explination
-[image](./images/image-15.png)
+![image](./images/image-15.png)
 Step 1: Log into Bandit Level 15
 
     ssh bandit15@bandit.labs.overthewire.org -p 2220
@@ -562,13 +564,13 @@ Step 3: Send the current password to port 30001. Paste the Bandit 15 password an
 - chmod = change permission
 
 ### Explination
-[image](./images/image-16.png)
+![image](./images/image-16.png)
 ✅ Step 0: Get the current password
 
      cat /etc/bandit_pass/bandit16 
 🔍 Step 1: Scan for open ports (31000–32000)
 Use nmap to find listening services:
-[image](./images/image-16-1.png)
+![image](./images/image-16-1.png)
 🔐 Step 2: Identify which port uses SSL/TLS
 Example:
 
@@ -621,7 +623,7 @@ and Save it to a file Create a file called bandit17.key:
 - diff = compare files
 - grep = 
 ### Explination
-[image](./images/image-17.png)
+![image](./images/image-17.png)
 
     ls
 You should see:
@@ -652,7 +654,7 @@ cut -c3- → removes > (greater-than + space)
 ### Commands
 - cat = Display the file contents on terminal
 ### Explination
-[image](./images/image-18.png)
+![image](./images/image-18.png)
 Why it immediately exits (“Byebye!”)
 In Bandit18, your .bashrc is modified so that as soon as you log in, it prints:
 
@@ -682,7 +684,7 @@ Immediately exits (this is normal)
 - ls -1 = list files
 - cat = Display the file contents on terminal
 ### Explination
-[image](./images/image-19.png)
+![image](./images/image-19.png)
 
       ls -l
 You’ll see something like:
@@ -705,8 +707,8 @@ Tell it to run cat as bandit20:
 ### Commands
 - nc = netcat
 ### Explination
-[image](./images/image-20.png)
-[image](./images/image-20-1.png)
+![image](./images/image-20.png)
+![image](./images/image-20-1.png)
 🔹 Terminal 1
 
     nc -l -p 4444
@@ -732,7 +734,7 @@ Now PASTE ONLY THIS LINE and press ENTER:That means bandit20 password
 - cat = Display the file contents on terminal
 - echo = Display a string
 ### Explination
-[image](./images/image-21.png)
+![image](./images/image-21.png)
 List the files in /etc/cron.d/:
 
     ls /etc/cron.d/
@@ -780,7 +782,7 @@ Step 7: Read the password
 - cat = Display the file contents on terminal
 - echo = Display a string
 ### Explination
-[image](./images/image-22.png)
+![image](./images/image-22.png)
 List the files in /etc/cron.d/:
 
     ls /etc/cron.d/
@@ -829,7 +831,7 @@ Step 7: Read the password
 - nano = Edit a file
 - chmod = Change file permissions
 ### Explination
-[image](./images/image-23.png)
+![image](./images/image-23.png)
 2️⃣ Inspect the cron configuration
 
      ls /etc/cron.d/
@@ -867,18 +869,28 @@ Generate all PINs from 0000 → 9999
 Prefix each with the bandit24 password
 Pipe everything into one nc (netcat) connection
 Watch for the line that contains the bandit25 password
-[image](./images/image-24-1.png)
+![image](./images/image-24-1.png)
 👉 Replace BANDIT24_PASSWORD with the actual password for bandit24
-[image](./images/image-24.png)
+![image](./images/image-24.png)
 Why this works
 seq -w keeps the PINs 4 digits (0001 instead of 1)
 The loop sends all attempts at once
 nc keeps one open TCP connection, which is exactly what the daemon wants
 ## Level-25
 + Username : bandit25
-+  Password :  iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
++ Password :  iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
 + Domain : ssh bandit25@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
 ### Explination 
-[image](./images/image-25.png)
+![image](./images/image-25.png)
+
+
+
+## Level-26
++ Username : bandit26
++  Password :  s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
++ Domain : ssh bandit26@bandit.labs.overthewire.org -p 2220
++ Port Num : 2220
+### Commands
+
