@@ -465,6 +465,7 @@ below is the image of level-13
 - cat = Display the file contents on terminal
 - nano =
 - chmod =
+- scp = downnload the private key
 ### Explination
 You do not get a password for bandit14.
 Instead, you are given a private SSH key.
