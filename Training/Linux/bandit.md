@@ -9,6 +9,7 @@
     1.6 ctrl+X = " save and exit "
     1.7 ctrl+f = " find the all matching names at selected name "
     1.8 ctrl+h = " edit all in one modification at selected name "
+    1.9 b  press then leave then press TAB (incase only one file in directory autoaticalyy print its. It applicable only one existing file in directory)
 2.ctrl+k then leave them thenpress v 
  you can able to see  the updated git that means your not goto the git otherthan you will able see updated git by your own correctons on Vs code 
 3.In a system you have file Like in a Notepad there is a resume file then you can able to see the resume file
