@@ -17,3 +17,12 @@ ls -g = list files by group
 ls -G = list files by group, including hidden ones
 ls -h = list files in human-readable format
 
+
+file "xxx" = display information about a file
+cat "xxx" = display the contents of a file
+grep "xxx" = search for a pattern in a file
+. = current directory
+.. = parent directory
+| = pipe
+> = redirect output to a file
+< = redirect input from a file
