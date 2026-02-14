@@ -79,9 +79,9 @@ Step 4: Get the password
 + Domain :   ssh bandit2@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### commands 
-  ls = list files
-  ls  -i =
-  find = Find the files and directories Based on    Name, size, Modification time
+-  ls = list files
+ - ls  -i =
+ - find = Find the files and directories Based on    Name, size, Modification time
 ### Explination
 1️⃣ List the files
 
@@ -117,10 +117,10 @@ Now run:
 + Domain :   ssh bandit3@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
-ls = list files
- cd = change directory 
-ls -a =
-  find = Find the files and directories Based on    Name, size, Modification time
+- ls = list files
+- cd = change directory 
+- ls -a =
+ - find = Find the files and directories Based on    Name, size, Modification time
 ### Explination
 List files in the home directory:
 
@@ -152,10 +152,10 @@ No quotes, no guessing, no typing the filename
 + Domain :   ssh bandit4@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### Commands
-ls = list files  
+- ls = list files  
 + cd = change directory
-ls or ls -a = list files
-  find = Find the files and directories Based on    Name, size, Modification time
+- ls or ls -a = list files
+-  find = Find the files and directories Based on    Name, size, Modification time
   cat = read file
 ### Explination
 
@@ -211,11 +211,11 @@ Example:
 + Domain :  ssh bandit5@bandit.labs.overthewire.org -p 2220  
 + Port Num : 2220
 ### Commands
-ls = list files  
+- ls = list files  
 + cd = change directory
-ls or ls -1 = list files
-  find = Find the files and directories Based on    Name, size, Modification time
-  cat = read file
+- ls or ls -1 = list files
+ - find = Find the files and directories Based on    Name, size, Modification time
+ - cat = read file
 ### Explination
 
      ls
@@ -271,8 +271,8 @@ Example:
 + Domain :  ssh bandit6@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### Commands
-find = Find the files and directories Based on    Name, size, Modification time
-  cat = Display the file contents on terminal
+- find = Find the files and directories Based on    Name, size, Modification time
+ - cat = Display the file contents on terminal
 ### Explination
 
      find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
@@ -288,7 +288,7 @@ Read it
 + Domain : ssh bandit7@bandit.labs.overthewire.org -p 2220  
 + Port Num : 2220
 ### Commands
-grep = 
+- grep = 
 ### Explination
 
           ls
@@ -302,9 +302,9 @@ It prints the entire line containing the word millionth
 + Domain : ssh bandit8@bandit.labs.overthewire.org -p 2220  
 + Port Num : 2220
 ### Commands
-ls = list files 
-sort = 
-uniq =
+- ls = list files 
+- sort = 
+- uniq =
 ### Explination
 sort data.txt | uniq -u
 
@@ -324,9 +324,9 @@ And finally:
 + Domain : ssh bandit9@bandit.labs.overthewire.org -p 2220  
 + Port Num : 2220
 ### Commands
-ls = list files 
-strings = 
-grep =
+- ls = list files 
+- strings = 
+- grep =
 ### Explination
 Inspect data.txt Use strings to extract human-readable text:
 
@@ -344,9 +344,9 @@ The password is intentionally easy to spot once filtered correctly
 + Domain :  ssh bandit10@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### Commands
-ls = list files 
-cat = Display the file contents on terminal
- base64 =  
+- ls = list files 
+- cat = Display the file contents on terminal
+- base64 =  
 ### Explination
 List files
 
@@ -366,8 +366,8 @@ or equivalently:
 + Domain :  ssh bandit11@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### Commands
-cat = Display the file contents on terminal
-tr = 
+- cat = Display the file contents on terminal
+- tr = 
 ### Explination
 The password is in data.txt.
 All letters (a–z, A–Z) are rotated by 13 positions (ROT13). Numbers and symbols are unchanged. ROT13 is symmetric: applying it once decodes the text.
@@ -387,14 +387,14 @@ Because the alphabet has 26 letters, rotating by 13 twice returns the original t
 + Domain :  ssh bandit12@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### Commands
-cp = copy
-mv = move
-xxd = 
--r = 
-ls = list files
-file =
-file * = 
-cat =  read the contents of a file
+- cp = copy
+- mv = move
+- xxd = 
+- -r = 
+- ls = list files
+- file =
+- file * = 
+- cat =  read the contents of a file
 ### Explination
 [image](./images/image-12.png)
 1️⃣ Use a random temp directory (recommended):
@@ -461,10 +461,10 @@ Once you get a text file:like password.txt
 below is the image of level-13
 [image](./images/image-13.png)
 ### Commands
-ls = list files
-cat = Display the file contents on terminal
-nano =
-chmod =
+- ls = list files
+- cat = Display the file contents on terminal
+- nano =
+- chmod =
 ### Explination
 You do not get a password for bandit14.
 Instead, you are given a private SSH key.
@@ -514,8 +514,8 @@ When asked, enter the bandit13 password. The file will appear in your current Ka
 + Domain : ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
-cat = Display the file contents on terminal
-nc =
+- cat = Display the file contents on terminal
+- nc =
 ### Explination
 [image](./images/image-14-1.png)
 [image](./images/image-14.png)
@@ -535,8 +535,9 @@ Login:
 + Domain : ssh bandit15@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
-[image](./images/image-15.png)
+- openssl = encrypt and decrypt
 ### Explination
+[image](./images/image-15.png)
 Step 1: Log into Bandit Level 15
 
     ssh bandit15@bandit.labs.overthewire.org -p 2220
@@ -552,12 +553,12 @@ Step 3: Send the current password to port 30001. Paste the Bandit 15 password an
 + Domain : ssh bandit16@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
-cat = Display the file contents on terminal
-nmap =
-openssl =
--quit =
-nano =
-chmod = change permission
+- cat = Display the file contents on terminal
+- nmap =
+- openssl =
+- -quit =
+- nano =
+- chmod = change permission
 
 ### Explination
 [image](./images/image-16.png)
@@ -615,9 +616,9 @@ and Save it to a file Create a file called bandit17.key:
 + Domain : ssh bandit17@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
-ls = list files
-diff = compare files
-grep = 
+- ls = list files
+- diff = compare files
+- grep = 
 ### Explination
 [image](./images/image-17.png)
 
@@ -648,7 +649,7 @@ cut -c3- → removes > (greater-than + space)
 + Domain : ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
 + Port Num : 2220
 ### Commands
-cat = Display the file contents on terminal
+- cat = Display the file contents on terminal
 ### Explination
 [image](./images/image-18.png)
 Why it immediately exits (“Byebye!”)
@@ -677,8 +678,8 @@ Immediately exits (this is normal)
 + Domain : ssh bandit19@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
-ls -1 = list files
-cat = Display the file contents on terminal
+- ls -1 = list files
+- cat = Display the file contents on terminal
 ### Explination
 [image](./images/image-19.png)
 
@@ -701,7 +702,7 @@ Tell it to run cat as bandit20:
 + Domain : ssh bandit20@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
-nc = netcat
+- nc = netcat
 ### Explination
 [image](./images/image-20.png)
 [image](./images/image-20-1.png)
@@ -726,9 +727,9 @@ Now PASTE ONLY THIS LINE and press ENTER:That means bandit20 password
 + Domain : ssh bandit21@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
-ls = list files
-cat = Display the file contents on terminal
-echo = Display a string
+- ls = list files
+- cat = Display the file contents on terminal
+- echo = Display a string
 ### Explination
 [image](./images/image-21.png)
 List the files in /etc/cron.d/:
@@ -774,9 +775,9 @@ Step 7: Read the password
 + Domain : ssh bandit22@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
-ls = list files
-cat = Display the file contents on terminal
-echo = Display a string
+- ls = list files
+- cat = Display the file contents on terminal
+- echo = Display a string
 ### Explination
 [image](./images/image-22.png)
 List the files in /etc/cron.d/:
@@ -822,10 +823,10 @@ Step 7: Read the password
 + Domain : ssh bandit23@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
-ls = list files
-cat = Display the file contents on terminal
-nano = Edit a file
-chmod = Change file permissions
+- ls = list files
+- cat = Display the file contents on terminal
+- nano = Edit a file
+- chmod = Change file permissions
 ### Explination
 [image](./images/image-23.png)
 2️⃣ Inspect the cron configuration
