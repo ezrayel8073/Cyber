@@ -885,8 +885,144 @@ nc keeps one open TCP connection, which is exactly what the daemon wants
 ### Commands
 ### Explination 
 ![image](./images/image-25.png)
+1️⃣ Login to bandit25
+ssh bandit25@bandit.labs.overthewire.org -p 2220
+2️⃣ List files
+
+ ![image](./images/image-25-5.png)
+Output:
+bandit26.sshkey
+3️⃣ Check the file type
+
+      file bandit26.sshkey
+4️⃣ View the key 
+
+       cat bandit26.sshkey
+This displays the private key content.
+
+✔️ Correct
+(Opening in nano is optional, not required)
+
+5️⃣ Set correct permissions on the key
+chmod 600 bandit26.sshkey
 
 
+✔️ Correct
+SSH will refuse the key if permissions are not 600.
+
+6️⃣ Login to bandit26 using the key
+ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220
+
+
+⚠️ Important
+
+bandit26 does NOT allow password login
+
+Only key-based login works
+
+✔️ Correct
+
+7️⃣ Why bandit26 looks “failed” at first
+
+bandit26 does not give a normal shell.
+
+Check:
+
+cat /etc/passwd | grep bandit26
+
+
+You see:
+
+bandit26:x:11026:11026::/home/bandit26:/usr/bin/showtext
+
+
+✔️ Correct
+This shows bandit26 uses /usr/bin/showtext as its shell.
+
+8️⃣ Understand the restricted shell
+cat /usr/bin/showtext
+
+
+Output:
+
+#!/bin/sh
+export TERM=linux
+exec more ~/text.txt
+exit 0
+
+
+✔️ Correct
+
+Meaning:
+
+When bandit26 logs in, it runs more
+
+Then exits
+
+No normal shell is given
+
+9️⃣ Resize (compress) the terminal
+
+Make the terminal window small in height.
+
+✔️ Correct
+This forces more to pause and show:
+
+--More--
+
+🔟 Open vi from more
+
+While --More-- is visible, press:
+
+v
+
+
+✔️ Correct
+This opens the file in vi editor.
+
+1️⃣1️⃣ Escape from vi to a real shell
+
+Inside vi, run these commands exactly:
+
+:set shell=/bin/bash
+
+
+Press ENTER
+
+Then:
+
+:shell
+
+
+(or :!bash)
+
+Press ENTER
+
+✔️ Correct
+You now have a real bash shell as bandit26.
+
+1️⃣2️⃣ Verify user
+whoami
+
+
+Output:
+
+bandit26
+
+
+✔️ Correct
+
+1️⃣3️⃣ ❌ IMPORTANT CORRECTION (THIS WAS WRONG IN YOUR STEPS)
+
+You wrote:
+
+cat /etc/bandit_pass/bandit26
+
+
+❌ THIS IS WRONG
+
+✅ CORRECT COMMAND:
+cat /etc/bandit_pass/bandit27
 
 ## Level-26
 + Username : bandit26
