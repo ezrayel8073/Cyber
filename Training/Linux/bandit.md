@@ -153,10 +153,10 @@ No quotes, no guessing, no typing the filename
 + Port Num : 2220
 ### Commands
 - ls = list files  
-+ cd = change directory
+- cd = change directory
 - ls or ls -a = list files
 -  find = Find the files and directories Based on    Name, size, Modification time
-  cat = read file
+-  cat = read file
 ### Explination
 
       ls
@@ -212,7 +212,7 @@ Example:
 + Port Num : 2220
 ### Commands
 - ls = list files  
-+ cd = change directory
+- cd = change directory
 - ls or ls -1 = list files
  - find = Find the files and directories Based on    Name, size, Modification time
  - cat = read file
