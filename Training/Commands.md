@@ -117,3 +117,9 @@ wc "xxx" = count lines, words, and bytes
 wc -l "xxx" = count lines in a file
 wc -w "xxx" = count words in a file
 wc -c "xxx" = count bytes in a file
+
+
+
+| = pipe
+     > = redirect output to a file or newpasswordline
+< = redirect input from a file  or oldpasswordline
