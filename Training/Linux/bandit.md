@@ -921,4 +921,14 @@ Step-15 : use ls command to check the files . Then see the files and run the cat
 + Domain : ssh bandit26@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
+### Explination
+
+## Level-27
++ Username : bandit27
++  Password : upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
++ Domain : ssh bandit27@bandit.labs.overthewire.org -p 2220
++ Port Num : 2220
+### Commands
+### Explination
+
 
