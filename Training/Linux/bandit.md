@@ -881,3 +881,4 @@ nc keeps one open TCP connection, which is exactly what the daemon wants
 + Port Num : 2220
 ### Commands
 ### Explination 
+[image](./images/image-25.png)
