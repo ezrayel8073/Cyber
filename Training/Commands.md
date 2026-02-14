@@ -24,5 +24,21 @@ grep "xxx" = search for a pattern in a file
 . = current directory
 .. = parent directory
 | = pipe
-> = redirect output to a file
-< = redirect input from a file
+> = redirect output to a file or newpasswordline
+< = redirect input from a file  or oldpasswordline
+touch "xxx" = create a file
+chmod 600 "xxx" = change file permissions
+~ = home directory
+mv "xxx" "yyy" = move a file or directory
+cp "xxx" "yyy" = copy a file or directory
+rm "xxx" = remove a file or directory
+mkdir "xxx" = create a directory
+cd "xxx" = change directory
+pwd = print the current working directory
+find "xxx" = search for a file or directory
+find . -name "xxx" = search for a file or directory in the current directory
+locate "xxx" = search for a file or directory using the locate command
+locate "xxx" | xargs grep "yyy" = search for a file or directory using the locate command and then search for a pattern in the file
+locate "xxx" | xargs grep "yyy" | xargs sed "zzz" = search for a file or directory using the locate command, search for a pattern in the file, and then replace a pattern in the file
+
+
