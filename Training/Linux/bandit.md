@@ -872,3 +872,10 @@ Why this works
 seq -w keeps the PINs 4 digits (0001 instead of 1)
 The loop sends all attempts at once
 nc keeps one open TCP connection, which is exactly what the daemon wants
+## Level-25
++ Username : bandit25
++  Password :  iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
++ Domain : ssh bandit25@bandit.labs.overthewire.org -p 2220
++ Port Num : 2220
+### Commands
+### Explination 
