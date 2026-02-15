@@ -1001,7 +1001,8 @@ Step-9:View commit history using git log, You should see more than one commit.Th
 ## Level-29
 + Username : bandit29
 +  Password :  4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7
-+ Domain : ssh bandit29@bandit.labs.overthewire.org -p 2220
++ Domain : git clone ssh://bandit29-git@bandit.labs.overthewire.org:2220/home/bandit29-git/repo
+
 + Port Num : 2220
 ### Commands
 
