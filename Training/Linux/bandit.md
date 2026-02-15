@@ -922,6 +922,7 @@ Step-15 : use ls command to check the files . Then see the files and run the cat
 + Port Num : 2220
 ### Commands
 ### Explination
+![image](./images/image-26.png)
 
 ## Level-27
 + Username : bandit27
