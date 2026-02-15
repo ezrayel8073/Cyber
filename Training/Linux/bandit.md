@@ -963,6 +963,7 @@ Step-8 : use ls command to check the files . Then see the files and run the cat 
  git = Git version control system
  git clone = Clone a repository into a new directory
  cd = Change directory
+ git ls-files = List files
  type = Display the type of a file
 ### Explination
 Step-1: Open a terminal on your local machine (Command prompt),Make sure git is installed: git --version, If not, install Git using your OS package manager.
@@ -970,7 +971,7 @@ Step-2: Run git command for checking installation or not
 Step-3:Clone the repository to use the git clone command.
 Step-4: After that it asks for password,  Instead of copy and paste Enter the password Manually.Because it not accepted copy and paste.
 Step-5: Then observe path is correct format ok otherwise change it your System path.
-Step-7: Then change the path into repo
+Step-7: Then change the path into repo.View list of files in the repo. 
 Step-8: Read the README file to get the password.
 ![image](./images/image-27.png)
 ## Level-28
@@ -982,6 +983,7 @@ Step-8: Read the README file to get the password.
 git = Git version control system
  git clone = Clone a repository into a new directory
  cd = Change directory
+ git ls-files = List files
  type = Display the type of a file
  git log = Show commit logs
  git log -p = Show commit logs with patch
@@ -991,7 +993,7 @@ Step-2: Run git command for checking installation or not
 Step-3:Clone the repository to use the git clone command.
 Step-4: After that it asks for password,  Instead of copy and paste Enter the password Manually.Because it not accepted copy and paste.
 Step-5: Then observe path is correct format ok otherwise change it your System path.
-Step-7: Then change the path into repo.Already have repo delete that.
+Step-7: Then change the path into repo.Already have repo delete that.View list of files in the repo.
 Step-8: Read the README file to get the password.But in xxxx format.
 ![image](./images/image-28-1.png)
 Step-9:View commit history using git log, You should see more than one commit.Then View changes between commits by using git log -p.Then you will see the password
