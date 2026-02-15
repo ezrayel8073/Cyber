@@ -883,6 +883,16 @@ nc keeps one open TCP connection, which is exactly what the daemon wants
 + Domain : ssh bandit25@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
+ls = list files
+file = check file type
+cat = Display the file contents on terminal
+nano = Edit a file
+chmod = Change file permissions
+grep = Search for a pattern
+vim = Edit a file
+shell = Open a shell
+set shell = Change the shell
+### Explination
 Step-1: Login to bandit25
 Step-2: Run the Ls commad to get the files, after file type checking it shows private key,then run the cat command this displayprivate key content
  ![image](./images/image-25-5.png)
@@ -913,23 +923,85 @@ Step-12 : it will show shell location /bin/bash Then Run:
 Step-14 : You now have a real bash shell as bandit26.
 ![image](./images/image-25-4.png)
 Step-15 : use ls command to check the files . Then see the files and run the cat command to check the content of the files
-       getting the password  bandit26 password  But that password is not useful for bandit26 login Beonly open in vi editor because of --more--  
-
+       getting the password  bandit26 password  But that password is not useful for bandit26 login Be only open in vi editor because of --more--  
 ## Level-26
 + Username : bandit26
 +  Password :  s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
 + Domain : ssh bandit26@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
+vim = Edit a file
+shell = Open a shell
+set shell = Change the shell
+ls = list files
+cat = Display the file contents on terminal
 ### Explination
-![image](./images/image-26.png)
+Step-1 : Login to bandit26 using the key . But that password is not useful for bandit26 login Be only open in vi editor because of --more--
 
+     ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220
+Step-2 : Resize (compress) the terminal,Make the terminal window small in height.This forces more to pause and show:
+![image](./images/image-25-1.png)
+Step-3 : Open vi from more, While --More-- is visible, press: v
+![image](./images/image-25-2.png)
+Step-4 : Run :shell it will shows bandit26 two images whenever scroll page up you will see the same image. Then Run:
+ 
+    :set shell?
+Step-5 : it will show shell location /bin/bash Then Run:
+
+     :set shell=/bin/bash 
+ Step-6 :  :shell  press ENTER
+Step-7 : You now have a real bash shell as bandit26.
+![image](./images/image-26.png)
+Step-8 : use ls command to check the files . Then see the files and run the cat command to check the content of the files
+       getting the password  bandit26 password  
 ## Level-27
 + Username : bandit27
 +  Password : upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
 + Domain : ssh bandit27@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
+ git = Git version control system
+ git clone = Clone a repository into a new directory
+ cd = Change directory
+ type = Display the type of a file
 ### Explination
+Step-1: Open a terminal on your local machine (Command prompt),Make sure git is installed: git --version, If not, install Git using your OS package manager.
+Step-2: Run git command for checking installation or not
+Step-3:Clone the repository to use the git clone command.
+Step-4: After that it asks for password,  Instead of copy and paste Enter the password Manually.Because it not accepted copy and paste.
+Step-5: Then observe path is correct format ok otherwise change it your System path.
+Step-7: Then change the path into repo
+Step-8: Read the README file to get the password.
+![image](./images/image-27.png)
+## Level-28
++ Username : bandit28
++  Password :  Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN
++ Domain : ssh bandit28@bandit.labs.overthewire.org -p 2220
++ Port Num : 2220
+### Commands
+git = Git version control system
+ git clone = Clone a repository into a new directory
+ cd = Change directory
+ type = Display the type of a file
+ git log = Show commit logs
+ git log -p = Show commit logs with patch
+### Explination
+Step-1: Open a terminal on your local machine (Command prompt),Make sure git is installed: git --version, If not, install Git using your OS package manager.
+Step-2: Run git command for checking installation or not
+Step-3:Clone the repository to use the git clone command.
+Step-4: After that it asks for password,  Instead of copy and paste Enter the password Manually.Because it not accepted copy and paste.
+Step-5: Then observe path is correct format ok otherwise change it your System path.
+Step-7: Then change the path into repo.Already have repo delete that.
+Step-8: Read the README file to get the password.But in xxxx format.
+![image](./images/image-28-1.png)
+Step-9:View commit history using git log, You should see more than one commit.Then View changes between commits by using git log -p.Then you will see the password
+![image](./images/image-28.png)
+## Level-29
++ Username : bandit29
++  Password :  4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7
++ Domain : ssh bandit29@bandit.labs.overthewire.org -p 2220
++ Port Num : 2220
+### Commands
 
 
+### Explination
