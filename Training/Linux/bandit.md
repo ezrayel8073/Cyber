@@ -958,7 +958,6 @@ Step-8 : use ls command to check the files . Then see the files and run the cat 
 + Username : bandit27
 +  Password : upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
 + Domain : git clone ssh://bandit27-git@bandit.labs.overthewire.org:2220/home/bandit27-git/repo
-
 + Port Num : 2220
 ### Commands
  git = Git version control system
@@ -978,7 +977,7 @@ Step-8: Read the README file to get the password.
 ## Level-28
 + Username : bandit28
 +  Password :  Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN
-+ Domain : ssh bandit28@bandit.labs.overthewire.org -p 2220
++ Domain : git clone ssh://bandit28-git@bandit.labs.overthewire.org:2220/home/bandit28-git/repo
 + Port Num : 2220
 ### Commands
 git = Git version control system
