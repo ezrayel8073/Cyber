@@ -957,7 +957,8 @@ Step-8 : use ls command to check the files . Then see the files and run the cat 
 ## Level-27
 + Username : bandit27
 +  Password : upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
-+ Domain : ssh bandit27@bandit.labs.overthewire.org -p 2220
++ Domain : git clone ssh://bandit27-git@bandit.labs.overthewire.org:2220/home/bandit27-git/repo
+
 + Port Num : 2220
 ### Commands
  git = Git version control system
