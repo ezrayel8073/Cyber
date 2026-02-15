@@ -1007,3 +1007,12 @@ Step-9:View commit history using git log, You should see more than one commit.Th
 
 
 ### Explination
+
+## Level-30
++ Username : bandit30
++  Password :  qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL
++ Domain : ssh bandit30@bandit.labs.overthewire.org -p 2220
++ Port Num : 2220
+### Commands
+
+### Explination
