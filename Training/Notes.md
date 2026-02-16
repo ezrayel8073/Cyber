@@ -1,3 +1,23 @@
+## Important Points 
+    1.ctrl+1 = " commit "                                        
+    1.1 Ctrl+shift+i = " inspect "
+    1.2 Ctrl+shift++ = " zoom in "
+    1.3 Ctrl+shift+- = " zoom out "
+    1.4 Ctrl+shift+0 = " reset zoom "
+    1.5 ctrl+c = " exit "
+    1.6 ctrl+X = " save and exit "
+    1.7 ctrl+f = " find the all matching names at selected name "
+    1.8 ctrl+h = " edit all in one modification at selected name "
+    1.9 b  press then leave then press TAB (incase only one file in directory autoaticalyy print its. It applicable only one existing file in directory)
+2.ctrl+k then leave them thenpress v 
+ you can able to see  the updated git that means your not goto the git otherthan you will able see updated git by your own correctons on Vs code 
+3.In a system you have file Like in a Notepad there is a resume file then you can able to see the resume file
+ 4.It has a properties. In a File properties you can able to see that 3 types  modules
+
+        1.System
+        2.You (your mail)
+        3.Administrator
+ 5.These 3 have right on a file Authorization , Like  The Root is a Administrator in Linux setup
 ## what is capture the flag (CTF) understanding ?
 
   

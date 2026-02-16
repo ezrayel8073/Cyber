@@ -1,24 +1,4 @@
 # BANDIT LABS
-## Important Points 
-    1.ctrl+1 = " commit "                                        
-    1.1 Ctrl+shift+i = " inspect "
-    1.2 Ctrl+shift++ = " zoom in "
-    1.3 Ctrl+shift+- = " zoom out "
-    1.4 Ctrl+shift+0 = " reset zoom "
-    1.5 ctrl+c = " exit "
-    1.6 ctrl+X = " save and exit "
-    1.7 ctrl+f = " find the all matching names at selected name "
-    1.8 ctrl+h = " edit all in one modification at selected name "
-    1.9 b  press then leave then press TAB (incase only one file in directory autoaticalyy print its. It applicable only one existing file in directory)
-2.ctrl+k then leave them thenpress v 
- you can able to see  the updated git that means your not goto the git otherthan you will able see updated git by your own correctons on Vs code 
-3.In a system you have file Like in a Notepad there is a resume file then you can able to see the resume file
- 4.It has a properties. In a File properties you can able to see that 3 types  modules
-
-        1.System
-        2.You (your mail)
-        3.Administrator
- 5.These 3 have right on a file Authorization , Like  The Root is a Administrator in Linux setup
 ## Terminal
 1.First you can start the terminal you will see the starting stage of terminal the you need to go that terminal you can access that terminal by " sudo su " 
 2.After that terninal can ask you the password 
@@ -1093,5 +1073,8 @@ Step-6: Run this commad cat /etc/bandit_pass/bandit33. It will show the password
 +  Password :  tQdtbs5D5i2vJwkO8mEyYEyTL8izoeJ0
 + Domain : ssh bandit33@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
-### Commands
 ### Explination
+At this moment, level 34 does not exist yet.
+“Bandit: Level 33 → Level 34 (Level 34 is not available yet).”
+“Bandit progression from Level 33 to Level 34 — Level 34 does not currently exist.”
+“Bandit Level 33 → 34 (not yet implemented).”
