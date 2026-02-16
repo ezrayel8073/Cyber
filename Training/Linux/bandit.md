@@ -231,66 +231,8 @@ Step-8: Move the newly existing file to data.bz2. Then decompress it. check what
 Step-9: Then you will get another compressed file name POSIX tar archive.
 Step-10: Extract the newly existing file to a tar file. Then immediately check list  of files.and check what kind of file it is.
 ![image](./images/image-12-2.png)
-Step-11: Utill you will decompreess the files to get the password.one by one.Like a loop
-Step-12: Finally you will get the password.
-
+Step-11: Just keep looping until file says something like: ASCII text. Finally you will get the password.
 ![image](./images/image-12.png)
-1️⃣ Use a random temp directory (recommended):
-
-     cd /tmp
-
-     mktemp -d
-Example output:
-
-     /tmp/tmp.ABC123xyz
-Move into it:
-
-       cd /tmp/tmp.ABC123xyz
-2️⃣ Copy the data file into your workspace
-   
-     cp ~/data.txt .
-Rename it so it’s easier to work with:
-
-      mv data.txt data.hex
-3️⃣ Convert the hex dump back into a binary file
-
-     xxd -r data.hex > data.bin
-Now check what kind of file it is:
-
-      file data.bin
-You’ll see something like:
-
-     data.bin: gzip compressed data
-Example sequence (your exact order may vary):
-
-       mv data.bin data.gz
-
-         gunzip data.gz
-
-         file data
-You might then see:
-
-      data: bzip2 compressed data
-
-      mv data data.bz2
-
-     bunzip2 data.bz2
-
-     file data
-Then:
-
-       data: POSIX tar archive
-
-        tar -xf data
-2️⃣ Immediately list files
-        
-        ls
-        file *
-You may encounter gzip, bzip2, and tar multiple times. Just keep looping until file says something like: ASCII text
-4️⃣ Repeatedly, Check file type, Rename with correct extension, Decompress, Repeat
-Once you get a text file:like password.txt
-
-        cat data
 ## Level-13
 + Username : bandit13   
 +  Password : FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn 
@@ -305,9 +247,15 @@ below is the image of level-13
 - chmod =
 - scp = downnload the private key
 ### Explination
-You do not get a password for bandit14.
+Step-1: You do not get a password for bandit14.
 Instead, you are given a private SSH key.
 You must use that key to log in as bandit14.
+Step-2: Connect to the server as bandit13.
+Step-3: Use ls command to get a list of files and directories in the current directory. Then you will get sshkey.private
+Step-4: Use cat command to read the contents of a file. Copy the entire key and Paste the key into a text editor means nano tool.Reanme it to key and save it.This process on another terminal.
+Step-5: Change the permissions of the key file.
+Step-6: Use the private key to log in as bandit14.
+![image](./images/image-13.png)
 1. Log in to Bandit Level 13 (as usual)
 
        ssh bandit13@bandit.labs.overthewire.org -p 2220
