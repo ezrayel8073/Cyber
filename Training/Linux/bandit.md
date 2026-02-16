@@ -120,6 +120,9 @@ Step-6: Use cat command to read the contents of a file
 - find = Find the files and directories Based on    Name, size, Modification time
  - cat = Display the file contents on terminal
 ### Explination
+Step 1: Connect to the server as bandit6.
+Step 2: Use ls command to get a list of files and directories in the current directory.But you will not get the files or directories.
+Step 3: Use find command to find a file with a specific user, group and size.
 
      find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
 This will return one file, usually:
