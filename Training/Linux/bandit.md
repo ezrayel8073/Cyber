@@ -257,12 +257,12 @@ Step-5: Change the permissions of the key file.
 Step-6: Use the private key to log in as bandit14.
 ![image](./images/image-13.png)
 #### 2nd Method
-![image](./images/image-13-1.png)
 Step-1: Download the sshkey.private key.
 Step-2:  Use the private key to log in as bandit14.
+![image](./images/image-13-1.png)
  ## Level-14
 + Username : bandit14
-+  Password : 
++  Password : MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
 + Domain : ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
