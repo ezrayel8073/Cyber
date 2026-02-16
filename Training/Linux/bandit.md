@@ -315,34 +315,12 @@ Step 5: But i found two ports are same How can i find that Correct one.
 Step 6: If you find this one Protocol  : TLSv1.3
 Step 7: At the TLSv1.3 protocol, is also same in two ports. How can i find that Correct one
 Step 8: Run echo command to get the password of bandit16.  Then you will send along with bandit16 password to ports.Then you will get the sshkey.private.
+![image](./images/image-16-2.png)
 Step-9: Use cat command to read the contents of a file. Copy the entire key and Paste the key into a text editor means nano tool.Reanme it to key and save it.This process on another terminal.
 Step-10: Change the permissions of the bandit16.sshkey file.
 Step-11: Use the private key to log in as bandit17.
 ![image](./images/image-16.png)
 Step-12: Use cat command to get the password of bandit17.
-
-
-I found “RSA PRIVATE KEY” mean here
-1️⃣ Copy the ENTIRE RSA key
-Copy everything, including:
------BEGIN RSA PRIVATE KEY-----
-...
------END RSA PRIVATE KEY-----
-No missing lines. No extra spaces.
-2️⃣ Before paste that we will do one thing exit that current domain 
-
-          nano bandit17.key
-and Save it to a file Create a file called bandit17.key:
-3️⃣ Fix file permissions (VERY IMPORTANT)
-
-       chmod 600 bandit17.key
-4️⃣ Log in using the private key
-
-        ssh -i bandit17.key bandit17@bandit.labs.overthewire.org -p 2220
-✅ This will log you in without a password. Once logged in, You are now bandit17. To continue later:
-
-       cat /etc/bandit_pass/bandit17
-
 ## Level-17
 + Username : bandit17
 +  Password :  EReVavePLFHtFlFsjn3hyzMlvSuSAcRD
