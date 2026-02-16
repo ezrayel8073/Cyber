@@ -101,7 +101,6 @@ Step-6: Use cat command to read the contents of a file
 ### Commands
 - ls = list files  
 - cd = change directory
-- ls or ls -1 = list files
  - find = Find the files and directories Based on    Name, size, Modification time
  - cat = read file
 ### Explination
@@ -109,58 +108,12 @@ Step 1: Connect to the server as bandit5.
 Step 2: Use ls command to get a list of files and directories in the current directory.
 Step 3: It shows inhere Directory.Then use cd command to move into the inhere directory.
 Step 4: Use ls command . Then you will get the lot of Directories.
-Step-5: Use find command to find a file with a specific size.
-
-     ls
-1️⃣ Go into the inhere directory
-
-        cd inhere
-2️⃣ List all files, including hidden ones
-
-         ls -a
-Step 1️⃣ Check where you are
-Run:
-   
-     pwd
-You must see:
-
-/home/bandit4/inhere
-If you do not, then run:
-
-     cd inhere
-Step 2️⃣ Confirm the files really exist
-Now run:
-
-        ls
-You must see something like: file00  file01  file02  file03  file04  file05  file06  file07  file08  file09
-Why ls -1 helps
-
-         ls -1
-This lists one filename per line, making copy-paste and reading easier.You should see something like:
--file00
--file01
--file02
--file03
-...
-Then use this command it will shows the inner file names.
- 
-    file ./*
-But this time it shows directories.
-Because it has num of files in their directories thats why file ./* command cannot find exact one file.
-
-    find . -type f -size 1033c ! -executable
--type f → files only
--size 1033c → exactly 1033 bytes
-! -executable → excludes executable files
-find → searches recursively under inhere 
-Example:
-
-./maybehere07/.file2 Read the file
-
-       cat ./maybehere07/.file2
+Step-5: Use find command to find a file with a specific size.Ten you will get exact file.
+Step-6: Use cat command to read the contents of a file
+![image](./images/image-5.png)
 ## Level-6
 + Username : bandit6   
-+  Password :                     
++  Password : HWasnPhtq9AVKe0dmk45nxy20cvUa6EG                    
 + Domain :  ssh bandit6@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### Commands
