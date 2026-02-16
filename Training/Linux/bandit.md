@@ -205,12 +205,17 @@ Step-4: Finally you will get the password.
 + Domain :  ssh bandit12@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### Commands
-- cp = copy
-- mv = move
-- xxd = 
-- -r = 
 - ls = list files
-- file =
+- mkdir = make directory
+- cd = change directory
+- cp = copy a file
+- mv = move a file
+- xxd = move hexa decimal to binary
+- -r = re
+- file = file type
+- gzip = compress to decompress
+- bunzip2 = decompress
+- tar = extract
 - file * = 
 - cat =  read the contents of a file
 ### Explination
@@ -224,7 +229,8 @@ Step-6: Move the file to data.gz. Then decompress it.Check what kind of file it 
 Step-7: Then you will get another compressed file name bzip2 compressed data.
 Step-8: Move the newly existing file to data.bz2. Then decompress it. check what kind of file it is.
 Step-9: Then you will get another compressed file name POSIX tar archive.
-Step-10: Extract the tar file. Then immediately check list  of files.and check what kind of file it is.
+Step-10: Extract the newly existing file to a tar file. Then immediately check list  of files.and check what kind of file it is.
+![image](./images/image-12-2.png)
 Step-11: Utill you will decompreess the files to get the password.one by one.Like a loop
 Step-12: Finally you will get the password.
 
