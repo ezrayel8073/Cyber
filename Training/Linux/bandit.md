@@ -192,7 +192,7 @@ step-4: Finally you will get the password.
 + Port Num : 2220
 ### Commands
 - cat = Display the file contents on terminal
-- tr = 
+- tr = translate characters in a file
 ### Explination
 Step 1: Connect to the server as bandit11.
 Step 2: Use ls command to get a list of files and directories in the current directory. Then you will get data.txt
