@@ -304,34 +304,27 @@ Step 5: You will get the Password for bandit16.
 - chmod = change permission
 
 ### Explination
-![image](./images/image-16.png)
-✅ Step 0: Get the current password
-
-     cat /etc/bandit_pass/bandit16 
-🔍 Step 1: Scan for open ports (31000–32000)
-Use nmap to find listening services:
+Step 1: Connect to the server as bandit16.
+Step 2: Scan for open ports (31000–32000).Use nmap to find listening services.
 ![image](./images/image-16-1.png)
-🔐 Step 2: Identify which port uses SSL/TLS
-Example:
+ Step 3: Identify which port uses SSL/TLS Use this below command. You will see certificate details, and Connection completes successfully
+ 
+    openssl s_client -connect localhost:31046 
 
-    openssl s_client -connect localhost:31046
-✅ Correct SSL service:
-You see certificate details
-Connection completes successfully
-❌ Not SSL:
-Errors like: wrong version number or handshake failure
-Repeat this for each open port until one clearly supports SSL.
-You wiil see the Difference between them
-   But i found two ports are same How can i find that Correct one
-✅ Correct:
-If you find this one Protocol  : TLSv1.3
-At the TLSv1.3 protocol, is also same in two ports. How can i find that Correct one
-🔐Run exactly this:
 
-    echo "$(cat /etc/bandit_pass/bandit16)" | openssl s_client -connect localhost:31518 -quiet
-Does not show the password
 
-    echo "$(cat /etc/bandit_pass/bandit16)" | openssl s_client -connect localhost:31790 -quiet
+Step 4: Repeat this for each open port until one clearly supports SSL.You wiil see the Difference between them
+Step 5: But i found two ports are same How can i find that Correct one.
+Step 6: If you find this one Protocol  : TLSv1.3
+Step 7: At the TLSv1.3 protocol, is also same in two ports. How can i find that Correct one
+Step 8: Run echo command to get the password of bandit16.  Then you will send along with bandit16 password to ports.Then you will get the sshkey.private.
+Step-9: Use cat command to read the contents of a file. Copy the entire key and Paste the key into a text editor means nano tool.Reanme it to key and save it.This process on another terminal.
+Step-10: Change the permissions of the bandit16.sshkey file.
+Step-11: Use the private key to log in as bandit17.
+![image](./images/image-16.png)
+Step-12: Use cat command to get the password of bandit17.
+
+
 I found “RSA PRIVATE KEY” mean here
 1️⃣ Copy the ENTIRE RSA key
 Copy everything, including:
