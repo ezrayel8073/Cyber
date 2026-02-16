@@ -344,6 +344,7 @@ Step-5: Finally you will get the password.
 + Port Num : 2220
 ### Commands
 - cat = Display the file contents on terminal
+- readme = Display the file contents on terminal
 ### Explination
 Step 1: Connect to the server as bandit18.
 Step-2: But it immediately exits (“Byebye!”).In Bandit18, your .bashrc is modified so that as soon as you log in.
@@ -361,21 +362,11 @@ Step-5: It Prints the password for bandit19. Then Immediately exits.
 - ls -1 = list files
 - cat = Display the file contents on terminal
 ### Explination
+Step 1: Connect to the server as bandit19.
+Step 2: Use ls -l command to get a list of files and directories in the current directory.
+3. Run the binary without arguments.Run a command as another user.
+Step-4: Usage: ./bandit20-do <command>.Use the binary to read the password.Tell it to run cat as bandit20:
 ![image](./images/image-19.png)
-
-      ls -l
-You’ll see something like:
--rwsr-x--- 1 bandit20 bandit19 7296 bandit20-do Owned by bandit20 Executing it runs as bandit20
-3. Run the binary without arguments
-
-       ./bandit20-do
-Output :
-Run a command as another user.
-Usage: ./bandit20-do <command>
-4. Use the binary to read the password
-Tell it to run cat as bandit20:
-
-    ./bandit20-do cat /etc/bandit_pass/bandit20
 ## Level-20
 + Username : bandit20
 +  Password :  0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
