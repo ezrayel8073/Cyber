@@ -161,22 +161,17 @@ step-3: Use sort command to sort data.Along with uniq command you will get the p
 + Port Num : 2220
 ### Commands
 - ls = list files 
-- strings = 
-- grep =
+- strings = extract human-readable text
+- grep = search for lines that match a pattern for a file
 ### Explination
-Inspect data.txt Use strings to extract human-readable text:
-
-    strings data.txt
-Filter for lines with = characters
-The password is preceded by several = characters, so pipe the output to grep:
-
-    strings data.txt | grep "==="
-strings → extracts readable ASCII text from a binary file
-grep "===" → narrows results to lines matching the level hint
-The password is intentionally easy to spot once filtered correctly
+Step 1: Connect to the server as bandit9.
+Step 2: Use ls command to get a list of files and directories in the current directory.
+Step-3: Use strings command to extract human-readable text.
+step-4: Use grep command to search for lines that match a pattern for a file.
+![image](./images/image-9.png)
 ## Level-10
 + Username : bandit10   
-+  Password :                     
++  Password :  FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey                   
 + Domain :  ssh bandit10@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### Commands
