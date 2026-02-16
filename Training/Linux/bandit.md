@@ -32,7 +32,7 @@ Step 5: Log out of bandit0. That means use exit command to log out.
 + ls = list files  
 + cat = read file
 ### Explination
-Step 1: Connect to the server as bandit0.
+Step 1: Connect to the server as bandit1.
 Step 2: Use ls command to get a list of files and directories in the current directory.
 Step 3: Use cat command to read the contents of a file.But shows  -  means stdin.
 Step 4: Use cat command to read the contents of a file.
@@ -45,134 +45,57 @@ Step 5: Get the password for Level 1.
 + Port Num : 2220
 ### commands 
 -  ls = list files
- - ls  -i =
+ - ls  -i = list files with inode numbers.
  - find = Find the files and directories Based on    Name, size, Modification time
 ### Explination
-1️⃣ List the files
-
-    ls
-You should see something like:
-
-     spaces in this filename
-###### ✅ Step 1: List files exactly
-Run this first and copy what you see character-for-character:
-
-   ls -l
-You will likely see something like:
--rw-r----- 1 bandit2 bandit2 33 spaces in this filename
-#### 🚨 Common causes of your error
-run:
-
-     pwd
-You should see:
-/home/bandit2
-If not:
-cd ~
-This bypasses the filename entirely.
-
-     ls -i
-You’ll see something like:1234567 spaces in this file name
-Now run:
-
-    find . -inum 1234567 -exec cat {} \;
-(replace 1234567 with the actual number)
+Step 1: Connect to the server as bandit2.
+Step 2: Use ls command to get a list of files and directories in the current directory.
+Step-3: Use ls -b  command for list files with escaped special characters.
+Step-4: Use ls -i  command for list files with inode numbers.
+Step_5: Use find command to find a file with a specific inode number.
+![image](./images/image-2.png)
 ## Level-3
 + Username : bandit3   
-+  Password :                 
++  Password :     MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx            
 + Domain :   ssh bandit3@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
 - ls = list files
 - cd = change directory 
-- ls -a =
+- ls -a = list all files, including hidden ones.
  - find = Find the files and directories Based on    Name, size, Modification time
 ### Explination
-List files in the home directory:
-
-     ls    
-You type ls and the output literally says:
-      
-      inhere
-So the file is inside a directory named inhere, not directly in your home folder.
-
-    cd inhere
-When your prompt changes to:
-
-     ~/inhere$
-➡️ You are now inside the inhere directory
-
-     ls -a
-When ls shows:
-
-    Hiding from you
-Type exactly this while you are in ~/inhere:
-
-    find . -type f -exec cat {} \;
-find . -type f → finds the file no matter how strange its name is
--exec cat {} \; → prints the contents directly
-No quotes, no guessing, no typing the filename
+Step 1: Connect to the server as bandit3.
+Step 2: Use ls command to get a list of files and directories in the current directory.
+Step 3: It shows inhere Directory.Then use cd command to move into the inhere directory.
+Step 4: Use ls -a command to list all files, including hidden ones. It shows Hiding from you.
+Step 5: Use find command to find a file with a specific type.  Then you will get the password.
+![image](./images/image-3.png)
 ## Level-4
 + Username : bandit4   
-+  Password :                        
++  Password :  2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ                      
 + Domain :   ssh bandit4@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### Commands
 - ls = list files  
 - cd = change directory
-- ls or ls -a = list files
--  find = Find the files and directories Based on    Name, size, Modification time
+- file = file type
 -  cat = read file
 ### Explination
-
-      ls
-1️⃣ Go into the inhere directory
-
-        cd inhere
-2️⃣ List all files, including hidden ones
-
-          ls -a
-Run:
-
-    pwd
-You must see:
-/home/bandit4/inhere
-If you do not, then run:
-
-      cd inhere
-Step 2️⃣ Confirm the files really exist
-
-    ls
-You must see something like: file00  file01  file02  file03  file04  file05  file06  file07  file08  file09
-Why ls -1 helps
-
-      ls -1
-You should see something like:
--file00
--file01
--file02
--file03
-...
-✅ Correct way to read the file
-
-    cat ./-file02
-Option 2 (also valid)
-
-     cat -- -file02
--- means: stop reading options after this, so It shows diamond symboles along with charecteres in a password
+Step 1: Connect to the server as bandit4.
+Step 2: Use ls command to get a list of files and directories in the current directory.
+Step 3: It shows inhere Directory.Then use cd command to move into the inhere directory.
+Step 4: Use ls command . Then you will get the lot of files.
+Step-5: Use file ./* to get the type of each file. Where yu will get ASCII code.
+Step-6: Use cat command to read the contents of a file 
+!![image](./images/image-4.png)
+ Optional - so It shows diamond symboles along with charecteres in a password
 
     cat ./-file02 | od -An -tx1
-This shows the password in hex bytes, proving it’s longer than 4 characters.You’ll see output like:61 7f 9a e2 ...
-2️⃣ Identify the ONLY valid password file
 
-      file ./* or file ./-*
-You must see exactly ONE line like:
-./-file07: ASCII text
-Example:
-
-     cat ./-file07
 ## Level-5
 + Username : bandit5   
-+  Password :                         
++  Password :   4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw                      
 + Domain :  ssh bandit5@bandit.labs.overthewire.org -p 2220  
 + Port Num : 2220
 ### Commands
@@ -182,6 +105,11 @@ Example:
  - find = Find the files and directories Based on    Name, size, Modification time
  - cat = read file
 ### Explination
+Step 1: Connect to the server as bandit5.
+Step 2: Use ls command to get a list of files and directories in the current directory.
+Step 3: It shows inhere Directory.Then use cd command to move into the inhere directory.
+Step 4: Use ls command . Then you will get the lot of Directories.
+Step-5: Use find command to find a file with a specific size.
 
      ls
 1️⃣ Go into the inhere directory
