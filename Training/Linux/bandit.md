@@ -1026,7 +1026,29 @@ step-10: Read the README file .it will show the password.
 ## Level-30
 + Username : bandit30
 +  Password :  qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL
-+ Domain : ssh bandit30@bandit.labs.overthewire.org -p 2220
++ Domain : git clone ssh://bandit30-git@bandit.labs.overthewire.org:2220/home/bandit30-git/repo
++ Port Num : 2220
+### Commands
+git = Git version control system
+ git clone = Clone a repository into a new directory
+ cd = Change directory
+ git ls-files = List files
+ type = Display the type of a file
+ git tag = List tags
+ git show = Show object
+### Explination
+Step-1: Open a terminal on your local machine (Command prompt),Make sure git is installed: git --version, If not, install Git using your OS package manager.
+Step-2: Run git command for checking installation or not
+Step-3:Clone the repository to use the git clone command.
+Step-4: After that it asks for password,  Instead of copy and paste Enter the password Manually.Because it not accepted copy and paste.
+Step-5: Then observe path is correct format ok otherwise change it your System path.
+Step-7: Then change the path into repo.Already have repo delete that.View list of files in the repo.
+Step-8: Read the README file. But it has no password.This level hides the password in a Git tag, not in a file.Then inspect that.
+![image](./images/image-30.png)
+## Level-31
++ Username : bandit31
++  Password :  fb5S2xb7bRyFmAvQYQGEqsbhVyJqhnDy
++ Domain : ssh bandit31@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
 
