@@ -310,10 +310,7 @@ Step 2: Scan for open ports (31000–32000).Use nmap to find listening services.
  Step 3: Identify which port uses SSL/TLS Use this below command. You will see certificate details, and Connection completes successfully
  
     openssl s_client -connect localhost:31046 
-
-
-
-Step 4: Repeat this for each open port until one clearly supports SSL.You wiil see the Difference between them
+Step 4: Repeat this for each open port until one clearly supports SSL.You wiil see the Difference between them.
 Step 5: But i found two ports are same How can i find that Correct one.
 Step 6: If you find this one Protocol  : TLSv1.3
 Step 7: At the TLSv1.3 protocol, is also same in two ports. How can i find that Correct one
@@ -348,7 +345,7 @@ and Save it to a file Create a file called bandit17.key:
 
 ## Level-17
 + Username : bandit17
-+  Password :
++  Password :  EReVavePLFHtFlFsjn3hyzMlvSuSAcRD
 + Domain : ssh bandit17@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
