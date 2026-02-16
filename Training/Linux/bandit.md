@@ -147,24 +147,16 @@ step-4: Finally you will get the password.
 + Port Num : 2220
 ### Commands
 - ls = list files 
-- sort = 
-- uniq =
+- sort = sort data
+- uniq = print unique lines
 ### Explination
-sort data.txt | uniq -u
-
-     sort data.txt
-Groups identical lines together (required for uniq to work correctly).
-
-     uniq -u
-Prints only lines that occur once.
-
-    sort data.txt | uniq
-And finally:
-
-    sort data.txt | uniq -u
+step 1: Connect to the server as bandit8.
+step 2: Use ls command to get a list of files and directories in the current directory.
+step-3: Use sort command to sort data.Along with uniq command you will get the password.
+![image](./images/image-8.png)
 ## Level-9
 + Username : bandit9   
-+  Password :                     
++  Password : 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM                    
 + Domain : ssh bandit9@bandit.labs.overthewire.org -p 2220  
 + Port Num : 2220
 ### Commands
