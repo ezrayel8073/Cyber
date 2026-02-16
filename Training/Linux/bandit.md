@@ -296,13 +296,13 @@ Step 5: You will get the Password for bandit16.
 + Domain : ssh bandit16@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
+- nmap = scan for open ports
+- openssl = encrypt and decrypt
+- echo = Display a string
 - cat = Display the file contents on terminal
-- nmap =
-- openssl =
-- -quit =
-- nano =
-- chmod = change permission
-
+- -quit = quit
+- nano = edit a file
+- chmod = change permissions of a file
 ### Explination
 Step 1: Connect to the server as bandit16.
 Step 2: Scan for open ports (31000–32000).Use nmap to find listening services.
@@ -329,31 +329,14 @@ Step-12: Use cat command to get the password of bandit17.
 ### Commands
 - ls = list files
 - diff = compare files
-- grep = 
+- grep = search for lines that match a pattern
 ### Explination
+Step 1: Connect to the server as bandit17.
+Step 2: Use ls command to get a list of files and directories in the current directory.
+Step-3: It will shows passwords.old and passwords.new.
+Step-4: Use diff command to compare files.Then you will get the use grep command to search for lines that match a pattern.
+Step-5: Finally you will get the password.
 ![image](./images/image-17.png)
-
-    ls
-You should see:
- passwords.old  passwords.new
-Compare the two files using diff:
-
-     diff passwords.old passwords.new
-You’ll see something like:
-        < oldpasswordline
-           ---
-        > newpasswordline
-
-    Lines starting with < come from passwords.old
-
-    Lines starting with > come from passwords.new
-Alternative (cleaner output)
-
-    diff passwords.old passwords.new | grep ">"
-^> → only lines starting with >
-cut -c3- → removes > (greater-than + space)
-
-    diff passwords.old passwords.new | grep "^>" | cut -c3-
 ## Level-18
 + Username : bandit18
 +  Password :
