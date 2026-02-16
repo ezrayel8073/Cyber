@@ -216,7 +216,7 @@ Step-4: Finally you will get the password.
 - gzip = compress to decompress
 - bunzip2 = decompress
 - tar = extract
-- file * = 
+- file * = inspects a file’s contents,
 - cat =  read the contents of a file
 ### Explination
 Step 1: Connect to the server as bandit12.
