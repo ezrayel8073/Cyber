@@ -177,23 +177,13 @@ step-4: Use grep command to search for lines that match a pattern for a file.
 ### Commands
 - ls = list files 
 - cat = Display the file contents on terminal
-- base64 =  
+- base64 = encode a file
+- -d = decode
 ### Explination
 Step-1: Connect to the server as bandit10.
-Step-2: Use ls command to get a list of files and directories in the current directory. Then you will get data.txt
-Step-3: 
-List files
-
-      ls
-You should see:
-
-         data.txt
-Decode the Base64 data
-
-           base64 -d data.txt
-or equivalently:
-
-      cat data.txt | base64 --decode
+Step-2: Use ls command to get a list of files and directories in the current directory. Then you will get data.txt.
+Step-3: Use base64 command to encode a file. Then you will decode the Base64 data.
+![image](./images/image-10.png)
 ## Level-11
 + Username : bandit11   
 +  Password :                     
