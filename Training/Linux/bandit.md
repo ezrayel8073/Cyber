@@ -41,7 +41,7 @@ Step 5: Get the password for Level 1.
 !![image](./images/image-1.png)
 ##  Level 2
 + Username : bandit2   
-+  Password :                       
++  Password :   263JGJPfgU6LtdEvgfWU1XP5yac29mFx                    
 + Domain :   ssh bandit2@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### commands 
