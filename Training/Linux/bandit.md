@@ -269,21 +269,14 @@ Step-2:  Use the private key to log in as bandit14.
 - cat = Display the file contents on terminal
 - nc =
 ### Explination
+Step 1: Connect to the server as bandit14.
 ![image](./images/image-14-1.png)
+Step 2: Use cat command to get current password.
+Step-3: Use nc command to send the current password to port 30000.
 ![image](./images/image-14.png)
-Login: 
-
-    ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
-2️⃣ Get the current password
-
-     cat /etc/bandit_pass/bandit14
-
-3️⃣ Send it to port 30000 using nc
-
-    cat /etc/bandit_pass/bandit14 | nc localhost 30000
 ## Level-15
 + Username : bandit15
-+  Password :
++  Password :  8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
 + Domain : ssh bandit15@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
