@@ -194,21 +194,14 @@ step-4: Finally you will get the password.
 - cat = Display the file contents on terminal
 - tr = 
 ### Explination
-The password is in data.txt.
-All letters (a–z, A–Z) are rotated by 13 positions (ROT13). Numbers and symbols are unchanged. ROT13 is symmetric: applying it once decodes the text.
-Use tr to rotate the characters back:
-
-    cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
-This command:
-Reads the file
-Translates:
-A–Z → N–Z A–M
-a–z → n–z a–m  Prints the decoded password to the terminal . ROT13 shifts each letter 13 places:
-a ↔ n, b ↔ o, …, m ↔ z Same logic for uppercase letters
-Because the alphabet has 26 letters, rotating by 13 twice returns the original text.
+Step 1: Connect to the server as bandit11.
+Step 2: Use ls command to get a list of files and directories in the current directory. Then you will get data.txt
+Step-3: Use tr command and along with cat command to translate characters in a file.All letters (a–z, A–Z) are rotated by 13 positions (ROT13). Numbers and symbols are unchanged. ROT13 is symmetric: applying it once decodes the text.
+Step-4: Finally you will get the password.
+![image](./images/image-11.png)
 ## Level-12
 + Username : bandit12
-+  Password : TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI                       
++  Password :  7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
 + Domain :  ssh bandit12@bandit.labs.overthewire.org -p 2220 
 + Port Num : 2220
 ### Commands
