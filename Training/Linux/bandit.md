@@ -123,17 +123,12 @@ Step-6: Use cat command to read the contents of a file
 Step 1: Connect to the server as bandit6.
 Step 2: Use ls command to get a list of files and directories in the current directory.But you will not get the files or directories.
 Step 3: Use find command to find a file with a specific user, group and size.
-
-     find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
-This will return one file, usually:
-
-/var/lib/dpkg/info/bandit7.password
-Read it
-
-    cat /var/lib/dpkg/info/bandit7.password
+step-4: It will shows the certain path to the file.
+step-5: Use cat command to read the contents of a file.
+![image](./images/image-6.png)
 ## Level-7
 + Username : bandit7   
-+  Password :                     
++  Password :   morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj                  
 + Domain : ssh bandit7@bandit.labs.overthewire.org -p 2220  
 + Port Num : 2220
 ### Commands
