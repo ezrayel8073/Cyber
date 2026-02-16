@@ -366,6 +366,7 @@ Step 1: Connect to the server as bandit19.
 Step 2: Use ls -l command to get a list of files and directories in the current directory.
 3. Run the binary without arguments.Run a command as another user.
 Step-4: Usage: ./bandit20-do <command>.Use the binary to read the password.Tell it to run cat as bandit20:
+Step-5: Finally you will get the password for bandit20
 ![image](./images/image-19.png)
 ## Level-20
 + Username : bandit20
