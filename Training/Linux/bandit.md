@@ -214,6 +214,20 @@ Step-4: Finally you will get the password.
 - file * = 
 - cat =  read the contents of a file
 ### Explination
+Step 1: Connect to the server as bandit12.
+Step 2: Use ls command to get a list of files and directories in the current directory. Then you will get data.txt
+Step-3: Create a temporary directory and change to it.
+Step-4: Copy the data.txt file into temp directory.Then Rename it as data.hex. Convert the hex dump back into a binary file.  
+Step-5: Then check what kind of file it is. It will shows compressed file name gizpp compressed data.
+![image](./images/image-12-1.png)
+Step-6: Move the file to data.gz. Then decompress it.Check what kind of file it is.
+Step-7: Then you will get another compressed file name bzip2 compressed data.
+Step-8: Move the file to data.bz2. Then decompress it. check what kind of file it is.
+Step-9: Then you will get another compressed file name POSIX tar archive.
+Step-10: Extract the tar file. Then immediately check list  of files.and check what kind of file it is.
+Step-11: Utill you will decompreess the files to get the password.one by one.Like a loop
+Step-12: Finally you will get the password.
+
 ![image](./images/image-12.png)
 1️⃣ Use a random temp directory (recommended):
 
