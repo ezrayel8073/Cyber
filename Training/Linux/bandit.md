@@ -282,13 +282,14 @@ Step-3: Use nc command to send the current password to port 30000.
 ### Commands
 - openssl = encrypt and decrypt
 ### Explination
-![image](./images/image-15.png)
 Step 1: Connect to the server as bandit15.
 Step 2: Conect securly to port 30001.
 
     openssl s_client -connect localhost:30001
-You should see a lot of SSL-related output — this is normal.
-Step 3: Send the current password to port 30001. Paste the Bandit 15 password and press Enter.
+Step-3: You should see a lot of SSL-related output — this is normal.
+Step 4: Send the password to port 30001. That means Paste the Bandit 15 password.
+Step 5: You will get the Password for bandit16.
+![image](./images/image-15.png)
 ## Level-16
 + Username : bandit16
 +  Password :
