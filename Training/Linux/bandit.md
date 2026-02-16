@@ -132,17 +132,17 @@ step-5: Use cat command to read the contents of a file.
 + Domain : ssh bandit7@bandit.labs.overthewire.org -p 2220  
 + Port Num : 2220
 ### Commands
-- grep = 
+- ls = list files
+- grep = Search for lines that match a pattern for a file.
 ### Explination
-
-          ls
-     
-     grep millionth data.txt
-grep searches through data.txt
-It prints the entire line containing the word millionth
+Step 1: Connect to the server as bandit7.
+Step 2: Use ls command to get a list of files and directories in the current directory.
+Step-3: Use grep command to search for lines that match a pattern for a file.
+step-4: Finally you will get the password.
+![image](./images/image-7.png)
 ## Level-8
 + Username : bandit8   
-+  Password :                     
++  Password :  dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc                   
 + Domain : ssh bandit8@bandit.labs.overthewire.org -p 2220  
 + Port Num : 2220
 ### Commands
