@@ -292,7 +292,7 @@ Step 5: You will get the Password for bandit16.
 ![image](./images/image-15.png)
 ## Level-16
 + Username : bandit16
-+  Password :
++  Password : kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
 + Domain : ssh bandit16@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
