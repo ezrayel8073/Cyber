@@ -136,7 +136,7 @@ step-5: Use cat command to read the contents of a file.
 - grep = Search for lines that match a pattern for a file.
 ### Explination
 Step 1: Connect to the server as bandit7.
-Step 2: Use ls command to get a list of files and directories in the current directory.
+Step 2: Use ls command to get a list of files and directories in the current directory.Then you will get data.txt
 Step-3: Use grep command to search for lines that match a pattern for a file.
 step-4: Finally you will get the password.
 ![image](./images/image-7.png)
@@ -151,7 +151,7 @@ step-4: Finally you will get the password.
 - uniq = print unique lines
 ### Explination
 step 1: Connect to the server as bandit8.
-step 2: Use ls command to get a list of files and directories in the current directory.
+step 2: Use ls command to get a list of files and directories in the current directory.Then you will get data.txt
 step-3: Use sort command to sort data.Along with uniq command you will get the password.
 ![image](./images/image-8.png)
 ## Level-9
@@ -165,7 +165,7 @@ step-3: Use sort command to sort data.Along with uniq command you will get the p
 - grep = search for lines that match a pattern for a file
 ### Explination
 Step 1: Connect to the server as bandit9.
-Step 2: Use ls command to get a list of files and directories in the current directory.
+Step 2: Use ls command to get a list of files and directories in the current directory.Then you will get data.txt
 Step-3: Use strings command to extract human-readable text.
 step-4: Use grep command to search for lines that match a pattern for a file.
 ![image](./images/image-9.png)
@@ -179,6 +179,9 @@ step-4: Use grep command to search for lines that match a pattern for a file.
 - cat = Display the file contents on terminal
 - base64 =  
 ### Explination
+Step-1: Connect to the server as bandit10.
+Step-2: Use ls command to get a list of files and directories in the current directory. Then you will get data.txt
+Step-3: 
 List files
 
       ls
