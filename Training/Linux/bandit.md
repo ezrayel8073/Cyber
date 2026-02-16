@@ -14,19 +14,15 @@ What you Need to do :
 + Port Num : 2220
 ### Commands
 + ls = list files  
-+ cd = change directory  
 + cat = read file
 ### Explination 
- list files with:
-
-    ls
-You’ll see a file called readme.
-Read it:
-
-    cat readme
-That file gives you the password for Level 1.
-To log out later:
-exit
+Step 1: Connect to the server as bandit0.
+![image](./images/image-0-1.png)
+Step 2: Use ls command to get a list of files and directories in the current directory.
+Step 3: Use cat command to read the contents of a file.
+Step 4: Get the password for Level 1.
+Step 5: Log out of bandit0. That means use exit command to log out.
+![image](./images/image-0.png)
 ##  Level 1
 + Username : bandit1   
 +  Password :                        
@@ -37,25 +33,12 @@ exit
 + cd = change directory       
 + cat = read file
 ### Explination
-Run:
-
-     ls
-Output:
-
-     -
-That’s the file containing the password.
-⚠️ Common mistake (DO NOT do this)
-
-       cat -
-❌ This makes cat wait for keyboard input because - means 
-
-       stdin.
-Step 3: Correct way to read the file
-You have two correct options.
-✅ Option 1 (recommended): Use ./
-
-        cat ./-
-Step 4: Get the password
+Step 1: Connect to the server as bandit0.
+Step 2: Use ls command to get a list of files and directories in the current directory.
+Step 3: Use cat command to read the contents of a file.But shows  -  means stdin.
+Step 4: Use cat command to read the contents of a file.
+Step 5: Get the password for Level 1.
+!![image](./images/image-1.png)
 ##  Level 2
 + Username : bandit2   
 +  Password :                       
