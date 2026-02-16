@@ -283,11 +283,8 @@ Step-3: Use nc command to send the current password to port 30000.
 - openssl = encrypt and decrypt
 ### Explination
 ![image](./images/image-15.png)
-Step 1: Log into Bandit Level 15
-
-    ssh bandit15@bandit.labs.overthewire.org -p 2220
-Enter Password:    
-Step 2: Connect securely to port 30001
+Step 1: Connect to the server as bandit15.
+Step 2: Conect securly to port 30001.
 
     openssl s_client -connect localhost:30001
 You should see a lot of SSL-related output — this is normal.
