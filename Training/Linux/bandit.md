@@ -25,7 +25,7 @@ Step 5: Log out of bandit0. That means use exit command to log out.
 ![image](./images/image-0.png)
 ##  Level 1
 + Username : bandit1   
-+  Password :                        
++  Password :  ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If                  
 + Domain : ssh bandit1@bandit.labs.overthewire.org -p 2220   
 + Port Num : 2220
 ### Commands
