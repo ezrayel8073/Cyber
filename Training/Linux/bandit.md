@@ -256,45 +256,10 @@ Step-4: Use cat command to read the contents of a file. Copy the entire key and 
 Step-5: Change the permissions of the key file.
 Step-6: Use the private key to log in as bandit14.
 ![image](./images/image-13.png)
-1. Log in to Bandit Level 13 (as usual)
-
-       ssh bandit13@bandit.labs.overthewire.org -p 2220
-Once logged in, list the files:
-
-        ls
-You should see a file named:
-
-     sshkey.private
-  it will shows the key
-
-      cat sshkey.private
-copy the entire key and Paste the key into a text editor means nano tool
-
-     nano key 
-then save it and rename it to key, the key rename name is also a key
-3. Fix the key’s permissions (important!)
-SSH will refuse to use a private key if it’s too open.
-
-      chmod 600 key
-4. Use the private key to log in as bandit14, From inside bandit13, Example run:
-
-    ssh -i key bandit14@bandit.labs.overthewire.org -p 2220
-Explanation:
--i sshkey.private → tells SSH which private key to use
-bandit14@localhost → you’re logging into the same machine, just as a different user
 #### 2nd Method
 ![image](./images/image-13-1.png)
-✅ DOWNLOAD SSH KEY FROM BANDIT TO KALI (FINAL)
-📌 Run this ON YOUR KALI TERMINAL, not on Bandit:
-
-    scp -P 2220 bandit13@bandit.labs.overthewire.org:/home/bandit13/sshkey.private .
-When asked, enter the bandit13 password. The file will appear in your current Kali directory.
-✅ FIX PERMISSIONS ON KALI (IMPORTANT)
-
-    chmod 600 sshkey.private
-✅ LOGIN TO BANDIT14 USING THE KEY
-
-    ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
+Step-1: Download the sshkey.private key.
+Step-2:  Use the private key to log in as bandit14.
  ## Level-14
 + Username : bandit14
 +  Password : 
