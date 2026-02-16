@@ -339,7 +339,7 @@ Step-5: Finally you will get the password.
 ![image](./images/image-17.png)
 ## Level-18
 + Username : bandit18
-+  Password :
++  Password :  x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
 + Domain : ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
 + Port Num : 2220
 ### Commands
