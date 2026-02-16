@@ -211,7 +211,7 @@ Step-4: Finally you will get the password.
 - cp = copy a file
 - mv = move a file
 - xxd = move hexa decimal to binary
-- -r = re
+- -r = recursive
 - file = file type
 - gzip = compress to decompress
 - bunzip2 = decompress
@@ -235,16 +235,16 @@ Step-11: Just keep looping until file says something like: ASCII text. Finally y
 ![image](./images/image-12.png)
 ## Level-13
 + Username : bandit13   
-+  Password : FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn 
-+  Domain : ssh bandit13@bandit.labs.overthewire.org -p 2220     [or]
++ Password : FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn 
++ Domain : ssh bandit13@bandit.labs.overthewire.org -p 2220     [or]
 + Domain 1: scp -P 2220 bandit13@bandit.labs.overthewire.org:/home/bandit13/sshkey.private .
 below is the image of level-13
 ![image](./images/image-13.png)
 ### Commands
 - ls = list files
 - cat = Display the file contents on terminal
-- nano =
-- chmod =
+- nano = edit a file
+- chmod = change file permissions
 - scp = downnload the private key
 ### Explination
 Step-1: You do not get a password for bandit14.
