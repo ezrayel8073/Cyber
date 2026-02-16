@@ -345,30 +345,16 @@ Step-5: Finally you will get the password.
 ### Commands
 - cat = Display the file contents on terminal
 ### Explination
-![image](./images/image-18.png)
-Why it immediately exits (“Byebye!”)
-In Bandit18, your .bashrc is modified so that as soon as you log in, it prints:
-
-    Byebye!
-
-    ssh bandit18@bandit.labs.overthewire.org -p 2220
-and it immediately exits, that means:
-👉 Your password is correct 👉 You are now officially on Bandit18 👉 This behavior belongs to Level 18 → 19. How to actually stay in Bandit18. You must bypass .bashrc.
-What you’re seeing now is normal SSH behavior, not a crash.
+Step 1: Connect to the server as bandit18.
+Step-2: But it immediately exits (“Byebye!”).In Bandit18, your .bashrc is modified so that as soon as you log in.
+Step-3: Your password is correct and You are now officially on Bandit18 .This behavior belongs to Level 18 → 19. How to actually stay in Bandit18. You must bypass .bashrc.What you’re seeing now is normal SSH behavior, not a crash.
 This is intentional for security.
- 
-    ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
-SSH logs in and prompts for a password. Enter Password: Does NOT start an interactive shell. Runs cat readme
-Prints the password for bandit19
-Immediately exits (this is normal)
-    
-    Can’t stay logged in    -	Bandit18 trap
-    Blank screen	        -    Shell killed
-    SSH works but exits	     -  Normal
-    Best solution	         -   ssh ... cat readme
+Step-4: SSH logs in and prompts for a password. Enter Password: Does NOT start an interactive shell. Runs cat readme
+Step-5: It Prints the password for bandit19. Then Immediately exits.
+![image](./images/image-18.png)
 ## Level-19
 + Username : bandit19
-+  Password :
++  Password : cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
 + Domain : ssh bandit19@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
