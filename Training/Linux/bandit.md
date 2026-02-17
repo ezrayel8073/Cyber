@@ -975,9 +975,9 @@ Step-9: After that it asks for password,  Instead of copy and paste Enter the pa
 + Domain : ssh bandit32@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
-$0 =
-whoami = Display the name of the current user
-cat = Display the contents of a file
+- $0 =
+- whoami = Display the name of the current user
+- cat = Display the contents of a file
 ### Explination
 Step-1: Login to bandit32
 
