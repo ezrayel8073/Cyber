@@ -707,6 +707,7 @@ Step-2: Run the Ls commad to get the files, after file type checking it shows pr
  ![image](./images/image-25-5.png)
 
 Step-3: (Opening in nano to edit, Rename it and save it (sshkey)). Then Set correct permissions on the key
+![image](./images/image-25-7.png)
 
        chmod 600 sshkey
 Step-4: Login to bandit26 using the key.
@@ -765,7 +766,7 @@ set shell = Change the shell
 ls = list files
 cat = Display the file contents on terminal
 ### Explination
-Step-1 : Login to bandit26 using the key . But that password is not useful for bandit26 login Be only open in vi editor because of --more--
+Step-1 : Login to bandit26 using the key from bandit25 . But that password is not useful for bandit26 login Be only open in vi editor because of --more--
 
      ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220
 Step-2 : After login attemt of bandit26 it will show like bandit26 image. 
