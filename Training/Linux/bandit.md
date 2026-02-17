@@ -375,24 +375,17 @@ Step-5: Finally you will get the password for bandit20
 + Port Num : 2220
 ### Commands
 - nc = netcat
+- suconnect = send the password
 ### Explination
+Step 1: Connect to the server as bandit20.
+Step-2: In the first terminal, run nc -l -p 4444.
+Step-3: In the second terminal, Also connect to the server as bandit20.
+Step-4: Run ./suconnect 4444.
 ![image](./images/image-20.png)
+Step-5: Then you will return back to the first terminal.
+Step-6: Now paste bandit20 password in the first terminal.
+Step-7: You will get the password for bandit21.
 ![image](./images/image-20-1.png)
-🔹 Terminal 1
-
-    nc -l -p 4444
-(wait — cursor blinking)
-🔹 Terminal 2 (new SSH window)
-
-    ./suconnect 4444
-🔹 BACK TO TERMINAL 1
-Now PASTE ONLY THIS LINE and press ENTER:That means bandit20 password
-
-      0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
-✅ You will now see TWO lines:
-
-    0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
-    <bandit21_password_here>
 ## Level-21
 + Username : bandit21
 +  Password :  EeoULMCra2q0dSkYj561DX7s1CpBuOBt
