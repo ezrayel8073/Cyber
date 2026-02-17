@@ -838,13 +838,13 @@ Step-8: Read the README file to get the password.
 + Domain : git clone ssh://bandit28-git@bandit.labs.overthewire.org:2220/home/bandit28-git/repo
 + Port Num : 2220
 ### Commands
-git = Git version control system
- git clone = Clone a repository into a new directory
- cd = Change directory
- git ls-files = List files
- type = Display the type of a file
- git log = Show commit logs
- git log -p = Show commit logs with patch
+- git = Git version control system
+-  git clone = Clone a repository into a new directory
+- cd = Change directory
+- git ls-files = List files
+- type = Display the type of a file
+- git log = Show commit logs
+- git log -p = Show commit logs with patch
 ### Explination
 Step-1: Open a terminal on your local machine (Command prompt),Make sure git is installed: git --version, If not, install Git using your OS package manager.
 
@@ -873,13 +873,13 @@ changes between commits by using git log -p.Then you will see the password
 + Domain : git clone ssh://bandit29-git@bandit.labs.overthewire.org:2220/home/bandit29-git/repo
 + Port Num : 2220
 ### Commands
-git = Git version control system
- git clone = Clone a repository into a new directory
- cd = Change directory
- git ls-files = List files
- type = Display the type of a file
- git branch = List branches
- git checkout = Switch branches
+- git = Git version control system
+- git clone = Clone a repository into a new directory
+- cd = Change directory
+- git ls-files = List files
+- type = Display the type of a file
+- git branch = List branches
+- git checkout = Switch branches
 ### Explination
 Step-1: Open a terminal on your local machine (Command prompt),Make sure git is installed: git --version, If not, install Git using your OS package manager.
 
