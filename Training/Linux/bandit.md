@@ -713,6 +713,7 @@ Step-4: Login to bandit26 using the key.
 
         ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220
 Step-5: bandit26 does NOT allow password login with the ssh key. bandit26 does not give a normal shell.
+
 Step-6: Check: cat /etc/passwd  it shows lot of files. Then use grep command to find bandit26
 
 Step-7: use cat command to check the shell of bandit26
@@ -725,30 +726,30 @@ Step-8 : Login to bandit26 using the key
 
      ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220  
 Step-9 : After login attemt of bandit26 it will show like bandit26 image. Then
- Resize (compress) the terminal,Make the terminal window small in height of image.This forces more to pause and show.
+ Step-10 : Resize (compress) the terminal,Make the terminal window small in height of image.This forces more to pause and show.
 
 ![image](./images/image-25-1.png)
 
- Step-10 : Then try to login again to bandit26.
+ Step-11 : Then try to login again to bandit26.
 ![image](./images/image-25-2.png)
 
-Step-10 : Open vi from more, While --More-- is visible, press: v
+Step-12 : Open vi from more, While --More-- is visible, press: v
 
 ![image](./images/image-25-3.png)
 
-Step-11 : Run :shell it will shows bandit26 two images whenever scroll page up you will see the same image. Then Run:
+Step-13 : Run :shell it will shows bandit26 two images whenever scroll page up you will see the same image. Then Run:
  
     :set shell?
-Step-12 : it will show shell location /bin/bash Then Run:
+Step-14 : it will show shell location /bin/bash Then Run:
 
      :set shell=/bin/bash 
- Step-13 :  :shell  press ENTER
+ Step-15 :  :shell  press ENTER
 
-Step-14 : You now have a real bash shell as bandit26.
+Step-16 : You now have a real bash shell as bandit26.
 
-Step-15 : use ls command to check the files . Then see the files and run the cat command to check the content of the files
+Step-17 : use ls command to check the files . Then see the files and run the cat command to check the content of the files
 
-Step-16 : Run the cat command to getting the password  bandit26 password  But that password is not useful for bandit26 login Be only open in vi editor because of --more-- 
+Step-18 : Run the cat command to getting the password  bandit26 password  But that password is not useful for bandit26 login Be only open in vi editor because of --more-- 
 
 ![image](./images/image-25-4.png)
 
