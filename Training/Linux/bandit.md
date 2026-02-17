@@ -781,10 +781,11 @@ Step-5 : it will show shell location /bin/bash Then Run:
 
 Step-7 : You now have a real bash shell as bandit26.
 
+Step-8 : use ls command to check the files . Then see the files and run the cat command to check the content of the files
+Step-9 : Finally you will get the password.getting the password  bandit26 password
+
 ![image](./images/image-26.png)
 
-Step-8 : use ls command to check the files . Then see the files and run the cat command to check the content of the files
-Step-9 : Finally you will get the password.getting the password  bandit26 password  
 ## Level-27
 + Username : bandit27
 +  Password : upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
