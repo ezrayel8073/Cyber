@@ -558,6 +558,7 @@ Step-7: You will get the password for bandit21.
 - ls = list files
 - cat = Display the file contents on terminal
 - echo = Display a string
+- MD5 =  MD5 hash
 ### Explination
 Step-1: Connect to the server as bandit21.
 
@@ -592,6 +593,7 @@ Step-11: It will show the password for bandit22
 - ls = list files
 - cat = Display the file contents on terminal
 - echo = Display a string
+- MD5 =  MD5 hash
 ### Explination
 Step-1: Connect to the server as bandit22.
 
@@ -630,21 +632,23 @@ Step-11: It will show the password for bandit23
 ### Explination
 Step-1: Connect to the server as bandit22.
 
-Step-2: Use ls command to get a list of files in /etc/cron.d/ . Then you will see files along with cronjob_bandit23
+Step-2: Use ls command to get a list of files in /etc/cron.d/ . Then you will see files along with cronjob_bandit24
 
-Step-3: Use cat command to read cronjob_bandit23
+Step-3: Use cat command to read cronjob_bandit24
 
-Step-4: It wil show the path of the script /usr/bin/cronjob_bandit23.sh
+Step-4: It wil show the path of the script /usr/bin/cronjob_bandit24.sh
 
-Step-5: Use cat command to read cronjob_bandit23.sh
+![image](./images/image-23-1.png)
+
+Step-5: Use cat command to read cronjob_bandit24.sh
 
 Step-6: It will show the some script information.
 
-Step-7: Use  export NANO_DISABLE_HISTORY=1 . Quick check that your script is fine. After saving, verify it.
+Step-7: Use  export NANO_DISABLE_HISTORY=1 . Quick check that your script is fine. After saving, verify it. Using cat command.
 
 Step-8: Change the permissions Using chmod command.
 
-Step-9: Using cat command to get the password for bandit23.
+Step-9: Using cat command to get the password for bandit24.
 
 Step-10: It will show the password for bandit24
 
