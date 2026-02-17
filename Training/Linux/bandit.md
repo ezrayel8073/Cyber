@@ -909,13 +909,13 @@ step-10: Read the README file .it will show the password.
 + Domain : git clone ssh://bandit30-git@bandit.labs.overthewire.org:2220/home/bandit30-git/repo
 + Port Num : 2220
 ### Commands
-git = Git version control system
- git clone = Clone a repository into a new directory
- cd = Change directory
- git ls-files = List files
- type = Display the type of a file
- git tag = List tags
- git show = Show object
+- git = Git version control system
+- git clone = Clone a repository into a new directory
+- cd = Change directory
+- git ls-files = List files
+- type = Display the type of a file
+- git tag = List tags
+- git show = Show object
 ### Explination
 Step-1: Open a terminal on your local machine (Command prompt),Make sure git is installed: git --version, If not, install Git using your OS package manager.
 
