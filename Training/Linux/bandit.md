@@ -332,8 +332,6 @@ Step-11: Just keep looping until file says something like: ASCII text. Finally y
 + Password : FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn 
 + Domain : ssh bandit13@bandit.labs.overthewire.org -p 2220     [or]
 + Domain 1: scp -P 2220 bandit13@bandit.labs.overthewire.org:/home/bandit13/sshkey.private .
-below is the image of level-13
-![image](./images/image-13.png)
 ### Commands
 - ls = list files
 - cat = Display the file contents on terminal
