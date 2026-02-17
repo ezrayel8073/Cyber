@@ -1,16 +1,16 @@
 # BANDIT LABS
 ## Terminal
-  1.First you can start the terminal you will see the starting stage of terminal the you need to go that terminal you can access that terminal by " sudo su " 
+  1.First you can start the terminal you will see the starting stage of terminal the    you need to go that terminal you can access that terminal by " sudo su " 
    
   2.After that terninal can ask you the password 
    
-3. Password : " kali "
+  3. Password : " kali "
    
-4. then you enter the password you will not able to see that password but it can automatically access
+  4. then you enter the password you will not able to see that password but it can      automatically access
    
-5. It will navigate Home that means Root, it will shows " root@kali " 
+  5. It will navigate Home that means Root, it will shows " root@kali " 
    
-6. It will shows in red color. It is the simple checking that  you are in root or not and below that root you will see " #  " in red color that means Finally you can start the Terminal
+  6. It will shows in red color. It is the simple checking that  you are in root or not and below that root you will see " #  " in red color that means Finally you can start the Terminal
 ## Level 0
 What you Need to do :
 + Username : bandit0   
