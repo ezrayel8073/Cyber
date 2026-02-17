@@ -1,8 +1,8 @@
 # BANDIT LABS
 ## Terminal
-1.First you can start the terminal you will see the starting stage of terminal the you need to go that terminal you can access that terminal by " sudo su " 
+  1.First you can start the terminal you will see the starting stage of terminal the you need to go that terminal you can access that terminal by " sudo su " 
    
-2.After that terninal can ask you the password 
+  2.After that terninal can ask you the password 
    
 3. Password : " kali "
    
