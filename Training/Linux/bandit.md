@@ -582,6 +582,7 @@ Step 10: It will show the some information. Then Using cat command along with th
 Step-11: It will show the password for bandit22
 
 ![image](./images/image-21.png)
+
 ## Level-22
 + Username : bandit22
 +  Password :  tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
@@ -592,44 +593,30 @@ Step-11: It will show the password for bandit22
 - cat = Display the file contents on terminal
 - echo = Display a string
 ### Explination
+Step-1: Connect to the server as bandit22.
+
+Step-2: Use ls command to get a list of files in /etc/cron.d/ . Then you will see files along with cronjob_bandit23
+
+Step-3: Use cat command to read cronjob_bandit23
+
+Step-4: It wil show the path of the script /usr/bin/cronjob_bandit23.sh
+
+Step-5: Use cat command to read cronjob_bandit23.sh
+
+Step-6: It will show the some information.
+
+Step-7: Use echo command to tell that iam user bandit23 along with md5sum
+
+Step-8: Uses the MD5 hash as a filename in /tmp/
+
+Step-9:Writes the bandit23 password into that file. Makes it readable
+
+Step 10: It will show the some information. Then Using cat command along with that information with the temporary file.
+
+Step-11: It will show the password for bandit23
+
 ![image](./images/image-22.png)
-List the files in /etc/cron.d/:
 
-    ls /etc/cron.d/
-You should see something like:
-
-    cronjob_bandit23
-Step 3: Read the cron job
-    
-    cat /etc/cron.d/cronjob_bandit23
-Typical output:
-    * * * * * bandit23 /usr/bin/cronjob_bandit23.sh
-Meaning:
-    * * * * * → runs every minute Runs as user bandit23
-Executes /usr/bin/cronjob_bandit23.sh
-Step 4: Read the script being executed
-
-      cat /usr/bin/cronjob_bandit23.sh
-You’ll see something like:
-#!/bin/bash
-chmod 644 /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)
-cat /etc/bandit_pass/bandit23 > /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)
-Step 5: Understand what it does
-
-It computes:
-
-    echo I am user bandit23 | md5sum
-Uses the MD5 hash as a filename in /tmp/
-Writes the bandit23 password into that file
-Makes it readable
-Example output:
-
-    8ca319486bfbbc3663ea0fbe81326349  -
-The filename is:
-/tmp/8ca319486bfbbc3663ea0fbe81326349
-Step 7: Read the password
-
-    cat /tmp/8ca319486bfbbc3663ea0fbe81326349
 ## Level-23
 + Username : bandit23
 +  Password :  0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
