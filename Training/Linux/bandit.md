@@ -776,9 +776,13 @@ Step-2 : After login attemt of bandit26 it will show like bandit26 image.
  Step-3 : Resize (compress) the terminal,Make the terminal window small in height of image.This forces more to pause and show.
 
 ![image](./images/image-25-1.png)
+
 Step-4 : Then try to login again to bandit26.
+
 ![image](./images/image-25-2.png)
+
 Step-5 : Open vi from more, While --More-- is visible, press: v
+
 ![image](./images/image-25-3.png)
 
 
