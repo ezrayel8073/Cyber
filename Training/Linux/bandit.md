@@ -531,7 +531,6 @@ Step-5: Finally you will get the password for bandit20
 - nc = netcat
 - suconnect = send the password
 ### Explination
-
 Step 1: Connect to the server as bandit20.
 
 Step-2: In the first terminal, run nc -l -p 4444.
@@ -560,24 +559,20 @@ Step-7: You will get the password for bandit21.
 - cat = Display the file contents on terminal
 - echo = Display a string
 ### Explination
-![image](./images/image-21.png)
-List the files in /etc/cron.d/:
+Step-1: Connect to the server as bandit21.
+Step-2: Use ls command to get a list of files in /etc/cron.d/ . Then you will see files along with cronjob_bandit22
+Step-3: Use cat command to read cronjob_bandit22
+Step-4: It wil show the path of the script /usr/bin/cronjob_bandit22.sh
+Step-5: Use cat command to read cronjob_bandit22.sh
+Step-6: It will show the some information.
+Step-7: Use echo command to tell that iam user bandit22 along with md5sum
+Step-8: Uses the MD5 hash as a filename in /tmp/
+Step-9:Writes the bandit22 password into that file.Makes it readable
+Step 10: It will show the some information. Then Using cat command along with that information with the temporary file.
+Step-11: It will show the password for bandit22
 
-    ls /etc/cron.d/
-You should see something like:
 
-    cronjob_bandit22
-Step 3: Read the cron job
-    
-    cat /etc/cron.d/cronjob_bandit22
-Typical output:
-    * * * * * bandit22 /usr/bin/cronjob_bandit22.sh
-Meaning:
-    * * * * * → runs every minute Runs as user bandit22
-Executes /usr/bin/cronjob_bandit22.sh
-Step 4: Read the script being executed
 
-      cat /usr/bin/cronjob_bandit22.sh
 You’ll see something like:
 #!/bin/bash
 chmod 644 /tmp/$(echo I am user bandit22 | md5sum | cut -d ' ' -f 1)
