@@ -16,6 +16,17 @@ What you Need to do :
 + ls = list files  
 + cat = read file
 ### Explination 
+
+Step 1: Connect to the server as bandit0 using ssh bandit0@bandit.labs.overthewire.org -p 2220
+
+Step 2: Use the ls command to list the files and directories in the current directory.
+
+Step 3: Use the cat readme command to display the contents of the readme file.
+
+Step 4: Copy the displayed password from the readme file — this is the password for Level 1.
+
+Step 5: Use the exit command to log out of the bandit0 session.
+
 Step 1: Connect to the server as bandit0.
 ![image](./images/image-0-1.png)
 Step 2: Use ls command to get a list of files and directories in the current directory.
