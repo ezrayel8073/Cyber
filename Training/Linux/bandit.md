@@ -939,15 +939,15 @@ Step-7: Read the README file. But it has no password.This level hides the passwo
 + Domain : git clone ssh://bandit31-git@bandit.labs.overthewire.org:2220/home/bandit31-git/repo
 + Port Num : 2220
 ### Commands
-git = Git version control system
- git clone = Clone a repository into a new directory
- cd = Change directory
- git ls-files = List files
- type = Display the type of a file
- echo = Display a string
- git add = Add files to the index
- git commit = Record changes to the repository
- git push = Update remote branches
+- git = Git version control system
+- git clone = Clone a repository into a new directory
+- cd = Change directory
+- git ls-files = List files
+- type = Display the type of a file
+- echo = Display a string
+- git add = Add files to the index
+- git commit = Record changes to the repository
+- git push = Update remote branches
 ### Explination
 Step-1: Open a terminal on your local machine (Command prompt),Make sure git is installed: git --version, If not, install Git using your OS package manager.
 
