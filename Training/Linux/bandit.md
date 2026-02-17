@@ -820,7 +820,7 @@ Step-1: Open a terminal on your local machine (Command prompt), Make sure git is
 
 Step-2: Run git command for checking installation or not.
 
- Step-3:If installed you will see git version and commands. Otherwise you will need to proper installation.
+ Step-3: If installed you will see git version and commands. Otherwise you will need to proper installation.
 
 ![image](./images/image-27-1.png)
 
@@ -855,6 +855,8 @@ Step-1: Open a terminal on your local machine (Command prompt),Make sure git is 
 Step-2: Run git command for checking installation or not.
 
  Step-3:If installed you will see git version and commands. Otherwise you will need to proper installation.
+
+![image](./images/image-28-2.png)
 
 Step-4:Clone the repository to use the git clone command.
 
@@ -892,6 +894,8 @@ Step-1: Open a terminal on your local machine (Command prompt),Make sure git is 
 Step-2: Run git command for checking installation or not.
 
  Step-3:If installed you will see git version and commands. Otherwise you will need to proper installation.
+
+![image](./images/image-29-2.png)
 
 Step-4:Clone the repository to use the git clone command.
 
@@ -931,6 +935,8 @@ Step-2: Run git command for checking installation or not.
 
  Step-3:If installed you will see git version and commands. Otherwise you will need to proper installation.
 
+![image](./images/image-30-1.png)
+
 Step-4:Clone the repository to use the git clone command.
 
 Step-5: After that it asks for password,  Instead of copy and paste Enter the password Manually.Because it not accepted copy and paste.
@@ -964,6 +970,8 @@ Step-1: Open a terminal on your local machine (Command prompt),Make sure git is 
 Step-2: Run git command for checking installation or not.
 
  Step-3:If installed you will see git version and commands. Otherwise you will need to proper installation.
+
+![image](./images/image-31-2.png)
 
 Step-4:Clone the repository to use the git clone command.
 
