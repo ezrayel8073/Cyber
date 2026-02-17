@@ -722,6 +722,7 @@ Step-7: use cat command to check the shell of bandit26
 
 ![image](./images/image-25-6.png)
 
+
 ![image](./images/image-25.png)
 
 Step-8 : Login to bandit26 using the key. At another terminal.
@@ -729,7 +730,7 @@ Step-8 : Login to bandit26 using the key. At another terminal.
      ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220  
 Step-9 : After login attemt of bandit26 it will show like bandit26 image.
  
- Step-10 : Resize (compress) the terminal,Make the terminal window small in height of image.This forces more to pause and show.
+ Step-10 : Resize (compress) the terminal,Make the terminal window small in height of image. This forces more to pause and show.
 
 ![image](./images/image-25-1.png)
 
