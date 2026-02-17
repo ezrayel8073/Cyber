@@ -945,15 +945,25 @@ git = Git version control system
  git push = Update remote branches
 ### Explination
 Step-1: Open a terminal on your local machine (Command prompt),Make sure git is installed: git --version, If not, install Git using your OS package manager.
+
 Step-2: Run git command for checking installation or not
+
 Step-3:Clone the repository to use the git clone command.
+
 Step-4: After that it asks for password,  Instead of copy and paste Enter the password Manually.Because it not accepted copy and paste.
+
 Step-5: Then observe path is correct format ok otherwise change it your System path.
-Step-7: Then change the path into repo.Already have repo delete that.View list of files in the repo.
-Step-8: Read the README file.This time your task is to push a file called key.txt to the repository.
+
+Step-6: Then change the path into repo.Already have repo delete that.View list of files in the repo.
+
+Step-7: Read the README file.This time your task is to push a file called key.txt to the repository.
+
 ![image](./images/image-31.png)
+
 Step-9: After that it asks for password,  Instead of copy and paste Enter the password Manually.Because it not accepted copy and paste.Finally you will get the password.
+
 ![image](./images/image-31-1.png)
+
 ## Level-32
 + Username : bandit32
 +  Password :  3O9RfhqyAlVBEZpVb6LYStshZoqoSx5K
@@ -965,12 +975,20 @@ whoami = Display the name of the current user
 cat = Display the contents of a file
 ### Explination
 Step-1: Login to bandit32
-Step-2: Anything you type gets transformed (uppercased) and then executed, which breaks normal commands.
+
+Step-2: Anything you type gets transformed (uppercased) and then executed, which breaks 
+normal commands.
+
 Ste-3: Run THis $0 command 
+
 Step-4: It expands to the name of the currently running shell.This launches a new, unrestricted shell.Variable expansion happens before the uppercase transformation
+
 Step-5: For confirmation using Whoami command it will show bandit32
+
 Step-6: Run this commad cat /etc/bandit_pass/bandit33. It will show the password.
+
 ![image](./images/image-32.png)
+
 ## Level-33
 + Username : bandit33
 +  Password :  tQdtbs5D5i2vJwkO8mEyYEyTL8izoeJ0
