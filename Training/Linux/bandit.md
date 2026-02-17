@@ -728,6 +728,7 @@ Step-8 : Login to bandit26 using the key. At another terminal.
 
      ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220  
 Step-9 : After login attemt of bandit26 it will show like bandit26 image.
+ 
  Step-10 : Resize (compress) the terminal,Make the terminal window small in height of image.This forces more to pause and show.
 
 ![image](./images/image-25-1.png)
@@ -775,25 +776,25 @@ Step-2 : After login attemt of bandit26 it will show like bandit26 image.
  Step-3 : Resize (compress) the terminal,Make the terminal window small in height of image.This forces more to pause and show.
 
 ![image](./images/image-25-1.png)
-Step-11 : Then try to login again to bandit26.
+Step-4 : Then try to login again to bandit26.
 ![image](./images/image-25-2.png)
-Step-3 : Open vi from more, While --More-- is visible, press: v
+Step-5 : Open vi from more, While --More-- is visible, press: v
 ![image](./images/image-25-3.png)
 
 
-Step-4 : Run :shell it will shows bandit26 two images whenever scroll page up you will see the same image. Then Run:
+Step-6 : Run :shell it will shows bandit26 two images whenever scroll page up you will see the same image. Then Run:
  
     :set shell?
-Step-5 : it will show shell location /bin/bash Then Run:
+Step-7 : it will show shell location /bin/bash Then Run:
 
      :set shell=/bin/bash 
- Step-6 :  :shell  press ENTER
+ Step-8 :  :shell  press ENTER
 
-Step-7 : You now have a real bash shell as bandit26.
+Step-9 : You now have a real bash shell as bandit26.
 
-Step-8 : use ls command to check the files . Then see the files and run the cat command to check the content of the files
+Step-10 : use ls command to check the files . Then see the files and run the cat command to check the content of the files
 
-Step-9 : Finally you will get the password.getting the password  bandit26 password
+Step-11 : Finally you will get the password.getting the password  bandit26 password
 
 ![image](./images/image-26.png)
 
