@@ -826,6 +826,7 @@ Step-7: Then change the path into repo.View list of files in the repo.
 Step-8: Read the README file to get the password.
 
 ![image](./images/image-27.png)
+
 ## Level-28
 + Username : bandit28
 +  Password :  Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN
@@ -841,15 +842,26 @@ git = Git version control system
  git log -p = Show commit logs with patch
 ### Explination
 Step-1: Open a terminal on your local machine (Command prompt),Make sure git is installed: git --version, If not, install Git using your OS package manager.
+
 Step-2: Run git command for checking installation or not
+
 Step-3:Clone the repository to use the git clone command.
+
 Step-4: After that it asks for password,  Instead of copy and paste Enter the password Manually.Because it not accepted copy and paste.
+
 Step-5: Then observe path is correct format ok otherwise change it your System path.
+
 Step-7: Then change the path into repo.Already have repo delete that.View list of files in the repo.
+
 Step-8: Read the README file to get the password.But in xxxx format.
+
 ![image](./images/image-28-1.png)
-Step-9:View commit history using git log, You should see more than one commit.Then View changes between commits by using git log -p.Then you will see the password
+
+Step-9:View commit history using git log, You should see more than one commit.Then View 
+changes between commits by using git log -p.Then you will see the password
+
 ![image](./images/image-28.png)
+
 ## Level-29
 + Username : bandit29
 +  Password :  4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7
@@ -865,16 +877,27 @@ git = Git version control system
  git checkout = Switch branches
 ### Explination
 Step-1: Open a terminal on your local machine (Command prompt),Make sure git is installed: git --version, If not, install Git using your OS package manager.
+
 Step-2: Run git command for checking installation or not
+
 Step-3:Clone the repository to use the git clone command.
+
 Step-4: After that it asks for password,  Instead of copy and paste Enter the password Manually.Because it not accepted copy and paste.
+
 Step-5: Then observe path is correct format ok otherwise change it your System path.
+
 Step-7: Then change the path into repo.Already have repo delete that.View list of files in the repo.
+
 Step-8: Read the README file .But it has no password.
+
 ![image](./images/image-29.png)
+
 Step-9: Check git Branch .Then switch the dev branch.View list of files .
+
 step-10: Read the README file .it will show the password.
+
 ![image](./images/image-29-1.png)
+
 ## Level-30
 + Username : bandit30
 +  Password :  qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL
@@ -890,13 +913,21 @@ git = Git version control system
  git show = Show object
 ### Explination
 Step-1: Open a terminal on your local machine (Command prompt),Make sure git is installed: git --version, If not, install Git using your OS package manager.
+
 Step-2: Run git command for checking installation or not
+
 Step-3:Clone the repository to use the git clone command.
+
 Step-4: After that it asks for password,  Instead of copy and paste Enter the password Manually.Because it not accepted copy and paste.
+
 Step-5: Then observe path is correct format ok otherwise change it your System path.
-Step-7: Then change the path into repo.Already have repo delete that.View list of files in the repo.
-Step-8: Read the README file. But it has no password.This level hides the password in a Git tag, not in a file.Then inspect that.
+
+Step-6: Then change the path into repo.Already have repo delete that.View list of files in the repo.
+
+Step-7: Read the README file. But it has no password.This level hides the password in a Git tag, not in a file.Then inspect that.
+
 ![image](./images/image-30.png)
+
 ## Level-31
 + Username : bandit31
 +  Password :  fb5S2xb7bRyFmAvQYQGEqsbhVyJqhnDy
