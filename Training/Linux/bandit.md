@@ -735,7 +735,7 @@ Step-9 : After login attemt of bandit26 it will show like bandit26 image.
 ![image](./images/image-25-1.png)
 
  Step-11 : Then try to login again to bandit26.
- 
+
 ![image](./images/image-25-2.png)
 
 Step-12 : Open vi from more, While --More-- is visible, press: v
@@ -764,11 +764,11 @@ Step-18 : Run the cat command to getting the password  bandit26 password  But th
 + Domain : ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
-vim = Edit a file
-shell = Open a shell
-set shell = Change the shell
-ls = list files
-cat = Display the file contents on terminal
+- vim = Edit a file
+- shell = Open a shell
+- set shell = Change the shell
+- ls = list files
+- cat = Display the file contents on terminal
 ### Explination
 Step-1 : Login to bandit26 using the key from bandit25 . But that password is not useful for bandit26 login Be only open in vi editor because of --more--
 
