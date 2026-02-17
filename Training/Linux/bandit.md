@@ -628,32 +628,28 @@ Step-11: It will show the password for bandit23
 - nano = Edit a file
 - chmod = Change file permissions
 ### Explination
+Step-1: Connect to the server as bandit22.
+
+Step-2: Use ls command to get a list of files in /etc/cron.d/ . Then you will see files along with cronjob_bandit23
+
+Step-3: Use cat command to read cronjob_bandit23
+
+Step-4: It wil show the path of the script /usr/bin/cronjob_bandit23.sh
+
+Step-5: Use cat command to read cronjob_bandit23.sh
+
+Step-6: It will show the some script information.
+
+Step-7: Use  export NANO_DISABLE_HISTORY=1 . Quick check that your script is fine. After saving, verify it.
+
+Step-8: Change the permissions Using chmod command.
+
+Step-9: Using cat command to get the password for bandit23.
+
+Step-10: It will show the password for bandit24
+
 ![image](./images/image-23.png)
-2️⃣ Inspect the cron configuration
 
-     ls /etc/cron.d/
-You should see something like: bandit24
-
-     cat /etc/cron.d/bandit24
-Output will look similar to:
-     * * * * * bandit24 /usr/bin/cronjob_bandit24.sh
-This means:
-Every minute (* * * * *) User bandit24
-Executes /usr/bin/cronjob_bandit24.sh
-3️⃣ Read the cron script
-
-    cat /usr/bin/cronjob_bandit24.sh
-
-     export NANO_DISABLE_HISTORY=1
-Quick check that your script is fine. After saving, verify:
-
-     cat /tmp/getpass.sh
- Change the permissions:
-
-    chmod +x /tmp/getpass.sh
-Use it to get the password:
-    
-    cat /tmp/bandit24_pass
 ## Level-24
 + Username : bandit24
 +  Password :  gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
