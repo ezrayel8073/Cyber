@@ -822,6 +822,8 @@ Step-2: Run git command for checking installation or not. If installed you will 
 
     git
 
+![image](./images/image-27-1.png)
+
 Step-3:Clone the repository to use the git clone command.
 
 Step-4: After that it asks for password,  Instead of copy and paste Enter the password Manually.Because it not accepted copy and paste.
