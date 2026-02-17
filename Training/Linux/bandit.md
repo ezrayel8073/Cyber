@@ -702,7 +702,7 @@ set shell = Change the shell
 ### Explination
 Step-1: Login to bandit25
 
-Step-2: Run the Ls commad to get the files, after file type checking it shows private key,then run the cat command this displayprivate key content
+Step-2: Run the Ls commad to get the files, after file type checking it shows private key,then run the cat command this display  private key content
 
  ![image](./images/image-25-5.png)
 
@@ -725,7 +725,6 @@ Step-8 : Login to bandit26 using the key
 
      ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220
 Step-9 : Resize (compress) the terminal,Make the terminal window small in height.This forces more to pause and show:
-
 
 ![image](./images/image-25-1.png)
 
@@ -751,7 +750,7 @@ Step-16 : Run the cat command to getting the password  bandit26 password  But th
 ## Level-26
 + Username : bandit26
 +  Password :  s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
-+ Domain : ssh bandit26@bandit.labs.overthewire.org -p 2220
++ Domain : ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
 vim = Edit a file
