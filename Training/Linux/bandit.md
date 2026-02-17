@@ -393,10 +393,15 @@ Step 1: Connect to the server as bandit15.
 Step 2: Conect securly to port 30001.
 
     openssl s_client -connect localhost:30001
+
 Step-3: You should see a lot of SSL-related output — this is normal.
+
 Step 4: Send the password to port 30001. That means Paste the Bandit 15 password.
+
 Step 5: You will get the Password for bandit16.
+
 ![image](./images/image-15.png)
+
 ## Level-16
 + Username : bandit16
 +  Password : kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
@@ -411,23 +416,38 @@ Step 5: You will get the Password for bandit16.
 - nano = edit a file
 - chmod = change permissions of a file
 ### Explination
+
 Step 1: Connect to the server as bandit16.
+
 Step 2: Scan for open ports (31000–32000).Use nmap to find listening services.
+
 ![image](./images/image-16-1.png)
+
  Step 3: Identify which port uses SSL/TLS Use this below command. You will see certificate details, and Connection completes successfully
  
     openssl s_client -connect localhost:31046 
+
 Step 4: Repeat this for each open port until one clearly supports SSL.You wiil see the Difference between them.
+
 Step 5: But i found two ports are same How can i find that Correct one.
+
 Step 6: If you find this one Protocol  : TLSv1.3
+
 Step 7: At the TLSv1.3 protocol, is also same in two ports. How can i find that Correct one
+
 Step 8: Run echo command to get the password of bandit16.  Then you will send along with bandit16 password to ports.Then you will get the sshkey.private.
 ![image](./images/image-16-2.png)
+
 Step-9: Use cat command to read the contents of a file. Copy the entire key and Paste the key into a text editor means nano tool.Reanme it to key and save it.This process on another terminal.
+
 Step-10: Change the permissions of the bandit16.sshkey file.
+
 Step-11: Use the private key to log in as bandit17.
+
 ![image](./images/image-16.png)
+
 Step-12: Use cat command to get the password of bandit17.
+
 ## Level-17
 + Username : bandit17
 +  Password :  EReVavePLFHtFlFsjn3hyzMlvSuSAcRD
@@ -438,12 +458,20 @@ Step-12: Use cat command to get the password of bandit17.
 - diff = compare files
 - grep = search for lines that match a pattern
 ### Explination
+
 Step 1: Connect to the server as bandit17.
+
 Step 2: Use ls command to get a list of files and directories in the current directory.
+
 Step-3: It will shows passwords.old and passwords.new.
-Step-4: Use diff command to compare files.Then you will get the use grep command to search for lines that match a pattern.
+
+Step-4: Use diff command to compare files.Then you will get the use grep command to 
+search for lines that match a pattern.
+
 Step-5: Finally you will get the password.
+
 ![image](./images/image-17.png)
+
 ## Level-18
 + Username : bandit18
 +  Password :  x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
@@ -453,13 +481,21 @@ Step-5: Finally you will get the password.
 - cat = Display the file contents on terminal
 - readme = Display the file contents on terminal
 ### Explination
+
 Step 1: Connect to the server as bandit18.
-Step-2: But it immediately exits (“Byebye!”).In Bandit18, your .bashrc is modified so that as soon as you log in.
+
+Step-2: But it immediately exits (“Byebye!”).In Bandit18, your .bashrc is modified so 
+that as soon as you log in.
+
 Step-3: Your password is correct and You are now officially on Bandit18 .This behavior belongs to Level 18 → 19. How to actually stay in Bandit18. You must bypass .bashrc.What you’re seeing now is normal SSH behavior, not a crash.
 This is intentional for security.
+
 Step-4: SSH logs in and prompts for a password. Enter Password: Does NOT start an interactive shell. Runs cat readme
+
 Step-5: It Prints the password for bandit19. Then Immediately exits.
+
 ![image](./images/image-18.png)
+
 ## Level-19
 + Username : bandit19
 +  Password : cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
@@ -470,11 +506,17 @@ Step-5: It Prints the password for bandit19. Then Immediately exits.
 - cat = Display the file contents on terminal
 ### Explination
 Step 1: Connect to the server as bandit19.
+
 Step 2: Use ls -l command to get a list of files and directories in the current directory.
+
 3. Run the binary without arguments.Run a command as another user.
+
 Step-4: Usage: ./bandit20-do <command>.Use the binary to read the password.Tell it to run cat as bandit20:
+
 Step-5: Finally you will get the password for bandit20
+
 ![image](./images/image-19.png)
+
 ## Level-20
 + Username : bandit20
 +  Password :  0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
@@ -484,15 +526,25 @@ Step-5: Finally you will get the password for bandit20
 - nc = netcat
 - suconnect = send the password
 ### Explination
+
 Step 1: Connect to the server as bandit20.
+
 Step-2: In the first terminal, run nc -l -p 4444.
+
 Step-3: In the second terminal, Also connect to the server as bandit20.
+
 Step-4: Run ./suconnect 4444.
+
 ![image](./images/image-20.png)
+
 Step-5: Then you will return back to the first terminal.
+
 Step-6: Now paste bandit20 password in the first terminal.
+
 Step-7: You will get the password for bandit21.
+
 ![image](./images/image-20-1.png)
+
 ## Level-21
 + Username : bandit21
 +  Password :  EeoULMCra2q0dSkYj561DX7s1CpBuOBt
@@ -662,25 +714,38 @@ shell = Open a shell
 set shell = Change the shell
 ### Explination
 Step-1: Login to bandit25
+
 Step-2: Run the Ls commad to get the files, after file type checking it shows private key,then run the cat command this displayprivate key content
+
  ![image](./images/image-25-5.png)
+
 Step-3: (Opening in nano to edit, Rename it and save it (sshkey)). Then Set correct permissions on the key
 
        chmod 600 sshkey
-Step-4: Login to bandit26 using the key
+Step-4: Login to bandit26 using the key.
+
         ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220
 Step-5: bandit26 does NOT allow password login with the ssh key. bandit26 does not give a normal shell.
 Check: cat /etc/passwd  it shows lot of files. Then use grep command to find bandit26
+
 Step-7: use cat command to check the shell of bandit26
+
 ![image](./images/image-25-6.png)
+
 ![image](./images/image-25.png)
+
 Step-8 : Login to bandit26 using the key
 
      ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220
 Step-9 : Resize (compress) the terminal,Make the terminal window small in height.This forces more to pause and show:
+
+
 ![image](./images/image-25-1.png)
+
 Step-10 : Open vi from more, While --More-- is visible, press: v
+
 ![image](./images/image-25-2.png)
+
 Step-11 : Run :shell it will shows bandit26 two images whenever scroll page up you will see the same image. Then Run:
  
     :set shell?
@@ -688,10 +753,14 @@ Step-12 : it will show shell location /bin/bash Then Run:
 
      :set shell=/bin/bash 
  Step-13 :  :shell  press ENTER
+
 Step-14 : You now have a real bash shell as bandit26.
+
 ![image](./images/image-25-4.png)
+
 Step-15 : use ls command to check the files . Then see the files and run the cat command to check the content of the files
-       getting the password  bandit26 password  But that password is not useful for bandit26 login Be only open in vi editor because of --more--  
+
+Step-16 : Run the cat command to getting the password  bandit26 password  But that password is not useful for bandit26 login Be only open in vi editor because of --more--  
 ## Level-26
 + Username : bandit26
 +  Password :  s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
@@ -707,10 +776,15 @@ cat = Display the file contents on terminal
 Step-1 : Login to bandit26 using the key . But that password is not useful for bandit26 login Be only open in vi editor because of --more--
 
      ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220
+
 Step-2 : Resize (compress) the terminal,Make the terminal window small in height.This forces more to pause and show:
+
 ![image](./images/image-25-1.png)
+
 Step-3 : Open vi from more, While --More-- is visible, press: v
+
 ![image](./images/image-25-2.png)
+
 Step-4 : Run :shell it will shows bandit26 two images whenever scroll page up you will see the same image. Then Run:
  
     :set shell?
@@ -718,10 +792,13 @@ Step-5 : it will show shell location /bin/bash Then Run:
 
      :set shell=/bin/bash 
  Step-6 :  :shell  press ENTER
+
 Step-7 : You now have a real bash shell as bandit26.
+
 ![image](./images/image-26.png)
+
 Step-8 : use ls command to check the files . Then see the files and run the cat command to check the content of the files
-       getting the password  bandit26 password  
+Step-9 : Finally you will get the password.getting the password  bandit26 password  
 ## Level-27
 + Username : bandit27
 +  Password : upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
@@ -735,12 +812,19 @@ Step-8 : use ls command to check the files . Then see the files and run the cat 
  type = Display the type of a file
 ### Explination
 Step-1: Open a terminal on your local machine (Command prompt),Make sure git is installed: git --version, If not, install Git using your OS package manager.
+
 Step-2: Run git command for checking installation or not
+
 Step-3:Clone the repository to use the git clone command.
+
 Step-4: After that it asks for password,  Instead of copy and paste Enter the password Manually.Because it not accepted copy and paste.
+
 Step-5: Then observe path is correct format ok otherwise change it your System path.
+
 Step-7: Then change the path into repo.View list of files in the repo. 
+
 Step-8: Read the README file to get the password.
+
 ![image](./images/image-27.png)
 ## Level-28
 + Username : bandit28
