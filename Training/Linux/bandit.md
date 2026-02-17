@@ -560,39 +560,28 @@ Step-7: You will get the password for bandit21.
 - echo = Display a string
 ### Explination
 Step-1: Connect to the server as bandit21.
+
 Step-2: Use ls command to get a list of files in /etc/cron.d/ . Then you will see files along with cronjob_bandit22
+
 Step-3: Use cat command to read cronjob_bandit22
+
 Step-4: It wil show the path of the script /usr/bin/cronjob_bandit22.sh
+
 Step-5: Use cat command to read cronjob_bandit22.sh
+
 Step-6: It will show the some information.
+
 Step-7: Use echo command to tell that iam user bandit22 along with md5sum
+
 Step-8: Uses the MD5 hash as a filename in /tmp/
-Step-9:Writes the bandit22 password into that file.Makes it readable
+
+Step-9:Writes the bandit22 password into that file. Makes it readable
+
 Step 10: It will show the some information. Then Using cat command along with that information with the temporary file.
+
 Step-11: It will show the password for bandit22
 
-
-
-You’ll see something like:
-#!/bin/bash
-chmod 644 /tmp/$(echo I am user bandit22 | md5sum | cut -d ' ' -f 1)
-cat /etc/bandit_pass/bandit22 > /tmp/$(echo I am user bandit22 | md5sum | cut -d ' ' -f 1)
-Step 5: Understand what it does
-
-It computes:
-
-    echo I am user bandit22 | md5sum
-Uses the MD5 hash as a filename in /tmp/
-Writes the bandit22 password into that file
-Makes it readable
-Example output:
-
-    8169b67bd894ddbb4412f91573b38db3  -
-The filename is:
-/tmp/8169b67bd894ddbb4412f91573b38db3
-Step 7: Read the password
-
-    cat /tmp/8169b67bd894ddbb4412f91573b38db3
+![image](./images/image-21.png)
 ## Level-22
 + Username : bandit22
 +  Password :  tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
