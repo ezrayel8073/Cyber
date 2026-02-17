@@ -660,19 +660,30 @@ Step-10: It will show the password for bandit24
 + Domain : ssh bandit24@bandit.labs.overthewire.org -p 2220
 + Port Num : 2220
 ### Commands
+- echo = Display a string
+- nc = netcat
 ### Explination
-Strategy:
-Generate all PINs from 0000 → 9999
-Prefix each with the bandit24 password
-Pipe everything into one nc (netcat) connection
-Watch for the line that contains the bandit25 password
+ Strategy:
+
+    Generate all PINs from 0000 → 9999    
+    Prefix each with the bandit24 password
+    Pipe everything into one nc (netcat) connection
+    Watch for the line that contains the bandit25 password
+    seq -w keeps the PINs 4 digits (0001 instead of 1)
+    The loop sends all attempts at once
+    nc keeps one open TCP connection, which is exactly what the daemon wants
+
+Step-1: Connect to the server as bandit24.
+
+
+Step 2 : Run the script. Before running the script do one thing firstly, replace the BANDIT24_PASSWORD with the actual password for bandit24 in the script.    
+
 ![image](./images/image-24-1.png)
-👉 Replace BANDIT24_PASSWORD with the actual password for bandit24
+
+Step 3: It will show the password for bandit25
+
 ![image](./images/image-24.png)
-Why this works
-seq -w keeps the PINs 4 digits (0001 instead of 1)
-The loop sends all attempts at once
-nc keeps one open TCP connection, which is exactly what the daemon wants
+
 ## Level-25
 + Username : bandit25
 + Password :  iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
