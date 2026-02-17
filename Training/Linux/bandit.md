@@ -351,7 +351,7 @@ Step-2: Connect to the server as bandit13.
 Step-3: Use ls command to get a list of files and directories in the current directory. Then you will get sshkey.private
 
 Step-4: Use cat command to read the contents of a file. Copy the entire key and Paste the key into a text editor means nano tool.Reanme it to key and save it.This process on another terminal.
-
+!![image](./images/image-13-2.png)
 Step-5: Change the permissions of the key file.
 
 Step-6: Use the private key to log in as bandit14.
