@@ -446,7 +446,9 @@ Step 8: Run echo command to get the password of bandit16.  Then you will send al
 
 Step-9: Use cat command to read the contents of a file. Copy the entire key and Paste the key into a text editor means nano tool.Reanme it to key and save it.This process on another terminal.
 
-Step-10: Change the permissions of the bandit16.sshkey file.
+![image](./images/image-16-3.png)
+
+Step-10: Change the permissions of the bandit17.sshkey file.
 
 Step-11: Use the private key to log in as bandit17.
 
