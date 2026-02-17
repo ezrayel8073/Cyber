@@ -735,6 +735,7 @@ Step-9 : After login attemt of bandit26 it will show like bandit26 image.
 ![image](./images/image-25-1.png)
 
  Step-11 : Then try to login again to bandit26.
+ 
 ![image](./images/image-25-2.png)
 
 Step-12 : Open vi from more, While --More-- is visible, press: v
