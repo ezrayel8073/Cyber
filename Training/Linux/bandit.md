@@ -11,6 +11,9 @@
   5. It will navigate Home that means Root, it will shows " root@kali " 
    
   6. It will shows in red color. It is the simple checking that  you are in root or not and below that root you will see " #  " in red color that means Finally you can start the Terminal
+
+  ![image](./images/image-terminal.png)
+  
 ## Level 0
 What you Need to do :
 + Username : bandit0   
