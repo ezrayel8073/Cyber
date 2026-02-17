@@ -818,7 +818,9 @@ Step-11 : Finally you will get the password.getting the password  bandit26 passw
 ### Explination
 Step-1: Open a terminal on your local machine (Command prompt), Make sure git is installed: git --version, If not, install Git using your OS package manager.
 
-Step-2: Run git command for checking installation or not
+Step-2: Run git command for checking installation or not. If installed you will see git version and commands. Otherwise you will need to proper installation.
+
+    git
 
 Step-3:Clone the repository to use the git clone command.
 
