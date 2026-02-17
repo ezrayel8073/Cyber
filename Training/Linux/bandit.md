@@ -713,7 +713,7 @@ Step-4: Login to bandit26 using the key.
 
         ssh -i bandit26.sshkey bandit26@bandit.labs.overthewire.org -p 2220
 Step-5: bandit26 does NOT allow password login with the ssh key. bandit26 does not give a normal shell.
-Check: cat /etc/passwd  it shows lot of files. Then use grep command to find bandit26
+Step-6: Check: cat /etc/passwd  it shows lot of files. Then use grep command to find bandit26
 
 Step-7: use cat command to check the shell of bandit26
 
