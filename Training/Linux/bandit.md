@@ -662,7 +662,7 @@ Step-10: It will show the password for bandit24
 + Port Num : 2220
 ### Commands
 - echo = Display a string
-- nc = netcat
+- nc = netcat connection
 ### Explination
  Strategy:
 
