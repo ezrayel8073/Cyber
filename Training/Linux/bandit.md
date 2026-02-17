@@ -742,11 +742,12 @@ Step-12 : it will show shell location /bin/bash Then Run:
 
 Step-14 : You now have a real bash shell as bandit26.
 
-![image](./images/image-25-4.png)
-
 Step-15 : use ls command to check the files . Then see the files and run the cat command to check the content of the files
 
-Step-16 : Run the cat command to getting the password  bandit26 password  But that password is not useful for bandit26 login Be only open in vi editor because of --more--  
+Step-16 : Run the cat command to getting the password  bandit26 password  But that password is not useful for bandit26 login Be only open in vi editor because of --more-- 
+
+![image](./images/image-25-4.png)
+
 ## Level-26
 + Username : bandit26
 +  Password :  s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
