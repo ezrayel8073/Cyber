@@ -376,7 +376,7 @@ Step-2:  Use the private key to log in as bandit14.
 - nc =
 ### Explination
 
-Step 1: Connect to the server as bandit14.
+Step 1: Connect to the server as bandit14 with the  sshkey.private from bandit13.
 
 ![image](./images/image-14-1.png)
 
