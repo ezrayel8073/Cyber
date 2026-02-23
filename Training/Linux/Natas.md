@@ -13,7 +13,7 @@ Step-5: It will navigate Home that means Root, it will shows " root@kali "
 
 Step-6: It will shows in red color. It is the simple checking that  you are in root or not and below that root you will see " #  " in red color that means Finally you can start the Terminal
 
-Step-7: Go to downnloads using cd downloads
+Step-7: Go to Downnloads using cd downloads
 
 Step-8: Go to Burp suite using cd burpsuite_pro_v2025.6.1
 
@@ -33,13 +33,19 @@ Step 3: In that proxy web you will intercept click on intercept
 
 Step 4: In that intercept you will see the intercept on and intercept off
 
-Step 5: Click on intercept 
+Step 5: Click on intercept (Receive)
 
 Step 6: Go to Firefox Browser (Connection on Foxy proxy extension)
 
 Step 7: Go to natas0.natas.labs.overthewire.org in firefox browser
 
-Step 8: You will see the login page
+Step 8: Set up the proxy on Burp suite in fire fox browser, Then refresh the page
 
-Step 9: Enter the username and password
+Step 9: Then go to Burp suite and click on Proxy tab then click on Proxy history(HTTP History)
+
+Step 10: Click on that page you will request . Then right click on that . you will see the option of export. Then click on send Repester. 
+
+Step 11: Then click on  Repeater and you will see request. Then click on send button. you will see the response.
+
+Step 12: In that response you will see the password for level-1
 
