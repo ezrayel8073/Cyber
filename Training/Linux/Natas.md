@@ -263,13 +263,11 @@ Step 4: You will see the page like this
 
 Step 5: You will need to find the password for level-5
 
-
 Step 6: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh the page
 
 ![image](./images-1/image-0-2.png)                  
 
 ![image](./images-1/image-0-3.png)
-
 
 Step 7: Go to Burp suite, then click on Proxy tab 
 
@@ -279,33 +277,38 @@ Step 9: In that intercept you will see the intercept on and intercept off, Then 
 
 ![image](./images-1/image-0-5.png)
 
-Step 10:  In that Proxy tab then click on history(HTTP History). Then you will see the natas2 http link. Then click on that link, Then you will see the request
+Step 10:  Go to firefox browser, In that output, Then refresh page
 
-Step 11: Then right click on that request. you will see the option of export. Then click on send Repeater. 
+![image](./images-1/image-4-5.png)
 
-Step 12: Then click on  Repeater. Whenever once a highlight after send repeater, which is placed in  menus bar
+Step 11: Go to Burpsuite, In intercept tab, Then you edit referer, Then change natas4 to natas5 in  Raw or pretty in request tab.
 
- Step 13: you will see request. Then click on send button. you will see the response.
+![image](./images-1/image-4-3.png)
 
-Step 14: In that response there is   no password.
+![image](./images-1/image-4-4.png)
 
- ![image](./images-1/image-4-1.png)
+Step 12: Then click forward.
 
-Step 15: Go to firefox browser, Then enter the leve2 link along with robots.txt 
+Step 13: Go to firefox browser, you will the password for level-5
 
-![image](./images-1/image-3-1.png)
+![image](./images-1/image-4-2.png)
 
-Step 16: Then enter the leve2 link along with/s3cr3t/ 
+## Level-5
++ Username : natas5
++  Password : 0n35PkggAPm2zbEpOU802c0x0Msn1ToK 
++ Domain : http://natas5.natas.labs.overthewire.org
 
-![image](./images-1/image-3-2.png)
-
-Step 17: Then click on that users.txt, Then you will see the password for level-3
-
-![image](./images-1/image-3-3.png)
-
+## Explination
 
 
- 
+
+
+
+
+
+
+
+
 
 
 
