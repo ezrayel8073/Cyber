@@ -39,6 +39,15 @@ Step 4: You will see the page like this
 
 Step 5: You will need to find the password for level-1
 
+Step 6: Go to Firefox Browser (Connection on Foxy proxy extension)
+
+Step 7: Go to natas0.natas.labs.overthewire.org in firefox browser
+
+Step 8: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh the page
+
+![image](./images-1/image-0-2.png)                     ![image](./images-1/image-0-3.png)
+
+
 Step 6: Go to Burp suite, then click on Proxy tab 
 
 Step 3: In that proxy web you will intercept, Then  click on intercept
@@ -47,21 +56,23 @@ Step 4: In that intercept you will see the intercept on and intercept off, Then 
 
 ![image](./images-1/image-0-4.png)                     ![image](./images-1/image-0-5.png)
 
-Step 6: Go to Firefox Browser (Connection on Foxy proxy extension)
+Step 9:  In that Proxy tab then click on history(HTTP History). Then you will see the natas 0 http link. Then click on that link, Then you will see the request
 
-Step 7: Go to natas0.natas.labs.overthewire.org in firefox browser
+![image](./images-1/image-0-6.png)                              ![image](./images-1/image-0-7.png)
 
-Step 8: Set up the proxy on Burp suite in fire fox browser, Then refresh the page
+Step 10:Then right click on that request. you will see the option of export. Then click on send Repeater. 
 
-![image](./images-1/image-0-2.png)                     ![image](./images-1/image-0-3.png)
+![image](./images-1/image-0-8.png)
 
-Step 9: Then go to Burp suite and click on Proxy tab then click on Proxy history(HTTP History)
+Step 11: Then click on  Repeater. Whenever once a highlight after send repeater, which is placed in  menus bar
 
-Step 10: Click on that page you will request . Then right click on that . you will see the option of export. Then click on send Repeater. 
+![image](./images-1/image-0-9.png)
 
-Step 11: Then click on  Repeater whereever placed in up menus and you will see request. Then click on send button. you will see the response.
+ Step11|: you will see request. Then click on send button. you will see the response.
 
 Step 12: In that response you will see the password for level-2
+
+ ![image](./images-1/image-0-10.png)
 
 
 
