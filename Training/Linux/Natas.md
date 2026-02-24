@@ -153,21 +153,15 @@ Step 7: Go to Burp suite, then click on Proxy tab
 
 Step 8: In that proxy web you will intercept, Then  click on intercept
 
-Step 9: In that intercept you will see the intercept on and intercept off, Then Click on the intercept on (Receive)
+Step 9: In that intercept you will see the intercept on and intercept off, Then Click on the intercept on (Receive)                 
 
-![image](./images-1/image-0-4.png)                     ![image](./images-1/image-0-5.png)
+![image](./images-1/image-0-5.png)
 
-Step 10:  In that Proxy tab then click on history(HTTP History). Then you will see the natas1 http link. Then click on that link, Then you will see the request
-
-![image](./images-1/image-1-1.png)                              ![image](./images-1/image-1-2.png)
+Step 10:  In that Proxy tab then click on history(HTTP History). Then you will see the natas2 http link. Then click on that link, Then you will see the request
 
 Step 11: Then right click on that request. you will see the option of export. Then click on send Repeater. 
 
-![image](./images-1/image-1-3.png)
-
 Step 12: Then click on  Repeater. Whenever once a highlight after send repeater, which is placed in  menus bar
-
-![image](./images-1/image-1-4.png)
 
  Step 13: you will see request. Then click on send button. you will see the response.
 
@@ -179,11 +173,9 @@ Step 15: Go to firefox browser, Then enter the leve2 link along with file
 
 ![image](./images-1/image-2-2.png)
 
-Step 16: Then click on that users.txt
+Step 16: Then click on that users.txt, Then you will see the password for level-3
 
 ![image](./images-1/image-2-3.png)
-
-Step 17: Then you will see the password for level-3
 
 
 
