@@ -299,9 +299,45 @@ Step 13: Go to firefox browser, you will the password for level-5
 + Domain : http://natas5.natas.labs.overthewire.org
 
 ## Explination
+Step 1:  Go to Firefox Browser (Connection on Foxy proxy extension)
 
+Step 2: Connect to natas1.natas.labs.overthewire.org
 
+Step 3: Then login with username and password
 
+Step 4: You will see the page like this
+
+![image](./images-1/image-4.png)
+
+Step 5: You will need to find the password for level-5
+
+Step 6: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh the page
+
+![image](./images-1/image-0-2.png)                  
+
+![image](./images-1/image-0-3.png)
+
+Step 7: Go to Burp suite, then click on Proxy tab 
+
+Step 8: In that proxy web you will intercept, Then  click on intercept
+
+Step 9: In that intercept you will see the intercept on and intercept off, Then Click on the intercept on (Receive)                 
+
+![image](./images-1/image-0-5.png)
+
+Step 10:  Go to firefox browser, Then refresh page
+
+Step 11: Go to Burpsuite, In intercept tab, Then you edit cookie, Then change logged in =0 to logged in =1 in  Raw or pretty in request tab.
+
+![image](./images-1/image-5-1.png)
+
+![image](./images-1/image-5-2.png)
+
+Step 12: Then click forward.
+
+Step 13: Go to firefox browser, you will the password for level-6
+
+![image](./images-1/image-5-3.png)
 
 
 
