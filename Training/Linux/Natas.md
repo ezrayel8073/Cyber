@@ -339,6 +339,14 @@ Step 13: Go to firefox browser, you will the password for level-6
 
 ![image](./images-1/image-5-3.png)
 
+## Level-6
++ Username : natas6
++  Password : 0RoJwHdSKWFTYR5WuiAewauSuNaBXned
++ Domain : http://natas6.natas.labs.overthewire.org
+
+## Explination
+
+
 
 
 
