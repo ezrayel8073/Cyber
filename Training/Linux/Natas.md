@@ -230,7 +230,7 @@ Step 12: Then click on  Repeater. Whenever once a highlight after send repeater,
 
  Step 13: you will see request. Then click on send button. you will see the response.
 
-Step 14: In that response you will see the file.
+Step 14: In that response there is   no password.
 
  ![image](./images-1/image-3.png)
 
@@ -238,13 +238,21 @@ Step 15: Go to firefox browser, Then enter the leve2 link along with robots.txt
 
 ![image](./images-1/image-3-1.png)
 
-Step 16: Then add this  /s3cr3t/ to along with natas3 link.
+Step 16: Then enter the leve2 link along with/s3cr3t/ 
 
 ![image](./images-1/image-3-2.png)
 
 Step 17: Then click on that users.txt, Then you will see the password for level-3
 
 ![image](./images-1/image-3-3.png)
+
+## Level-4
++ Username : natas4
++  Password : QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
++ Domain : http://natas4.natas.labs.overthewire.org
+
+## Explination
+
 
 
 
