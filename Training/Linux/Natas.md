@@ -345,6 +345,35 @@ Step 13: Go to firefox browser, you will the password for level-6
 + Domain : http://natas6.natas.labs.overthewire.org
 
 ## Explination
+Step 1:  Go to Firefox Browser (Connection on Foxy proxy extension)
+
+Step 2: Connect to natas1.natas.labs.overthewire.org
+
+Step 3: Then login with username and password
+
+Step 4: You will see the page like this, Then click on the link
+
+![image](./images-1/image-6.png)
+
+Step 5: you will see the source code
+
+![image](./images-1/image-6-1.png)
+
+Step 6: Then open natas6 link along with includes/secret.inc
+
+Step 7: Then you will see the blank page, Then inspect that page
+
+![image](./images-1/image-6-2.png)
+
+Step 8: Then you will see the Scecret password, Then copy that
+
+![image](./images-1/image-6-3.png)
+
+Step 9: Go back to the previous page, Then you will paste that secret password
+
+Step 10: Then you will get the password for level-7
+
+![image](./images-1/image-6-4.png)
 
 ## Level-7
 + Username : natas7
