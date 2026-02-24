@@ -13,11 +13,17 @@ Step-5: It will navigate Home that means Root, it will shows " root@kali "
 
 Step-6: It will shows in red color. It is the simple checking that  you are in root or not and below that root you will see " #  " in red color that means Finally you can start the Terminal
 
+![image](./images-1/image-terminal.png)
+
 Step-7: Go to Downnloads using cd downloads
 
 Step-8: Go to Burp suite using cd burpsuite_pro_v2025.6.1
 
 Step-9: Run the Burp suite using java -jar burploader.jar
+
+![image](./images-1/image-terminal-1.png)
+
+![image](./images-1/image-terminal-2.png)
 
 ## Level-0
 What you Need to do :
