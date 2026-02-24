@@ -187,6 +187,13 @@ Step 16: Then click on that users.txt, Then you will see the password for level-
 
 ![image](./images-1/image-2-3.png)
 
+## Level-3
++ Username : natas3
++  Password : 3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
++ Domain : http://natas3.natas.labs.overthewire.org
+
+## Explination
+
 
 
 
