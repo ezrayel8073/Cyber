@@ -45,6 +45,8 @@ Step 3: In that proxy web you will intercept, Then  click on intercept
 
 Step 4: In that intercept you will see the intercept on and intercept off, Then Click on the intercept on (Receive)
 
+![image](./images-1/image-0-4.png)                     ![image](./images-1/image-0-5.png)
+
 Step 6: Go to Firefox Browser (Connection on Foxy proxy extension)
 
 Step 7: Go to natas0.natas.labs.overthewire.org in firefox browser
