@@ -382,7 +382,61 @@ Step 10: Then you will get the password for level-7
 
 ## Explination
 
+Step 1:  Go to Firefox Browser (Connection on Foxy proxy extension)
 
+Step 2: Connect to natas1.natas.labs.overthewire.org
+
+Step 3: Then login with username and password
+
+Step 4: You will see the page like this
+
+![image](./images-1/image-7.png)
+
+Step 5: You will need to find the password for level-8
+
+Step 6: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh the page
+
+![image](./images-1/image-0-2.png)                  
+
+![image](./images-1/image-0-3.png)
+
+Step 7: Go to Burp suite, then click on Proxy tab 
+
+Step 8: In that proxy web you will intercept, Then  click on intercept
+
+Step 9: In that intercept you will see the intercept on and intercept off, Then Click on the intercept on (Receive)                 
+
+![image](./images-1/image-0-5.png)
+
+Step 10:  In that Proxy tab then click on history(HTTP History). Then you will see the natas2 http link. Then click on that link, Then you will see the request
+
+Step 11: Then right click on that request. you will see the option of export. Then click on send Repeater. 
+
+Step 12: Then click on  Repeater. Whenever once a highlight after send repeater, which is placed in  menus bar
+
+ Step 13: you will see request. Then click on send button. you will see the response.
+
+Step 14: In that response there is   no password.
+
+![image](./images-1/image-7-2.png)
+
+Step 15: Then go to firefox browser, Then click home, you will see this
+
+![image](./images-1/image-7-1.png)
+
+Step 16: Then go to /etc/natas_webpass/natas8 along with home
+
+Step 17: Then you will see the password for level-8
+
+![image](./images-1/image-7-3.png)
+
+
+## Level-8
++ Username : natas8
++  Password : xcoXLmzMkoIP9D7hlgPlh9XD7OgLAe5Q 
++ Domain : http://natas8.natas.labs.overthewire.org
+
+## Explination
 
 
 
