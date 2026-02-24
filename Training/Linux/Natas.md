@@ -68,7 +68,7 @@ Step 12: Then click on  Repeater. Whenever once a highlight after send repeater,
 
  Step 13: you will see request. Then click on send button. you will see the response.
 
-Step 14: In that response you will see the password for level-2
+Step 14: In that response you will see the password for level-1
 
  ![image](./images-1/image-0-10.png)
 
@@ -76,31 +76,50 @@ Step 14: In that response you will see the password for level-2
 
 ## Level-1
 + Username : natas1
-+  Password : natas1
-+ Domain : ssh natas1.natas.labs.overthewire.org -p 2220
++  Password : 0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq
++ Domain : http://natas1.natas.labs.overthewire.org
 
 ## Explination
+Step 1:  Go to Firefox Browser (Connection on Foxy proxy extension)
 
-Step 1: Go to Burp suite 
+Step 2: Connect to natas1.natas.labs.overthewire.org
 
-Step 2: Click on Proxy tab
+Step 3: Then login with username and password
 
-Step 3: In that proxy web you will intercept click on intercept
+Step 4: You will see the page like this
 
-Step 4: In that intercept you will see the intercept on and intercept off
+![image](./images-1/image-1.png)
 
-Step 5: Click on intercept (Receive)
+Step 5: You will need to find the password for level-2
 
-Step 6: Go to Firefox Browser (Connection on Foxy proxy extension)
+Step 6: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh the page
 
-Step 7: Go to natas0.natas.labs.overthewire.org in firefox browser
+![image](./images-1/image-0-2.png)                     ![image](./images-1/image-0-3.png)
 
-Step 8: Set up the proxy on Burp suite in fire fox browser, Then refresh the page
 
-Step 9: Then go to Burp suite and click on Proxy tab then click on Proxy history(HTTP History)
+Step 7: Go to Burp suite, then click on Proxy tab 
 
-Step 10: Click on that page you will request . Then right click on that . you will see the option of export. Then click on send Repester. 
+Step 8: In that proxy web you will intercept, Then  click on intercept
 
-Step 11: Then click on  Repeater and you will see request. Then click on send button. you will see the response.
+Step 9: In that intercept you will see the intercept on and intercept off, Then Click on the intercept on (Receive)
 
-Step 12: In that response you will see the password for level-2
+![image](./images-1/image-0-4.png)                     ![image](./images-1/image-0-5.png)
+
+Step 10:  In that Proxy tab then click on history(HTTP History). Then you will see the natas1 http link. Then click on that link, Then you will see the request
+
+Step 11:Then right click on that request. you will see the option of export. Then click on send Repeater. 
+
+![image](./images-1/image-1-1.png)
+
+Step 12: Then click on  Repeater. Whenever once a highlight after send repeater, which is placed in  menus bar
+
+![image](./images-1/image-0-9.png)
+
+ Step 13: you will see request. Then click on send button. you will see the response.
+
+Step 14: In that response you will see the password for level-2
+
+ ![image](./images-1/image-0-10.png)
+
+
+
