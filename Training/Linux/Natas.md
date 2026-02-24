@@ -25,6 +25,51 @@ Step-9: Run the Burp suite using java -jar burploader.jar
 + Domain : ssh natas0.natas.labs.overthewire.org -p 2220
 
 ## Explination
+Step 1:  Go to Firefox Browser (Connection on Foxy proxy extension)
+
+Step 2: Connect to natas0.natas.labs.overthewire.org
+
+Step 3: Then login with username and password
+
+![image](./images-1/image-0.png)
+
+Step 4: You will see the page like this
+
+![image](./images-1/image-0-1.png)
+
+Step 5: You will need to find the password for level-1
+
+Step 6: Go to Burp suite, then click on Proxy tab 
+
+Step 3: In that proxy web you will intercept, Then  click on intercept
+
+Step 4: In that intercept you will see the intercept on and intercept off, Then Click on the intercept on (Receive)
+
+Step 6: Go to Firefox Browser (Connection on Foxy proxy extension)
+
+Step 7: Go to natas0.natas.labs.overthewire.org in firefox browser
+
+Step 8: Set up the proxy on Burp suite in fire fox browser, Then refresh the page
+
+![image](./images-1/image-0-2.png)                     ![image](./images-1/image-0-3.png)
+
+Step 9: Then go to Burp suite and click on Proxy tab then click on Proxy history(HTTP History)
+
+Step 10: Click on that page you will request . Then right click on that . you will see the option of export. Then click on send Repeater. 
+
+Step 11: Then click on  Repeater whereever placed in up menus and you will see request. Then click on send button. you will see the response.
+
+Step 12: In that response you will see the password for level-2
+
+
+
+## Level-1
++ Username : natas1
++  Password : natas1
++ Domain : ssh natas1.natas.labs.overthewire.org -p 2220
+
+## Explination
+
 Step 1: Go to Burp suite 
 
 Step 2: Click on Proxy tab
@@ -47,5 +92,4 @@ Step 10: Click on that page you will request . Then right click on that . you wi
 
 Step 11: Then click on  Repeater and you will see request. Then click on send button. you will see the response.
 
-Step 12: In that response you will see the password for level-1
-
+Step 12: In that response you will see the password for level-2
