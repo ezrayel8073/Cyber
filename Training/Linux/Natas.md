@@ -108,19 +108,21 @@ Step 9: In that intercept you will see the intercept on and intercept off, Then 
 
 Step 10:  In that Proxy tab then click on history(HTTP History). Then you will see the natas1 http link. Then click on that link, Then you will see the request
 
+![image](./images-1/image-1-1.png)                              ![image](./images-1/image-1-2.png)
+
 Step 11:Then right click on that request. you will see the option of export. Then click on send Repeater. 
 
-![image](./images-1/image-0-8.png)
+![image](./images-1/image-1-3.png)
 
 Step 12: Then click on  Repeater. Whenever once a highlight after send repeater, which is placed in  menus bar
 
-![image](./images-1/image-0-9.png)
+![image](./images-1/image-1-4.png)
 
  Step 13: you will see request. Then click on send button. you will see the response.
 
 Step 14: In that response you will see the password for level-1
 
- ![image](./images-1/image-0-10.png)
+ ![image](./images-1/image-1-5.png)
 
 
 ## Level-2
