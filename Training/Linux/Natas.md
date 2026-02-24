@@ -15,11 +15,7 @@ Step-6: It will shows in red color. It is the simple checking that  you are in r
 
 ![image](./images-1/image-terminal.png)
 
-Step-7: Go to Downnloads using cd downloads
-
-Step-8: Go to Burp suite using cd burpsuite_pro_v2025.6.1
-
-Step-9: Run the Burp suite using java -jar burploader.jar
+Step-7: Go to Downnloads . In Downloads Go to Burp suite . Then Run the Burp suite 
 
 ![image](./images-1/image-terminal-1.png)
 
