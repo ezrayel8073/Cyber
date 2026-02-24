@@ -53,11 +53,15 @@ Step 8: In that proxy web you will intercept, Then  click on intercept
 
 Step 9: In that intercept you will see the intercept on and intercept off, Then Click on the intercept on (Receive)
 
-![image](./images-1/image-0-4.png)                     ![image](./images-1/image-0-5.png)
+![image](./images-1/image-0-4.png)                    
+
+ ![image](./images-1/image-0-5.png)
 
 Step 10:  In that Proxy tab then click on history(HTTP History). Then you will see the natas 0 http link. Then click on that link, Then you will see the request
 
-![image](./images-1/image-0-6.png)                              ![image](./images-1/image-0-7.png)
+![image](./images-1/image-0-6.png)                          
+
+![image](./images-1/image-0-7.png)
 
 Step 11: Then right click on that request. you will see the option of export. Then click on send Repeater. 
 
@@ -138,11 +142,7 @@ Step 14: In that response you will see the password for level-2
 + Domain : http://natas2.natas.labs.overthewire.org
 
 ## Explination
-Step 1:  Go to Firefox Browser (Connection on Foxy proxy extension)
-
-Step 2: Connect to natas1.natas.labs.overthewire.org
-
-Step 3: Then login with username and password
+Step 1:  Go to Firefox Browser, Connect to natas1.natas.labs.overthewire.org, Then login with username and password
 
 Step 4: You will see the page like this
 
@@ -155,14 +155,11 @@ Step 6: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh 
 
 ![image](./images-1/image-0-2.png)                  
 
-![image](./images-1/image-0-3.png)
+![image](./images-1/image-0-3.png) 
 
+Step 5: Go to Burp suite, then click on Proxy tab 
 
-Step 7: Go to Burp suite, then click on Proxy tab 
-
-Step 8: In that proxy web you will intercept, Then  click on intercept
-
-Step 9: In that intercept you will see the intercept on and intercept off, Then Click on the intercept on (Receive)                 
+Step 6:  Then Click on the intercept on (Receive)               
 
 ![image](./images-1/image-0-5.png)
 
@@ -193,11 +190,7 @@ Step 16: Then click on that users.txt, Then you will see the password for level-
 
 ## Explination
 
-Step 1:  Go to Firefox Browser (Connection on Foxy proxy extension)
-
-Step 2: Connect to natas1.natas.labs.overthewire.org
-
-Step 3: Then login with username and password
+Step 1:  Go to Firefox Browser, Connect to natas1.natas.labs.overthewire.org, Then login with username and password
 
 Step 4: You will see the page like this
 
@@ -212,12 +205,9 @@ Step 6: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh 
 
 ![image](./images-1/image-0-3.png)
 
+Step 5: Go to Burp suite, then click on Proxy tab 
 
-Step 7: Go to Burp suite, then click on Proxy tab 
-
-Step 8: In that proxy web you will intercept, Then  click on intercept
-
-Step 9: In that intercept you will see the intercept on and intercept off, Then Click on the intercept on (Receive)                 
+Step 6:  Then Click on the intercept on (Receive)                 
 
 ![image](./images-1/image-0-5.png)
 
@@ -251,11 +241,7 @@ Step 17: Then click on that users.txt, Then you will see the password for level-
 + Domain : http://natas4.natas.labs.overthewire.org
 
 ## Explination
-Step 1:  Go to Firefox Browser (Connection on Foxy proxy extension)
-
-Step 2: Connect to natas1.natas.labs.overthewire.org
-
-Step 3: Then login with username and password
+Step 1:  Go to Firefox Browser, Connect to natas1.natas.labs.overthewire.org, Then login with username and password
 
 Step 4: You will see the page like this
 
@@ -269,11 +255,9 @@ Step 6: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh 
 
 ![image](./images-1/image-0-3.png)
 
-Step 7: Go to Burp suite, then click on Proxy tab 
+Step 5: Go to Burp suite, then click on Proxy tab 
 
-Step 8: In that proxy web you will intercept, Then  click on intercept
-
-Step 9: In that intercept you will see the intercept on and intercept off, Then Click on the intercept on (Receive)                 
+Step 6:  Then Click on the intercept on (Receive)               
 
 ![image](./images-1/image-0-5.png)
 
@@ -299,11 +283,7 @@ Step 13: Go to firefox browser, you will the password for level-5
 + Domain : http://natas5.natas.labs.overthewire.org
 
 ## Explination
-Step 1:  Go to Firefox Browser (Connection on Foxy proxy extension)
-
-Step 2: Connect to natas1.natas.labs.overthewire.org
-
-Step 3: Then login with username and password
+Step 1:  Go to Firefox Browser, Connect to natas1.natas.labs.overthewire.org, Then login with username and password
 
 Step 4: You will see the page like this
 
@@ -317,11 +297,9 @@ Step 6: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh 
 
 ![image](./images-1/image-0-3.png)
 
-Step 7: Go to Burp suite, then click on Proxy tab 
+Step 5: Go to Burp suite, then click on Proxy tab 
 
-Step 8: In that proxy web you will intercept, Then  click on intercept
-
-Step 9: In that intercept you will see the intercept on and intercept off, Then Click on the intercept on (Receive)                 
+Step 6:  Then Click on the intercept on (Receive)              
 
 ![image](./images-1/image-0-5.png)
 
@@ -345,11 +323,7 @@ Step 13: Go to firefox browser, you will the password for level-6
 + Domain : http://natas6.natas.labs.overthewire.org
 
 ## Explination
-Step 1:  Go to Firefox Browser (Connection on Foxy proxy extension)
-
-Step 2: Connect to natas1.natas.labs.overthewire.org
-
-Step 3: Then login with username and password
+Step 1:  Go to Firefox Browser, Connect to natas1.natas.labs.overthewire.org, Then login with username and password
 
 Step 4: You will see the page like this, Then click on the link
 
@@ -382,11 +356,7 @@ Step 10: Then you will get the password for level-7
 
 ## Explination
 
-Step 1:  Go to Firefox Browser (Connection on Foxy proxy extension)
-
-Step 2: Connect to natas1.natas.labs.overthewire.org
-
-Step 3: Then login with username and password
+Step 1:  Go to Firefox Browser, Connect to natas1.natas.labs.overthewire.org, Then login with username and password
 
 Step 4: You will see the page like this
 
@@ -400,11 +370,9 @@ Step 6: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh 
 
 ![image](./images-1/image-0-3.png)
 
-Step 7: Go to Burp suite, then click on Proxy tab 
+Step 5: Go to Burp suite, then click on Proxy tab 
 
-Step 8: In that proxy web you will intercept, Then  click on intercept
-
-Step 9: In that intercept you will see the intercept on and intercept off, Then Click on the intercept on (Receive)                 
+Step 6:  Then Click on the intercept on (Receive)                 
 
 ![image](./images-1/image-0-5.png)
 
@@ -440,46 +408,44 @@ Step 17: Then you will see the password for level-8
 
 Step 1:  Go to Firefox Browser, Then Connect to natas1.natas.labs.overthewire.org, Then login with username and password
 
-Step 4: You will see the page like this
+Step 2: You will see the page like this
 
 ![image](./images-1/image-8.png)
 
-Step 5: You will need to find the password for level-8
+Step 3: You will need to find the password for level-8
 
-Step 6: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh the page
+Step 4: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh the page
 
 ![image](./images-1/image-0-2.png)                  
 
 ![image](./images-1/image-0-3.png)
 
-Step 7: Go to Burp suite, then click on Proxy tab 
+Step 5: Go to Burp suite, then click on Proxy tab 
 
-Step 8: In that proxy web you will intercept, Then  click on intercept
-
-Step 9: In that intercept you will see the intercept on and intercept off, Then Click on the intercept on (Receive)                 
+Step 6:  Then Click on the intercept on (Receive)                 
 
 ![image](./images-1/image-0-5.png)
 
-Step 10:  In that Proxy tab then click on history(HTTP History). Then you will see the natas2 http link. Then click on that link, Then you will see the request
+Step 7:  In that Proxy tab then click on history(HTTP History). Then you will see the natas8 http link. Then click on that link, Then you will see the request
 
-Step 11: Then right click on that request. you will see the option of export. Then click on send Repeater. 
+Step 8: Then right click on that request. you will see the option of export. Then click on send Repeater. 
 
-Step 12: Then click on  Repeater. Whenever once a highlight after send repeater, which is placed in  menus bar
+Step 9: Then click on  Repeater. Whenever once a highlight after send repeater, which is placed in  menus bar
 
- Step 13: you will see request. Then click on send button. you will see the response.
+ Step 10: you will see request. Then click on send button. you will see the response.
 
-Step 14: In that response  it shows how to find the password, Go to view source code
+Step 11: In that response  it shows how to find the password, Go to view source code
 
 ![image](./images-1/image-8-1.png)
 
-Step 15: Hence to decode the secrete using 
+Step 12: Hence to decode the secrete using 
 
     php -a
     echo base64_decode(strrev(hex2bin('3d3d516343746d4d6d6c315669563362')));
 
 ![image](./images-1/image-8-2.png)
 
-Step 16: Now we decode the secret , copy that secret, Then go to firefox browser paste the secret , Then you will see the password for level-9
+Step 13: Now we decode the secret , copy that secret, Then go to firefox browser paste the secret , Then you will see the password for level-9
 
 ![image](./images-1/image-8-3.png)
 
