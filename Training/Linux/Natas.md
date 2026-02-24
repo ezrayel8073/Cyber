@@ -23,8 +23,7 @@ Step-9: Run the Burp suite using java -jar burploader.jar
 What you Need to do :
 + Username : natas0
 +  Password : natas0
-+ Domain : ssh natas0.natas.labs.overthewire.org -p 2220
-
++ Domain : http://natas0.natas.labs.overthewire.org
 ## Explination
 Step 1:  Go to Firefox Browser (Connection on Foxy proxy extension)
 
