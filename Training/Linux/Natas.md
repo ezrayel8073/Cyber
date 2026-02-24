@@ -43,7 +43,9 @@ Step 5: You will need to find the password for level-1
 
 Step 6: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh the page
 
-![image](./images-1/image-0-2.png)                     ![image](./images-1/image-0-3.png)
+![image](./images-1/image-0-2.png)                     
+
+![image](./images-1/image-0-3.png)
 
 
 Step 7: Go to Burp suite, then click on Proxy tab 
@@ -95,7 +97,9 @@ Step 5: You will need to find the password for level-2
 
 Step 6: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh the page
 
-![image](./images-1/image-0-2.png)                     ![image](./images-1/image-0-3.png)
+![image](./images-1/image-0-2.png)             
+
+![image](./images-1/image-0-3.png)
 
 
 Step 7: Go to Burp suite, then click on Proxy tab 
@@ -104,11 +108,15 @@ Step 8: In that proxy web you will intercept, Then  click on intercept
 
 Step 9: In that intercept you will see the intercept on and intercept off, Then Click on the intercept on (Receive)
 
-![image](./images-1/image-0-4.png)                     ![image](./images-1/image-0-5.png)
+![image](./images-1/image-0-4.png)                   
+
+![image](./images-1/image-0-5.png)
 
 Step 10:  In that Proxy tab then click on history(HTTP History). Then you will see the natas1 http link. Then click on that link, Then you will see the request
 
-![image](./images-1/image-1-1.png)                              ![image](./images-1/image-1-2.png)
+![image](./images-1/image-1-1.png)                         
+
+![image](./images-1/image-1-2.png)
 
 Step 11: Then right click on that request. you will see the option of export. Then click on send Repeater. 
 
@@ -146,7 +154,9 @@ Step 5: You will need to find the password for level-3
 
 Step 6: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh the page
 
-![image](./images-1/image-0-2.png)                     ![image](./images-1/image-0-3.png)
+![image](./images-1/image-0-2.png)                  
+
+![image](./images-1/image-0-3.png)
 
 
 Step 7: Go to Burp suite, then click on Proxy tab 
