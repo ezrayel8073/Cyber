@@ -307,7 +307,7 @@ Step 3: Then login with username and password
 
 Step 4: You will see the page like this
 
-![image](./images-1/image-4.png)
+![image](./images-1/image-5.png)
 
 Step 5: You will need to find the password for level-5
 
