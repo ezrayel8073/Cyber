@@ -39,10 +39,6 @@ Step 4: You will see the page like this
 
 Step 5: You will need to find the password for level-1
 
-Step 6: Go to Firefox Browser (Connection on Foxy proxy extension)
-
-Step 7: Go to natas0.natas.labs.overthewire.org in firefox browser
-
 Step 8: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh the page
 
 ![image](./images-1/image-0-2.png)                     ![image](./images-1/image-0-3.png)
