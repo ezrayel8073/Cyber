@@ -416,7 +416,7 @@ Step 12: Then click on  Repeater. Whenever once a highlight after send repeater,
 
  Step 13: you will see request. Then click on send button. you will see the response.
 
-Step 14: In that response there is   no password.
+Step 14: In that response there is   no password. But it shows how to find the password
 
 ![image](./images-1/image-7-2.png)
 
