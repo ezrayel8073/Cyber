@@ -430,6 +430,13 @@ Step 13: Now we decode the secret , copy that secret, Then go to firefox browser
 
 ![image](./images-1/image-8-3.png)
 
+## Level-9
++ Username : natas9
++  Password : ZE1ck82lmdGIoErlhQgWND6j2Wzz6b6t
++ Domain : http://natas9.natas.labs.overthewire.org
+## Explination
+
+
 
 
 
