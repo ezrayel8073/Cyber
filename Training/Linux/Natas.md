@@ -460,7 +460,25 @@ Step 5: Then you will see the password for level-10
 +  Password : t7I5VHvpa14sJTUGV0cbEsbYfFP2dmOu
 + Domain : http://natas10.natas.labs.overthewire.org
 ## Explination
+Step 1:  Go to Firefox Browser, Then Connect to natas10.natas.labs.overthewire.org, Then login with username and password
 
+Step 2: You will see the page like this
+
+![image](./images-1/image-10.png)
+
+Step 3: Then click view source code
+
+![image](./images-1/image-10-1.png)
+
+Step 4: So, we will use (;) to execute multiple commands. We will try to read the password at the next level.
+
+    ;cat /etc/natas_webpass/natas10
+
+![image](./images-1/image-9-2.png)
+
+Step 5: Then you will see the password for level-10
+
+![image](./images-1/image-9-3.png)
 
 
 
