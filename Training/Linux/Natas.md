@@ -128,7 +128,7 @@ Step 12: Then click on  Repeater. Whenever once a highlight after send repeater,
 
  Step 13: you will see request. Then click on send button. you will see the response.
 
-Step 14: In that response you will see the password for level-1
+Step 14: In that response you will see the password for level-2
 
  ![image](./images-1/image-1-5.png)
 
