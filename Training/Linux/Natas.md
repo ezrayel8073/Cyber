@@ -470,15 +470,22 @@ Step 3: Then click view source code
 
 ![image](./images-1/image-10-1.png)
 
-Step 4: So, we will use (;) to execute multiple commands. We will try to read the password at the next level.
+Step 4: So, we will use (.*) to execute multiple commands
 
-    ;cat /etc/natas_webpass/natas10
+    .* /etc/natas_webpass/natas11
 
-![image](./images-1/image-9-2.png)
+![image](./images-1/image-10-2.png)
 
 Step 5: Then you will see the password for level-10
 
-![image](./images-1/image-9-3.png)
+![image](./images-1/image-10-3.png)
+
+## Level-11
++ Username : natas11
++  Password : UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
++ Domain : http://natas11.natas.labs.overthewire.org
+## Explination
+
 
 
 
