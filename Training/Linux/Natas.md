@@ -47,7 +47,6 @@ Step 6: Set up the proxy on Burp suite in fire fox browser (Send), Then refresh 
 
 ![image](./images-1/image-0-3.png)
 
-
 Step 7: Go to Burp suite, then click on Proxy tab 
 
 Step 8: In that proxy web you will intercept, Then  click on intercept
@@ -179,7 +178,7 @@ Step 14: In that response you will see the file.
 
  ![image](./images-1/image-2-1.png)
 
-Step 15: Go to firefox browser, Then enter the leve2 link along with file 
+Step 15: Then foward the link or Disable the Burpsuite, Then Go to firefox browser, Then enter the leve2 link along with file 
 
 ![image](./images-1/image-2-2.png)
 
@@ -234,7 +233,7 @@ Step 14: In that response there is   no password.
 
  ![image](./images-1/image-3.png)
 
-Step 15: Go to firefox browser, Then enter the leve2 link along with robots.txt 
+Step 15: Then foward the link or Disable the Burpsuite, Then Go to firefox browser, Then enter the leve2 link along with robots.txt 
 
 ![image](./images-1/image-3-1.png)
 
