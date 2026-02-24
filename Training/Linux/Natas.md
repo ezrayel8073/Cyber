@@ -20,6 +20,7 @@ Step-8: Go to Burp suite using cd burpsuite_pro_v2025.6.1
 Step-9: Run the Burp suite using java -jar burploader.jar
 
 ## Level-0
+What you Need to do :
 + Username : natas0
 +  Password : natas0
 + Domain : ssh natas0.natas.labs.overthewire.org -p 2220
