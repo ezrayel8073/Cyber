@@ -58,7 +58,7 @@ Step 10:  In that Proxy tab then click on history(HTTP History). Then you will s
 
 ![image](./images-1/image-0-6.png)                              ![image](./images-1/image-0-7.png)
 
-Step 11:Then right click on that request. you will see the option of export. Then click on send Repeater. 
+Step 11: Then right click on that request. you will see the option of export. Then click on send Repeater. 
 
 ![image](./images-1/image-0-8.png)
 
@@ -110,7 +110,7 @@ Step 10:  In that Proxy tab then click on history(HTTP History). Then you will s
 
 ![image](./images-1/image-1-1.png)                              ![image](./images-1/image-1-2.png)
 
-Step 11:Then right click on that request. you will see the option of export. Then click on send Repeater. 
+Step 11: Then right click on that request. you will see the option of export. Then click on send Repeater. 
 
 ![image](./images-1/image-1-3.png)
 
