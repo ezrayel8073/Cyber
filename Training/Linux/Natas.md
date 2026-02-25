@@ -576,7 +576,38 @@ Step 10: Then you will see the password for level-12
 +  Password : yZdkjAYZRd3R7tq7T5kXMjMJlOIkzDeB
 + Domain : http://natas12.natas.labs.overthewire.org
 ## Explination
+Step 1:  Go to Firefox Browser, Then Connect to natas12.natas.labs.overthewire.org, Then login with username and password
 
+Step 2: You will see the page like this
+
+![image](./images-1/image-12.png)
+
+Step 3: Then you want to upload file but not get password for level-13
+
+Step 4: Then you will see the source code. Found the ext that means it is a vulnarabilities
+
+![image](./images-1/image-12-1.png)
+
+Step 5: So change the ext .jpg to .php, In a code by inspecting the source code.
+
+![image](./images-1/image-12-2.png)
+
+Step 6: Then you need to upload a file . Create file with name .php by using nano command
+
+![image](./images-1/image-12-3.png)
+
+Step 7: Then you will upload the file
+
+![image](./images-1/image-12-4.png)
+
+Step 8: Then you will see the uploaded file, Then click on that file
+
+![image](./images-1/image-12-5.png)
+
+Step 9:  Then you will see the password for level-13
+
+![image](./images-1/image-12-6.png)
+ 
 ## Level-13
 + Username : natas13
 +  Password : trbs5pCjCrkuSknBBKHhaBxq6Wm1j3LC
