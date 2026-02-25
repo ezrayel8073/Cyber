@@ -563,7 +563,13 @@ Step 8: Found the key. Then we will write php code.
 
 ![image](./images-1/image-11-5.png)
 
-Step 9: Then you will see the group of charecters, copy that. Then Go to Burpsuite, Then paste that in data at cookie, Then click on forward. Then you will see the password for level-12
+Step 9: Then you will see the group of charecters, copy that. Then Go to Burpsuite, Then paste that in data at cookie, Then click on forward.
+
+![image](./images-1/image-11-6.png)
+
+Step 10: Then you will see the password for level-12
+
+![image](./images-1/image-11-7.png)
 
 
 
