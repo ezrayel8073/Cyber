@@ -485,7 +485,28 @@ Step 5: Then you will see the password for level-10
 +  Password : UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
 + Domain : http://natas11.natas.labs.overthewire.org
 ## Explination
+Step 1:  Go to Firefox Browser, Then Connect to natas11.natas.labs.overthewire.org, Then login with username and password
 
+Step 2: You will see the page like this
+
+![image](./images-1/image-11.png)
+
+Step 3: Then click view source code
+
+![image](./images-1/image-11-1.png)
+![image](./images-1/image-11-2.png)
+
+Step 4: In that source code, data in cookie . So, we will change that data in cookie. 
+
+Step 5: Before that we set up the firefox browser proxy, into Burpsuite(Send). Then go to firefox browser, Then refresh page
+
+Step 6: Go to Burpsuite then click on Proxy tab then click on intercept on (Receive)
+
+Step 7:Click on that natas11 link Then you will see the request, In a cookie you will see the data. Then decode it.
+
+![image](./images-1/image-11-3.png)
+
+![image](./images-1/image-11-4.png)                                ![image](./images-1/image-11-5.png)
 
 
 
