@@ -500,13 +500,21 @@ Step 4: In that source code, data in cookie . So, we will change that data in co
 
 Step 5: Before that we set up the firefox browser proxy, into Burpsuite(Send). Then go to firefox browser, Then refresh page
 
-Step 6: Go to Burpsuite then click on Proxy tab then click on intercept on (Receive)
-
-Step 7:Click on that natas11 link Then you will see the request, In a cookie you will see the data. Then decode it.
+Step 6: Go to Burpsuite, then click on intercept on (Receive), Click on that natas11 link Then you will see the request, In a cookie you will see the data. Then decode it.
 
 ![image](./images-1/image-11-3.png)
 
-![image](./images-1/image-11-4.png)                                ![image](./images-1/image-11-5.png)
+![image](./images-1/image-11-4.png)                                
+
+![image](./images-1/image-11-5.png)
+
+Step 7: It has XOR encoded data. So, We will find the key. So, use online php , Then write php code.
+
+![image](./images-1/image-11-6.png)
+
+Step 8: 
+
+
 
 
 
