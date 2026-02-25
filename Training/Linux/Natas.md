@@ -588,7 +588,7 @@ Step 4: Then you will see the source code. Found the ext (extention) that means 
 
 ![image](./images-1/image-12-1.png)
 
-Step 5: So change the ext .jpg to .php, In a code by inspecting the source code.
+Step 5: So change the extention .jpg to .php, In a code by inspecting the source code.
 
 ![image](./images-1/image-12-2.png)
 
