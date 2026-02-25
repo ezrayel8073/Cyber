@@ -653,6 +653,13 @@ step 11: Then you will see the password for level-14
 
 ![image](./images-1/image-13-8.png)
 
+## Level-14
++ Username : natas14
++  Password : z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ
++ Domain : http://natas14.natas.labs.overthewire.org
+## Explination
+
+
 
 
 
