@@ -658,6 +658,25 @@ step 11: Then you will see the password for level-14
 +  Password : z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ
 + Domain : http://natas14.natas.labs.overthewire.org
 ## Explination
+Step 1:  Go to Firefox Browser, Then Connect to natas14.natas.labs.overthewire.org, Then login with username and password
+
+Step 2: You will see the page like this
+
+![image](./images-1/image-14.png)
+
+Step 3: Then click view source code
+
+![image](./images-1/image-14-1.png)
+
+Step 4: Then you will OR operation , to find the password,  Then click on that Login.
+
+![image](./images-1/image-14-2.png)
+
+Step 5:  Do not touch password block, enter in username block only, other wise it will show error
+
+Step 6: Then you will see the password for level-15
+
+![image](./images-1/image-14-3.png)
 
 
 
