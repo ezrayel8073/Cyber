@@ -500,21 +500,70 @@ Step 4: In that source code, data in cookie . So, we will change that data in co
 
 Step 5: Before that we set up the firefox browser proxy, into Burpsuite(Send). Then go to firefox browser, Then refresh page
 
-Step 6: Go to Burpsuite, then click on intercept on (Receive), Click on that natas11 link Then you will see the request, In a cookie you will see the data. Then decode it.
+Step 6: Go to Burpsuite, then click on intercept on (Receive), Click on that natas11 link Then you will see the request, In a cookie you will see the data. Then decode it. For decode the data we will use Burpsuite or Any other decoder website.
 
 ![image](./images-1/image-11-3.png)
 
-![image](./images-1/image-11-4.png)                                
+Step 7: It has XOR encoded data. So, We will find the key. So, use online php , Then write php code.
+
+    <html>
+    <body>
+
+    <?php
+
+    $xor_encrypted_text = base64_decode("HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg=");
+    $variable = array( "showpassword"=>"no", "bgcolor"=>"#ffffff");
+    $original_text = json_encode($variable);
+    function xor_encrypt($a, $b) {
+    $outText = '';
+
+    for ($i = 0; $i < strlen($a); $i++) {
+        $outText .= $a[$i] ^ $b[$i];
+        }
+    echo $outText;
+    }
+    xor_encrypt($xor_encrypted_text, $original_text);
+
+    ?>
+
+    </body>
+    </html>
+
+![image](./images-1/image-11-4.png)
+
+Step 8: Found the key. Then we will write php code.
+     
+    <html>
+    <body>
+
+    <?php
+
+    function xor_encrypt($in) {
+    $key = 'eDWo';
+    $text = $in;
+    $outText = '';
+
+    // Iterate through each character
+
+    for($i=0;$i<strlen($text);$i++) {
+    $outText .= $text[$i] ^ $key[$i % strlen($key)];
+    }
+
+    return $outText;
+    
+    }
+
+    $variable = array( "showpassword"=>"yes", "bgcolor"=>"#ffffff");
+    echo base64_encode(xor_encrypt(json_encode($variable)));
+
+    ?>
+
+    </body>
+    </html>
 
 ![image](./images-1/image-11-5.png)
 
-Step 7: It has XOR encoded data. So, We will find the key. So, use online php , Then write php code.
-
-![image](./images-1/image-11-6.png)
-
-Step 8: 
-
-
+Step 9: Then you will see the group of charecters, copy that. Then Go to Burpsuite, Then paste that in data at cookie, Then click on forward. Then you will see the password for level-12
 
 
 
