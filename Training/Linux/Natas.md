@@ -577,6 +577,11 @@ Step 10: Then you will see the password for level-12
 + Domain : http://natas12.natas.labs.overthewire.org
 ## Explination
 
+## Level-13
++ Username : natas13
++  Password : trbs5pCjCrkuSknBBKHhaBxq6Wm1j3LC
++ Domain : http://natas13.natas.labs.overthewire.org
+## Explination
 
 
 
