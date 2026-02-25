@@ -584,7 +584,7 @@ Step 2: You will see the page like this
 
 Step 3: Then you want to upload file but not get password for level-13
 
-Step 4: Then you will see the source code. Found the ext that means it is a vulnarabilities
+Step 4: Then you will see the source code. Found the ext (extention) that means it is a vulnarabilities
 
 ![image](./images-1/image-12-1.png)
 
