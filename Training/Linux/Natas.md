@@ -613,7 +613,45 @@ Step 9:  Then you will see the password for level-13
 +  Password : trbs5pCjCrkuSknBBKHhaBxq6Wm1j3LC
 + Domain : http://natas13.natas.labs.overthewire.org
 ## Explination
+Step 1:  Go to Firefox Browser, Then Connect to natas13.natas.labs.overthewire.org, Then login with username and password
 
+Step 2: You will see the page like this
+
+![image](./images-1/image-13.png)
+
+Step 3: Then click view source code
+
+![image](./images-1/image-13-1.png)
+
+Step 4:  It accept only image format only , That's why we use BMP file format.
+
+Step 5:  Create file with name .bmp by using nano command
+
+![image](./images-1/image-13-2.png)
+
+Step 6: File convert into image format by using BMP file format
+
+![image](./images-1/image-13-3.png)
+
+step 7: Then upload the file. But you will not get the password for level-14
+
+![image](./images-1/image-13-4.png)
+
+Step 8: Go to Browser send to Burpsuite, Then refresh the page, Return back Browser upload a file Again send to Burpsuite, Then refresh the page 
+
+![image](./images-1/image-13-5.png)
+
+Step 9: Then edit the properties of file in Burpsuite, Then click on forward
+
+![image](./images-1/image-13-6.png)
+
+Step 10: It shows like this, Then click on that link, navigate to Burpsuite then click forward
+
+![image](./images-1/image-13-7.png)
+
+step 11: Then you will see the password for level-14
+
+![image](./images-1/image-13-8.png)
 
 
 
