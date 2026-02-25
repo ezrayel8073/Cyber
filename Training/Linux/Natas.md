@@ -571,6 +571,13 @@ Step 10: Then you will see the password for level-12
 
 ![image](./images-1/image-11-7.png)
 
+## Level-12
++ Username : natas12
++  Password : yZdkjAYZRd3R7tq7T5kXMjMJlOIkzDeB
++ Domain : http://natas12.natas.labs.overthewire.org
+## Explination
+
+
 
 
 
