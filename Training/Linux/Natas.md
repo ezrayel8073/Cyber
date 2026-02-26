@@ -1002,5 +1002,19 @@ Step 5: Then you will get the password for Natas19
 + Domain : ssh natas19.natas.labs.overthewire.org -p 2220
 
 ## Explination
+Step 1:  Go to Firefox Browser, Then Connect to natas19.natas.labs.overthewire.org, Then login with username and password
+
+Step 2: You will see the page like this
+
+![image](./images-1/image-19.png)
+
+
+Step 3: Write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
+
+
+Step 4: It will fetch one by one like loop, By using of Bruteforce attack, Then you will wait until it will get the password for Natas20
+
+
+
 
 
