@@ -1224,5 +1224,21 @@ Step 3: Lets view the source code
 
 ![image](./images-1/image-23-1.png)
 
-Step 4: In that source code iloveyou >10 numarical value in php code is 11
-It is a php type juggling converts the leading digits to an integer, making it 11iloveyou behave as 11.
+Step 4: In that source code iloveyou >10 numarical value in php code is 11.
+
+Step 5: It is a php type juggling converts the leading digits to an integer, making it 11iloveyou behave as 11.
+
+Step 6: Then we will enter 11iloveyou then click on login.
+
+![image](./images-1/image-23-2.png)
+
+Step 7: Then you will see the password
+
+![image](./images-1/image-23-3.png)
+
+## Level-24
++ Username : natas24
++  Password : MeuqmfJ8DDKuTr5pcvzFKSwlxedZYEWd
++ Domain : http://natas24.natas.labs.overthewire.org
+
+## Explination
