@@ -1162,4 +1162,12 @@ Step 7: So, we will Write a code like this, In nano editor, Then save the file, 
 
  Step 8: Then you will get the password for Natas22
 
-![image](./images-1/image-21-4.png)   
+![image](./images-1/image-21-4.png) 
+
+
+## Level-22
++ Username : natas22
++  Password : d8rwGBl0Xslg3b76uh3fEbSlnOUBlozz
++ Domain : http://natas22.natas.labs.overthewire.org
+
+## Explination
