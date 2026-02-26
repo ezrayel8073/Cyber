@@ -888,3 +888,9 @@ Step 9: It will fetch one by one like loop, By using of Bruteforce attack, Then 
 Step 10: Finally it will get the password for level-18
 
 ![image](./images-1/image-17-5.png)
+
+## Level-18
++ Username : natas18
++  Password : 6OG1PbKdVjyBlpxgD4DDbRG6ZLlCGgCJ
++ Domain : http://natas18.natas.labs.overthewire.org
+## Explination
