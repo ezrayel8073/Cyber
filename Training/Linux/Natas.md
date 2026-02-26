@@ -1052,4 +1052,47 @@ Step 5: Finally it will get the password for Natas20
 + Domain : http://natas20.natas.labs.overthewire.org
 
 ## Explination
+Step 1:  Go to Firefox Browser, Then Connect to natas20.natas.labs.overthewire.org, Then login with username and password
+
+Step 2: You will see the page like this
+
+![image](./images-1/image-20.png)
+
+Step 3: Lets view the source code
+
+![image](./images-1/image-20-1.png)
+
+![image](./images-1/image-20-2.png)
+
+Step 4: In a code it has a debug , So we will use it, at the along with the natas20 link
+
+ ![image](./images-1/image-20-4.png)
+
+Step 5: Using try\nadmin 1 , But there is no output
+
+![image](./images-1/image-20-3.png)
+
+Step 6: Then using try\nadmin 1, set up the proxy on Burp suite in fire fox browser (Send), Then Click change the name
+
+Step 7: Go to Burp suite, then click in intercept on (Receive), You will see the request
+
+![image](./images-1/image-20-5.png)
+
+Step 8: Then change the name in a raw at the request (%0A is convert to \n), Then click on forward
+
+![image](./images-1/image-20-6.png)
+
+Step 9: But in Browser doesn't show the output
+
+Step 10: Then Again using try\nadmin 1, set up the proxy on Burp suite in fire fox browser (Send),  Click change the name
+
+![image](./images-1/image-20-7.png)
+
+Step 11: Then In a Burpsuite, change the name in a raw at the request, Then click on forward
+
+Step 12: Then you will get the password for Natas21
+
+![image](./images-1/image-20-8.png)
+
+
 
