@@ -1171,3 +1171,47 @@ Step 7: So, we will Write a code like this, In nano editor, Then save the file, 
 + Domain : http://natas22.natas.labs.overthewire.org
 
 ## Explination
+Step 1:  Go to Firefox Browser, Then Connect to natas22.natas.labs.overthewire.org, Then login with username and password
+
+Step 2: You will see the page like this
+
+![image](./images-1/image-22.png)
+
+Step 3: Lets view the source code
+
+![image](./images-1/image-22-1.png)
+
+
+Step 4: In that source code revelio function is used to get the password for level-22
+
+![image](./images-1/image-22-2.png)
+
+Step 5:  Then we will set up to proxy on Burp suite in fire fox browser (Send), In that source code http link search along with /?revelio
+
+Step 6: Then switch on the intercept on (Receive), Then it will catch the request
+
+![image](./images-1/image-22-3.png)
+
+Step 7: Then navigate to http history, Then you will see the natas22 http link. Then click on that link, Then you will see the request
+
+Step 8: Then right click on that request. you will see the option of export. Then click on send Repeater.
+
+Step 9: Click on  Repeater. Whenever once a highlight after send repeater, which is placed in  menus bar
+
+![image](./images-1/image-22-4.png)
+
+ Step 10: you will see request. Then click on send button. you will see the response.
+
+![image](./images-1/image-22-5.png)
+
+Step 11: In that response you will see the password
+
+![image](./images-1/image-22-6.png)
+
+## Level-23
++ Username : natas23
++  Password : dIUQcI3uSus1JEOSSWRAEXBG8KbR8tRs
++ Domain : http://natas23.natas.labs.overthewire.org
+
+## Explination
+
