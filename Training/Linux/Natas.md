@@ -1214,4 +1214,15 @@ Step 11: In that response you will see the password
 + Domain : http://natas23.natas.labs.overthewire.org
 
 ## Explination
+Step 1:  Go to Firefox Browser, Then Connect to natas23.natas.labs.overthewire.org, Then login with username and password
 
+Step 2: You will see the page like this
+
+![image](./images-1/image-23.png)
+
+Step 3: Lets view the source code
+
+![image](./images-1/image-23-1.png)
+
+Step 4: In that source code iloveyou >10 numarical value in php code is 11
+It is a php type juggling converts the leading digits to an integer, making it 11iloveyou behave as 11.
