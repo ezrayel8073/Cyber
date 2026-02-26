@@ -996,4 +996,11 @@ Step 5: Then you will get the password for Natas19
 
 ![image](./images-1/image-18-14.png)
 
+## Level-19
++ Username : natas19
++  Password : tnwER7PdfWkxsG4FNWUtoAZ9VyZTJqJr
++ Domain : ssh natas19.natas.labs.overthewire.org -p 2220
+
+## Explination
+
 
