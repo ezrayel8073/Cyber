@@ -906,7 +906,7 @@ Step 3: Lets view the source code
 
 ![image](./images-1/image-18-2.png)
 
-Step 4: Max id declared has 640 we can use brutefore upto 1 to 640
+Step 4: Max id declared has 640 we can use bruteforce upto 1 to 640
 
 Step 5: We need to use Bruteforce attack to get the password for level-18, In Burpsute,  brut force attack can be  done using the intruder function
 
