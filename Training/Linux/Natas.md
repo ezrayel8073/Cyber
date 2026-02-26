@@ -1242,3 +1242,34 @@ Step 7: Then you will see the password
 + Domain : http://natas24.natas.labs.overthewire.org
 
 ## Explination
+Step 1:  Go to Firefox Browser, Then Connect to natas24.natas.labs.overthewire.org, Then login with username and password
+
+Step 2: You will see the page like this
+
+![image](./images-1/image-24.png)
+
+Step 3: Lets view the source code
+
+![image](./images-1/image-24-1.png)
+
+Step 4: Then we will enter 11iloveyou,  then click login
+
+![image](./images-1/image-24-2.png)
+
+Step 5: Then in search bar you will see the /?passwd=11iloveyou
+
+![image](./images-1/image-24-3.png)
+
+Step 6: Then in that search bar we will use array []
+
+Step 7: Then we will get the password for level-25
+
+![image](./images-1/image-24-4.png)
+
+## Level-25
++ Username : natas25
++  Password : ckELKUWZUfpOv6uxS6M7lXBpBssJZ4Ws
++ Domain : http://natas25.natas.labs.overthewire.org
+
+## Explination
+
