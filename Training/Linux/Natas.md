@@ -808,6 +808,6 @@ Step 4: Then write a code like this, In nano editor, Then save the file, Then Ru
 
 Step 5: It will fetch one by one like loop, By using of Bruteforce attack, Then you will wait until it will get the password for level-17
 
-Step 6: It is slow process, That's why we have more patience to get the password for level-17 
+Step 6: It is slow process, That's why we need to have more patience to get the password for level-17 
 
 ![image](./images-1/image-16-2.png)
