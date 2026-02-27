@@ -26,7 +26,7 @@ What you Need to do :
 + Username : natas0
 +  Password : natas0
 + Domain : http://natas0.natas.labs.overthewire.org
-## Explination
+## Explanation
 Step 1:  Go to Firefox Browser (Connection on Foxy proxy extension)
 
 Step 2: Connect to natas0.natas.labs.overthewire.org
@@ -81,7 +81,7 @@ Step 14: In that response you will see the password for level-1
 + Username : natas1
 +  Password : 0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq
 + Domain : http://natas1.natas.labs.overthewire.org
-## Explination
+## Explanarion
 Step 1:  Go to Firefox Browser (Connection on Foxy proxy extension)
 
 Step 2: Connect to natas1.natas.labs.overthewire.org
@@ -134,7 +134,7 @@ Step 14: In that response you will see the password for level-2
 + Username : natas2
 +  Password : TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI
 + Domain : http://natas2.natas.labs.overthewire.org
-## Explination
+## Explanarion
 Step 1:  Go to Firefox Browser, Connect to natas2.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -179,7 +179,7 @@ Step 13: Then click on that users.txt, Then you will see the password for level-
 + Username : natas3
 +  Password : 3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
 + Domain : http://natas3.natas.labs.overthewire.org
-## Explination
+## Explanarion
 Step 1:  Go to Firefox Browser, Connect to natas3.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -228,7 +228,7 @@ Step 14: Then click on that users.txt, Then you will see the password for level-
 + Username : natas4
 +  Password : QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
 + Domain : http://natas4.natas.labs.overthewire.org
-## Explination
+## Explanarion
 Step 1:  Go to Firefox Browser, Connect to natas4.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -269,7 +269,7 @@ Step 10: Go to firefox browser, you will the password for level-5
 + Username : natas5
 +  Password : 0n35PkggAPm2zbEpOU802c0x0Msn1ToK 
 + Domain : http://natas5.natas.labs.overthewire.org
-## Explination
+## Explanarion
 Step 1:  Go to Firefox Browser, Connect to natas5.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -308,7 +308,7 @@ Step 10: Go to firefox browser, you will the password for level-6
 + Username : natas6
 +  Password : 0RoJwHdSKWFTYR5WuiAewauSuNaBXned
 + Domain : http://natas6.natas.labs.overthewire.org
-## Explination
+## Explanarion
 Step 1:  Go to Firefox Browser, Connect to natas6.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this, Then click on the link
@@ -339,7 +339,7 @@ Step 8: Then you will get the password for level-7
 + Username : natas7
 +  Password : bmg8SvU1LizuWjx3y7xkNERkHxGre0GS
 + Domain : http://natas7.natas.labs.overthewire.org
-## Explination
+## Explanarion
 Step 1:  Go to Firefox Browser, Connect to natas7.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -386,7 +386,7 @@ Step 14: Then you will see the password for level-8
 + Username : natas8
 +  Password : xcoXLmzMkoIP9D7hlgPlh9XD7OgLAe5Q 
 + Domain : http://natas8.natas.labs.overthewire.org
-## Explination
+## Explanarion
 Step 1:  Go to Firefox Browser, Then Connect to natas8.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -434,7 +434,7 @@ Step 13: Now we decode the secret , copy that secret, Then go to firefox browser
 + Username : natas9
 +  Password : ZE1ck82lmdGIoErlhQgWND6j2Wzz6b6t
 + Domain : http://natas9.natas.labs.overthewire.org
-## Explination
+## Explanarion
 Step 1:  Go to Firefox Browser, Then Connect to natas9.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -459,7 +459,7 @@ Step 5: Then you will see the password for level-10
 + Username : natas10
 +  Password : t7I5VHvpa14sJTUGV0cbEsbYfFP2dmOu
 + Domain : http://natas10.natas.labs.overthewire.org
-## Explination
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas10.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -484,7 +484,7 @@ Step 5: Then you will see the password for level-10
 + Username : natas11
 +  Password : UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
 + Domain : http://natas11.natas.labs.overthewire.org
-## Explination
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas11.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -575,7 +575,7 @@ Step 10: Then you will see the password for level-12
 + Username : natas12
 +  Password : yZdkjAYZRd3R7tq7T5kXMjMJlOIkzDeB
 + Domain : http://natas12.natas.labs.overthewire.org
-## Explination
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas12.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -612,7 +612,7 @@ Step 9:  Then you will see the password for level-13
 + Username : natas13
 +  Password : trbs5pCjCrkuSknBBKHhaBxq6Wm1j3LC
 + Domain : http://natas13.natas.labs.overthewire.org
-## Explination
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas13.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -657,7 +657,7 @@ step 11: Then you will see the password for level-14
 + Username : natas14
 +  Password : z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ
 + Domain : http://natas14.natas.labs.overthewire.org
-## Explination
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas14.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -682,7 +682,7 @@ Step 6: Then you will see the password for level-15
 + Username : natas15
 +  Password : SdqIqBsFcz3yotlNYErZSZwblkm0lrvx
 + Domain : http://natas15.natas.labs.overthewire.org
-## Explination  
+## Explanation  
 Step 1:  Go to Firefox Browser, Then Connect to natas15.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -750,7 +750,7 @@ Step 9: Then you will see the password for level-16
 + Username : natas16
 +  Password : hPkjKYviLQctEW33QmuXL6eDVfMW4sGo
 + Domain : http://natas16.natas.labs.overthewire.org
-## Explination
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas16.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -816,7 +816,7 @@ Step 6: It is slow process, That's why we need to have more patience to get the 
 + Username : natas17
 +  Password : EqjHJbo7LFNb8vwhHb9s75hokh5TF0OC
 + Domain : http://natas17.natas.labs.overthewire.org
-## Explination
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas17.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -893,7 +893,7 @@ Step 10: Finally it will get the password for level-18
 + Username : natas18
 +  Password : 6OG1PbKdVjyBlpxgD4DDbRG6ZLlCGgCJ
 + Domain : http://natas18.natas.labs.overthewire.org
-## Explination
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas18.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -1001,7 +1001,7 @@ Step 5: Then you will get the password for Natas19
 +  Password : tnwER7PdfWkxsG4FNWUtoAZ9VyZTJqJr
 + Domain : ssh natas19.natas.labs.overthewire.org -p 2220
 
-## Explination
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas19.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -1051,7 +1051,7 @@ Step 5: Finally it will get the password for Natas20
 +  Password : p5mCvP7GS2K6Bmt3gqhM2Fc1A5T8MVyw
 + Domain : http://natas20.natas.labs.overthewire.org
 
-## Explination
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas20.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -1100,7 +1100,7 @@ Step 12: Then you will get the password for Natas21
 +  Password : BPhv63cKE1lkQl04cE5CuFTzXe15NfiH
 + Domain : http://natas21.natas.labs.overthewire.org
 
-## Explination
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas21.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -1170,7 +1170,7 @@ Step 7: So, we will Write a code like this, In nano editor, Then save the file, 
 +  Password : d8rwGBl0Xslg3b76uh3fEbSlnOUBlozz
 + Domain : http://natas22.natas.labs.overthewire.org
 
-## Explination
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas22.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -1213,7 +1213,7 @@ Step 11: In that response you will see the password
 +  Password : dIUQcI3uSus1JEOSSWRAEXBG8KbR8tRs
 + Domain : http://natas23.natas.labs.overthewire.org
 
-## Explination
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas23.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -1241,7 +1241,7 @@ Step 7: Then you will see the password
 +  Password : MeuqmfJ8DDKuTr5pcvzFKSwlxedZYEWd
 + Domain : http://natas24.natas.labs.overthewire.org
 
-## Explination
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas24.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -1271,7 +1271,7 @@ Step 7: Then we will get the password for level-25
 +  Password : ckELKUWZUfpOv6uxS6M7lXBpBssJZ4Ws
 + Domain : http://natas25.natas.labs.overthewire.org
 
-## Explination
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas25.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -1352,7 +1352,7 @@ print(response.text)
 +  Password : cVXXwxMS3Y26n5UZU89QgpGmWCelaQlE
 + Domain : http://natas26.natas.labs.overthewire.org
 
-## Explination
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas26.natas.labs.overthewire.org, Then login with username and password
 
 ![image](./images-1/image-26.png)
@@ -1394,7 +1394,7 @@ Step 9: Then we will use img/shell.php , Then along with natas26 link, Then load
 +  Password :  u3RRffXjysjgwFU6b9xa23i6prmUsYne
 + Domain : http://natas27.natas.labs.overthewire.org
 
-## Explination
+## Explanarion
 
 
 
