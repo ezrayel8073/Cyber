@@ -1272,16 +1272,62 @@ Step 7: Then we will get the password for level-25
 + Domain : http://natas25.natas.labs.overthewire.org
 
 ## Explination
+Step 1:  Go to Firefox Browser, Then Connect to natas25.natas.labs.overthewire.org, Then login with username and password
 
-include funtion will display our contents
+Step 2: You will see the page like this
 
-diversary traversal attack, if you could some how travel to the root directory to the websever
+![image](./images-1/image-25.png)
 
-as we can see safe include funtion ../ symbole get replaced by empty stringso we will not able to thhe root directory   
+Step 3: Lets view the source code
 
-../ it will not remove , we do not know how many strings go back
+![image](./images-1/image-25-1.png)
 
-..// use this symbole however many directories we are still able to reach to root directory
+Step 4: Then we will search for natas26 password.   By using diversary traversal attack
+
+    include funtion will display our contents
+
+    diversary traversal attack, if you could some how travel to the root directory to the websever
+
+    as we can see safe include funtion ../ symbole get replaced by empty string so we will not able to the root directory   
+
+    ../ it will not remove , we do not know how many strings go back
+
+    ..// use this symbole however many directories we are still able to reach to root directory
+
+
+Step 5:  For travel we need to have PASSIPHPSESSID, we will get from Burpsuite, for that browser setup burp suite (Send), Then load the page, 
+
+Step 6: Then we will switch on the intercept on (Receive), in that request you will see the PHPSESSID
+
+![image](./images-1/image-25-2.png)
+
+Step 7: Then we use /var/www/natas_webpass/natas25_ ,  PASSIPHPSESSID, Then use .log 
+           then search it.
+
+    http://natas25.natas.labs.overthewire.org/?lang=....//....//....//....//....//var/www/natas/natas25/logs/natas25_safot3p2212gdc87bo00m1bj4r.log
+
+Step 8: Then we will get the password for level-26
+
+![image](./images-1/image-25-3.png)
+
+### Metho 2
+Step 1:  After using traversal attack then load that page , Go to Burpsuite, Then go to repeater 
+
+Step 2: Then change that User-Agent like this , Before click send button
+
+    <?php include("*/etc/natas_webpass/natas26");?>
+
+![image](./images-1/image-25-4.png)
+
+
+
+S
+
+
+
+
+
+
 
 import requests
 import re
@@ -1307,5 +1353,4 @@ response = session.post(
 )
 
 print(response.text)
-
 
