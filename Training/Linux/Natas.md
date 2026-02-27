@@ -1320,7 +1320,7 @@ Step 2: Then change that User-Agent like this , Before click send button
 ![image](./images-1/image-25-4.png)
 
 ### Metho 3
-Step 1:  Step 7: So, we will Write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
+Step 1:  So, we will Write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
 
 import requests
 import re
@@ -1353,6 +1353,46 @@ print(response.text)
 + Domain : http://natas26.natas.labs.overthewire.org
 
 ## Explination
+Step 1:  Go to Firefox Browser, Then Connect to natas26.natas.labs.overthewire.org, Then login with username and password
+
+![image](./images-1/image-26.png)
+
+Step 2: If you want to draw using measurments like numbers, You will see
+
+![image](./images-1/image-26-1.png)
+
+Step 3: Then you will see the source code
+
+![image](./images-1/image-26-2.png)
+
+     we will drawing coocike input object type logger class intialize it with are own values of log file  init msg and exit msg according to a need of 
+
+     set log file name of random php file it will store the contents of the directory and in exit msg we wwill write php code which will be exicute the contents 
+
+     in the contents /etc/natas_webpass/natas26 , this directory  ultimately stored in log file 
+
+Step 4: So, we will need to write php code then run online platform or php.
+
+![image](./images-1/image-26-3.png)
+
+Step 5: Then copy of that outpout, Then paste in burpsuite
+
+Step 6: That the process is , go to burpsuite, Then switch on the intercept on (Receive), Then go to firefox browser, Then setup proxy on Burp suite (Send), Then refresh the page, it navigate to burpsuite
+
+Step 7: In that burpsuite, then In Intercept you will see the request, in a request you will see the drawing, Then change it, what you get from php code output , Then click forward
+
+![image](./images-1/image-26-4.png)
+
+Step 8: After forward, there is no password for level-26
+
+Step 9: Then we will use /img/shell.php , Then along with natas26 link, Then load the page, Finally we will see the password for level-26
+
+![image](./images-1/image-26-5.png)
+
+
+
+
+
 
 
 
