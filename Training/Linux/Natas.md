@@ -1437,5 +1437,30 @@ Step 5: Then we  will understand the process
 
     dump function ignore the spaces natas 28 contents of natas28 is shows original existing 
 
-Step 6: Then we will enter username: natas28 and 54 spaces and one extra charecter  (x), looks like
+Step 6: Then we will enter username and password , Then username: natas28 and 54 spaces and one extra charecter  (x), looks like
+ 
+        natas28                                                         x
+
+![image](./images-1/image-27-4.png)
+
+Step 7: Then we will click on login button, it will show like this
+
+![image](./images-1/image-27-5.png)
+
+Step 8: Then it will create new user , then you will login same crediantials, but you will delete the end charecter (x), Because of more 64 not not exceed thats why it deletes automatically,Then dump function ignore the spaces
+
+Step 9: Then you will get the password
+
+![image](./images-1/image-27-6.png)
+
+### Level-28
++ Username : natas28
++  Password :  1JNwQM1Oi6J6j1k49Xyw7ZN6pXMQInVj
++ Domain : http://natas28.natas.labs.overthewire.org
+
+## Explanation
+
+
+
+
 
