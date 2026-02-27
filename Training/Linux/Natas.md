@@ -1385,9 +1385,16 @@ Step 7: In that burpsuite, then In Intercept you will see the request, in a requ
 
 Step 8: After forward, there is no password for level-26
 
-Step 9: Then we will use /img/shell.php , Then along with natas26 link, Then load the page, Finally we will see the password for level-26
+Step 9: Then we will use img/shell.php , Then along with natas26 link, Then load the page, Finally we will see the password for level-26
 
 ![image](./images-1/image-26-5.png)
+
+### Level-27
++ Username : natas27
++  Password :  u3RRffXjysjgwFU6b9xa23i6prmUsYne
++ Domain : http://natas27.natas.labs.overthewire.org
+
+## Explination
 
 
 
