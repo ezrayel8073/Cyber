@@ -81,7 +81,7 @@ Step 14: In that response you will see the password for level-1
 + Username : natas1
 +  Password : 0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq
 + Domain : http://natas1.natas.labs.overthewire.org
-## Explanarion
+## Explanation
 Step 1:  Go to Firefox Browser (Connection on Foxy proxy extension)
 
 Step 2: Connect to natas1.natas.labs.overthewire.org
@@ -134,7 +134,7 @@ Step 14: In that response you will see the password for level-2
 + Username : natas2
 +  Password : TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI
 + Domain : http://natas2.natas.labs.overthewire.org
-## Explanarion
+## Explanation
 Step 1:  Go to Firefox Browser, Connect to natas2.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -179,7 +179,7 @@ Step 13: Then click on that users.txt, Then you will see the password for level-
 + Username : natas3
 +  Password : 3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
 + Domain : http://natas3.natas.labs.overthewire.org
-## Explanarion
+## Explanation
 Step 1:  Go to Firefox Browser, Connect to natas3.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -228,7 +228,7 @@ Step 14: Then click on that users.txt, Then you will see the password for level-
 + Username : natas4
 +  Password : QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
 + Domain : http://natas4.natas.labs.overthewire.org
-## Explanarion
+## Explanation
 Step 1:  Go to Firefox Browser, Connect to natas4.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -269,7 +269,7 @@ Step 10: Go to firefox browser, you will the password for level-5
 + Username : natas5
 +  Password : 0n35PkggAPm2zbEpOU802c0x0Msn1ToK 
 + Domain : http://natas5.natas.labs.overthewire.org
-## Explanarion
+## Explanation
 Step 1:  Go to Firefox Browser, Connect to natas5.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -308,7 +308,7 @@ Step 10: Go to firefox browser, you will the password for level-6
 + Username : natas6
 +  Password : 0RoJwHdSKWFTYR5WuiAewauSuNaBXned
 + Domain : http://natas6.natas.labs.overthewire.org
-## Explanarion
+## Explanation
 Step 1:  Go to Firefox Browser, Connect to natas6.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this, Then click on the link
@@ -339,7 +339,7 @@ Step 8: Then you will get the password for level-7
 + Username : natas7
 +  Password : bmg8SvU1LizuWjx3y7xkNERkHxGre0GS
 + Domain : http://natas7.natas.labs.overthewire.org
-## Explanarion
+## Explanation
 Step 1:  Go to Firefox Browser, Connect to natas7.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -386,7 +386,7 @@ Step 14: Then you will see the password for level-8
 + Username : natas8
 +  Password : xcoXLmzMkoIP9D7hlgPlh9XD7OgLAe5Q 
 + Domain : http://natas8.natas.labs.overthewire.org
-## Explanarion
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas8.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -434,7 +434,7 @@ Step 13: Now we decode the secret , copy that secret, Then go to firefox browser
 + Username : natas9
 +  Password : ZE1ck82lmdGIoErlhQgWND6j2Wzz6b6t
 + Domain : http://natas9.natas.labs.overthewire.org
-## Explanarion
+## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas9.natas.labs.overthewire.org, Then login with username and password
 
 Step 2: You will see the page like this
@@ -1394,12 +1394,47 @@ Step 9: Then we will use img/shell.php , Then along with natas26 link, Then load
 +  Password :  u3RRffXjysjgwFU6b9xa23i6prmUsYne
 + Domain : http://natas27.natas.labs.overthewire.org
 
-## Explanarion
+## Explanation
+Step 1:  Go to Firefox Browser, Then Connect to natas27.natas.labs.overthewire.org, Then login with username and password
+
+Step 2: You will see the page like this
+
+![image](./images-1/image-27.png)
+
+Step 3: Then you will see the source code
+
+![image](./images-1/image-27-1.png)
+
+Step 4: Enter username and password it shows lik this
+
+![image](./images-1/image-27-2.png)
+
+![image](./images-1/image-27-3.png)
+
+Step 5: Then we  will understand the process
 
 
+    It check the existing user or not
+    there is no existing user it is created new user
+    rejects usernames longer than 64  characters, return  false,
 
+    then new user created when new user created trims the usernname
+    trim removes all spaces from the front and back of the  string  
 
+    can not use only spaces to increases thhe length of the username so we will use only space it will show go away hacker 
 
+    so we add the charecter at end of the string 
+    new user created in dump data 
+    which ignore extra spaces to put end of the username
 
+    username and 64 spaces and end of charecter still shows in output without the spaces 
 
+    so we will use created extra username   
 
+    we will string heavy 1st 7 charecters is natas28, then we will have  57 wide spaces then complete 64 charecters we will have extra charecter like (x) of our choice 
+
+    then login then checks existing user or not so not user created then  it will show user grater than 64 charecters limit so it created new user trim  function will pass does not end with spaces and new user created . but we have limit is 64 charecyters that's why it removes end charecter 
+
+    dump function ignore the spaces natas 28 contents of natas28 is shows original existing 
+
+Step 6: Then we will enter username nd d54 spacesand one extra charecter (x)
