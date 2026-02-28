@@ -1510,7 +1510,7 @@ Step 7:  So, we will Write a code like this, In nano editor, Then save the file,
     search_url = "http://natas28.natas.labs.overthewire.org/search.php"
 
     # Create session with authentication
-    
+
     s = requests.Session()
     s.auth = ("natas28", "1JNwQM1Oi6J6j1k49Xyw7ZN6pXMQInVj")
 
@@ -1574,6 +1574,13 @@ Step 7:  So, we will Write a code like this, In nano editor, Then save the file,
 Step 8: After Run the code, we will get the password for Natas29
 
 ![image](./images-1/image-28-5.png)
+
+## Level-29
++ Username : natas29
++  Password :  31F4j3Qi2PnuhIZQokxXk1L3QT9Cppns
++ Domain : http://natas29.natas.labs.overthewire.org
+
+## Explanation
 
 
 
