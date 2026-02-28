@@ -1768,15 +1768,15 @@ Step 3: Then click view source code, it's a php script
 
 ![image](./images-1/image-33-1.png)
 
-Step 4: we need create file, 1.natas33.php 
+Step 4: we need create file, shell.php 
 
-Step 5: So, we will Write a code like this, In nano editor, Then save the file, Then . Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
+Step 5: So, we will Write a code like this, In nano editor, Then save the file, Then . Whole process in kali Linux. Because of it has librabraries.
 
     <?php 
     echo shell_exec('cat /etc/natas_webpass/natas34');
     ?>
 
-Step 6: we need create file, 2.shell.php, 
+Step 6: we need create file, natas33.php, 
 
     <?php
     class Executor
@@ -1797,7 +1797,7 @@ Step 6: we need create file, 2.shell.php,
 
     ?>
 
-Step 7: Then Run this commnand, After this it automatically creates natas.phar file
+Step 7: Then Run this commnand in kali Linux, After this it automatically creates natas.phar file
 
     php -d phar.readonly=false natas33.php
 
@@ -1813,7 +1813,7 @@ Step 10: First set up firefox proxy on Burp suite, Browse a shell.php file, then
 
 ![image](./images-1/image-33-4.png)
 
-Step 11: Then changes that propertiy to shell.php, Then click send button
+Step 11: Then changes that property to shell.php, Then click send button
 
 ![image](./images-1/image-33-5.png)
 
@@ -1845,7 +1845,11 @@ Step 16: Then you will see the password for level-34
 +  Password :  j4O7Q7Q5er5XFRCepmyXJaWCSIrslCJY
 + Domain : http://natas34.natas.labs.overthewire.org
 ## Explanation
+step 1:  Go to Firefox Browser, Then Connect to natas34.natas.labs.overthewire.org, Then login with username and password
 
+step 2: You will see the page like this
+
+![image](./images-1/image-34.png)
 
 
 
