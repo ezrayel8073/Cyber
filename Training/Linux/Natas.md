@@ -1668,7 +1668,7 @@ Step 2: You will see the page like this
 
 ![image](./images-1/image-31.png)
 
-Step 3: Then click view source code, it a perl script
+Step 3: Then click view source code, it's a perl script
 
 ![image](./images-1/image-31-1.png)
 
@@ -1680,7 +1680,7 @@ Step 6: First set up firefox proxy on Burp suite, Browse a file, then upload it,
 
 ![image](./images-1/image-31-2.png)
 
-Step 7: Then we need to change that properties, 
+Step 7: In that burpsuite will you Hi it's a contents of a file, what i have uploaded , Then we need to change that properties, 
 
      ARGV Exicutable command,  use post function arguments in post ?  arguments become commands 
 
@@ -1699,6 +1699,13 @@ Step 8: After change that properties, it will look like this
 Step 9: Then click  Forward button, we will get the password for Natas32
 
 ![image](./images-1/image-31-4.png)
+
+## Level-32
++ Username : natas32
++  Password :  NaIWhW2VIrKqrc7aroJVHOZvk3RQMi0B
++ Domain : http://natas32.natas.labs.overthewire.org
+## Explanation
+
 
 
 
