@@ -1662,7 +1662,43 @@ Step 6: After Run the code, we will get the password for Natas31
 +  Password :  m7bfjAHpJmSYgQWWeqRE2qVBuMiRNq0y
 + Domain : http://natas31.natas.labs.overthewire.org
 ## Explanation
+Step 1:  Go to Firefox Browser, Then Connect to natas31.natas.labs.overthewire.org, Then login with username and password
 
+Step 2: You will see the page like this
+
+![image](./images-1/image-31.png)
+
+Step 3: Then click view source code, it a perl script
+
+![image](./images-1/image-31-1.png)
+
+Step 4: So, if you want to upload any file after upload it will show contents in their file
+
+Step 5: Go to Burpsuite switch on the intercept on (Receive)
+
+Step 6: First set up firefox proxy on Burp suite, Browse a file, then upload it, It will navigate to burpsuite
+
+![image](./images-1/image-31-2.png)
+
+Step 7: Then we need to change that properties, 
+
+     ARGV Exicutable command,  use post function arguments in post ?  arguments become commands 
+
+     some special charects can not put in url, So we can go through this type url 
+
+                ?cat /etc/natas_webpass/natas32 |
+                
+     space encoded %20 , pipe line | encoded as %7C , C is captal letter 
+      
+                ?cat%20/etc/natas_webpass/natas32%20%7C
+
+Step 8: After change that properties, it will look like this
+
+![image](./images-1/image-31-3.png)
+
+Step 9: Then click  Forward button, we will get the password for Natas32
+
+![image](./images-1/image-31-4.png)
 
 
 
