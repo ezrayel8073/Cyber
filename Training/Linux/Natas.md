@@ -1428,7 +1428,7 @@ Step 5: Then we  will understand the process
 
     dump function ignore the spaces natas 28 contents of natas28 is shows original existing 
 
-Step 6: Then we will enter username and password , Then username: natas28 and 54 spaces and one extra charecter  (x), looks like
+Step 6: Then we will enter username and password , Then username: natas28 and 57 spaces and one extra charecter  (x), looks like
  
         natas28                                                         x
 
