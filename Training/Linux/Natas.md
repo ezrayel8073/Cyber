@@ -1680,7 +1680,7 @@ Step 6: First set up firefox proxy on Burp suite, Browse a file, then upload it,
 
 ![image](./images-1/image-31-2.png)
 
-Step 7: In that burpsuite will you Hi it's a contents of a file, what i have uploaded , Then we need to change that properties, 
+Step 7: In that burpsuite will you see Hi it's a contents of a file, what we have uploaded , Then we need to change that properties, 
 
      ARGV Exicutable command,  use post function arguments in post ?  arguments become commands 
 
@@ -1705,6 +1705,58 @@ Step 9: Then click  Forward button, we will get the password for Natas32
 +  Password :  NaIWhW2VIrKqrc7aroJVHOZvk3RQMi0B
 + Domain : http://natas32.natas.labs.overthewire.org
 ## Explanation
+Step 1:  Go to Firefox Browser, Then Connect to natas32.natas.labs.overthewire.org, Then login with username and password
+
+Step 2: You will see the page like this
+
+![image](./images-1/image-32.png)
+
+Step 3: Then click view source code, it's a perl script
+
+![image](./images-1/image-32-1.png)
+
+Step 4: we have to exicute multiple commands , 1.find out the file , 2.then exicute we can use Repeater
+
+Step 5: Go to Burpsuite switch on the intercept on (Receive)
+
+Step 6: First set up firefox proxy on Burp suite, Browse a file, then upload it, It will navigate to burpsuite, Then click send to Repeater, Then click on Repeater, it has placed in menus bar
+
+![image](./images-1/image-32-2.png)
+
+Step 7: Then click on Repeater, it has placed in menus bar, it has we will see Hi it will what we have uploaded, look like this
+
+![image](./images-1/image-32-3.png)
+
+Step 8: Then change that properties,  and  We need to find files that are present in the directory
+
+ARGV Exicutable command,  use post function arguments in post ?  arguments become commands 
+
+     some special charects can not put in url, So we can go through this type url 
+
+                  ?ls . |
+                
+     space encoded %20 , pipe line | encoded as %7C , C is captal letter 
+                
+                ?ls%20.%20%7C
+
+Step 9: After change that properties, Click Send button, it will look like this                
+      
+![image](./images-1/image-32-4.png)
+
+Step 10: We found get password , Then we will exicute that get password file
+
+            ?./getpassword |
+
+            ?./getpassword%20%7C
+
+Step 11: After using get password file, Then click Send button, we will get the password for Natas33
+
+![image](./images-1/image-32-5.png)
+
+
+
+
+
 
 
 
