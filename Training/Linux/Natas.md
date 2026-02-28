@@ -1510,6 +1510,7 @@ Step 7:  So, we will Write a code like this, In nano editor, Then save the file,
     search_url = "http://natas28.natas.labs.overthewire.org/search.php"
 
     # Create session with authentication
+    
     s = requests.Session()
     s.auth = ("natas28", "1JNwQM1Oi6J6j1k49Xyw7ZN6pXMQInVj")
 
