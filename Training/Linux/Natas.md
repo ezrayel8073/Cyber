@@ -1389,7 +1389,7 @@ Step 9: Then we will use img/shell.php , Then along with natas26 link, Then load
 
 ![image](./images-1/image-26-5.png)
 
-### Level-27
+## Level-27
 + Username : natas27
 +  Password :  u3RRffXjysjgwFU6b9xa23i6prmUsYne
 + Domain : http://natas27.natas.labs.overthewire.org
@@ -1453,14 +1453,89 @@ Step 9: Then you will get the password
 
 ![image](./images-1/image-27-6.png)
 
-### Level-28
+## Level-28
 + Username : natas28
 +  Password :  1JNwQM1Oi6J6j1k49Xyw7ZN6pXMQInVj
 + Domain : http://natas28.natas.labs.overthewire.org
 
 ## Explanation
 
+search every time with same charecters or words or different words or charecters it shows diffrent jockes , but length of 3 is permitted (3 jocks), Every time it shows diffrent jockes 
+
+if change that means delete perticular query, it will show like this
+
+generally PKCS #7 USES  a Block cipher , then brutefoece attack to find multiple query
+
+block cipher is proper way encode the data , but if you input same data multipul time the encoding is similer 
+
+instead of stream cipher 
+, stream cipher, it chages some incryption , if you input same data mulyipile times , the number pf times you input the data what was before the data changes how the data getting incrypted  
+
+its padding like 
+xxxxxxxxxxxx
+xxxxxxxxxxxx
+xxxx
+       xxxxx
+xxxxxxxxxxxx
+xxxxxxxxxxxx
+
+we are trying to use sql injectiopn with backtic (`)   
+
+union mergers any two table , and merges all present in the database
+
+find the num of bocks in our sql injection
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+import requests
+import urllib
+import base64
+
+url = 'http://natas28.natas.labs.overthewire.org/index.php?lang='
+s = requests.Session()
+s.auth = ('natas28', '1JNwQM1Oi6J6j1k49Xyw7ZN6pXMQInVj')
+
+sample = 'A' 
+
+while len(sample) < 32:
+    data = {
+        'query':sample
+    }
+    r = s.post(url, data=data)
+    cipher = r.url.split('query=')[1]
+    cipher = urllib.parse.unquote(cipher)
+    cipher = base64.b64decode(cipher.encode('utf-8'))
+    cipher = hex(int.from_bytes(cipher, byteorder='big'))[2:]
+    print("[*] %d chars.\t|\n" % (len(sample)))
+    
+    for i in range(0, len(cipher), 32):
+    print(cipher[i:i+32])
+    sample += 'A'+
+
+
+
+
+import requests
+import urllib
+import base64
+
+url = 'http://natas28.natas.labs.overthewire.org/index.php?lang='
+s = requests.Session()
+s.auth = ('natas28', '1JNwQM1Oi6J6j1k49Xyw7ZN6pXMQInVj')
+
+
+data = {
+    'query': 10 * ' '
+}
