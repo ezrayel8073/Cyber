@@ -75,7 +75,7 @@ Step 12: Then click on  Repeater. Whenever once a highlight after send repeater,
 
 Step 14: In that response you will see the password for level-1
 
- ![image](./images-1/image-0-10.png)
+![image](./images-1/image-0-10.png)
 
 ## Level-1
 + Username : natas1
@@ -128,7 +128,7 @@ Step 12: Then click on  Repeater. Whenever once a highlight after send repeater,
 
 Step 14: In that response you will see the password for level-2
 
- ![image](./images-1/image-1-5.png)
+![image](./images-1/image-1-5.png)
 
 ## Level-2
 + Username : natas2
@@ -210,7 +210,7 @@ Step 9: Then click on  Repeater. Whenever once a highlight after send repeater, 
 
 Step 11: In that response there is   no password.
 
- ![image](./images-1/image-3.png)
+![image](./images-1/image-3.png)
 
 Step 12: Then foward the link or Disable the Burpsuite, Then Go to firefox browser, Then enter the leve2 link along with robots.txt 
 
@@ -841,8 +841,6 @@ Step 7: Then we will use Blind time based sql injection  to specific amount of t
 
 Step 8:  Then write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
 
-
-
     import requests 
     import re
     from time import *
@@ -879,8 +877,6 @@ Step 8:  Then write a code like this, In nano editor, Then save the file, Then R
               if len(current_password) == 32:
               break
 
-
-
 Step 9: It will fetch one by one like loop, By using of Bruteforce attack, Then you will wait until it will get the password for level-18              
 
 ![image](./images-1/image-17-4.png)
@@ -914,7 +910,7 @@ Step 5: We need to use Bruteforce attack to get the password for level-19, In Bu
 
  Step 7: Go to Firefox Browser, Then enter the username and password and click on login. Before that set up burpsuite in firefox browser (Send)
 
- ![image](./images-1/image-18-3.png)
+![image](./images-1/image-18-3.png)
 
 Step 8: Then Burpsuite can catch that, We want to Bruteforce PHPSESSID:285
 
@@ -943,7 +939,6 @@ Step 13: Then click on start attack
 Step 14: It will fetch one by one , in that you will get admin login PHPSESSID , Then go to intercept tab, Then change that PHPSESSID: what you get from the attack, Then click on forward, you will get the password for level-19
 
 ![image](./images-1/image-18-10.png)
-
 
 ### Method 2
 Step 1: After saw the max id is 640, Then we will use Bruteforce attack 
@@ -1008,9 +1003,7 @@ Step 2: You will see the page like this
 
 ![image](./images-1/image-19.png)
 
-
 Step 3: Write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
-
 
     import requests
     import re
@@ -1036,7 +1029,6 @@ Step 3: Write a code like this, In nano editor, Then save the file, Then Run the
             if "You are an admin" in response.text:
             print(response.text)
             break
-
 
 Step 4: It will fetch one by one like loop, By using of Bruteforce attack, Then you will wait until it will get the password for Natas20
 
@@ -1066,7 +1058,7 @@ Step 3: Lets view the source code
 
 Step 4: In a code it has a debug , So we will use it, at the along with the natas20 link
 
- ![image](./images-1/image-20-4.png)
+![image](./images-1/image-20-4.png)
 
 Step 5: Using try\nadmin 1 , But there is no output
 
@@ -1094,12 +1086,10 @@ Step 12: Then you will get the password for Natas21
 
 ![image](./images-1/image-20-8.png)
 
-
 ## Level-21
 + Username : natas21
 +  Password : BPhv63cKE1lkQl04cE5CuFTzXe15NfiH
 + Domain : http://natas21.natas.labs.overthewire.org
-
 ## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas21.natas.labs.overthewire.org, Then login with username and password
 
@@ -1133,7 +1123,10 @@ Step 7: So, we will Write a code like this, In nano editor, Then save the file, 
 
     session = requests.Session()
 
+    # --------------------------------------------------
     # Step 1: Set admin=1
+    # --------------------------------------------------
+
     response = session.post(
              url_experimenter,
              data={
@@ -1146,11 +1139,18 @@ Step 7: So, we will Write a code like this, In nano editor, Then save the file, 
     print("Experimenter response:")
     print(response.text)
 
+    # --------------------------------------------------
     # Step 2: Extract PHPSESSID manually
+    # --------------------------------------------------
+
     phpsessid = session.cookies.get('PHPSESSID')
     print("\nPHPSESSID:", phpsessid)
 
+
+    # --------------------------------------------------
     # Step 3: Send same session ID to main site
+    # --------------------------------------------------
+
          response = requests.get(
          url_main,
          cookies={"PHPSESSID": phpsessid},
@@ -1160,16 +1160,14 @@ Step 7: So, we will Write a code like this, In nano editor, Then save the file, 
     print("\nMain site response:")
     print(response.text)
 
- Step 8: Then you will get the password for Natas22
+Step 8: Then you will get the password for Natas22
 
 ![image](./images-1/image-21-4.png) 
-
 
 ## Level-22
 + Username : natas22
 +  Password : d8rwGBl0Xslg3b76uh3fEbSlnOUBlozz
 + Domain : http://natas22.natas.labs.overthewire.org
-
 ## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas22.natas.labs.overthewire.org, Then login with username and password
 
@@ -1180,7 +1178,6 @@ Step 2: You will see the page like this
 Step 3: Lets view the source code
 
 ![image](./images-1/image-22-1.png)
-
 
 Step 4: In that source code revelio function is used to get the password for level-22
 
@@ -1212,7 +1209,6 @@ Step 11: In that response you will see the password
 + Username : natas23
 +  Password : dIUQcI3uSus1JEOSSWRAEXBG8KbR8tRs
 + Domain : http://natas23.natas.labs.overthewire.org
-
 ## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas23.natas.labs.overthewire.org, Then login with username and password
 
@@ -1240,7 +1236,6 @@ Step 7: Then you will see the password
 + Username : natas24
 +  Password : MeuqmfJ8DDKuTr5pcvzFKSwlxedZYEWd
 + Domain : http://natas24.natas.labs.overthewire.org
-
 ## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas24.natas.labs.overthewire.org, Then login with username and password
 
@@ -1270,7 +1265,6 @@ Step 7: Then we will get the password for level-25
 + Username : natas25
 +  Password : ckELKUWZUfpOv6uxS6M7lXBpBssJZ4Ws
 + Domain : http://natas25.natas.labs.overthewire.org
-
 ## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas25.natas.labs.overthewire.org, Then login with username and password
 
@@ -1351,7 +1345,6 @@ print(response.text)
 + Username : natas26
 +  Password : cVXXwxMS3Y26n5UZU89QgpGmWCelaQlE
 + Domain : http://natas26.natas.labs.overthewire.org
-
 ## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas26.natas.labs.overthewire.org, Then login with username and password
 
@@ -1393,7 +1386,6 @@ Step 9: Then we will use img/shell.php , Then along with natas26 link, Then load
 + Username : natas27
 +  Password :  u3RRffXjysjgwFU6b9xa23i6prmUsYne
 + Domain : http://natas27.natas.labs.overthewire.org
-
 ## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas27.natas.labs.overthewire.org, Then login with username and password
 
@@ -1412,7 +1404,6 @@ Step 4: Enter username and password it shows lik this
 ![image](./images-1/image-27-3.png)
 
 Step 5: Then we  will understand the process
-
 
     It check the existing user or not
     there is no existing user it is created new user
@@ -1457,7 +1448,6 @@ Step 9: Then you will get the password
 + Username : natas28
 +  Password :  1JNwQM1Oi6J6j1k49Xyw7ZN6pXMQInVj
 + Domain : http://natas28.natas.labs.overthewire.org
-
 ## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas28.natas.labs.overthewire.org, Then login with username and password
 
@@ -1655,7 +1645,6 @@ Step 5: So, we will Write a code like this, In nano editor, Then save the file, 
 Step 6: After Run the code, we will get the password for Natas31
 
 ![image](./images-1/image-30-2.png)
-
 
 ## Level-31
 + Username : natas31
