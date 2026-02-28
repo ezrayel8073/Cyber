@@ -1729,7 +1729,7 @@ Step 7: Then click on Repeater, it has placed in menus bar, it has we will see H
 
 Step 8: Then change that properties,  and  We need to find files that are present in the directory
 
-ARGV Exicutable command,  use post function arguments in post ?  arguments become commands 
+    ARGV Exicutable command,  use post function arguments in post ?  arguments become commands 
 
      some special charects can not put in url, So we can go through this type url 
 
@@ -1752,6 +1752,13 @@ Step 10: We found get password , Then we will exicute that get password file
 Step 11: After using get password file, Then click Send button, we will get the password for Natas33
 
 ![image](./images-1/image-32-5.png)
+
+## Level-33
++ Username : natas33
++  Password :  2v9nDlbSF7jvawaCncr5Z9kSzkmBeoCJ
++ Domain : http://natas33.natas.labs.overthewire.org
+## Explanation
+
 
 
 
