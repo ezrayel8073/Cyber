@@ -1465,7 +1465,7 @@ Step 2: You will see the page like this
 
 ![image](./images-1/image-28.png)
 
-Step 3: It will search every time with same charecters or words or different words or charecters it shows diffrent jockes , but length of 3 is permitted (3 jocks), Every time it shows diffrent jockes 
+Step 3: It has no source code provided, But In a search box,  It will search every time with same charecters or words or different words or charecters it shows diffrent jockes , but length of 3 is permitted (3 jocks), Every time it shows diffrent jockes 
 
 ![image](./images-1/image-28-1.png)
 
@@ -1581,6 +1581,56 @@ Step 8: After Run the code, we will get the password for Natas29
 + Domain : http://natas29.natas.labs.overthewire.org
 
 ## Explanation
+Step 1:  Go to Firefox Browser, Then Connect to natas29.natas.labs.overthewire.org, Then login with username and password
+
+Step 2: You will see the page like this
+
+![image](./images-1/image-29.png)
+
+Step 3: It has no source code provided, But In a search box, We will click any of them it shows like this, some modifications
+
+Step 4: Every time click another options it will show same in search bar, along with what you cling propeties
+
+![image](./images-1/image-29-1.png)
+
+Step 5: So, we use pipe means this symbole | , Then we will use ls command, along with null charecters, like this
+
+    |ls%00
+
+Step 6: It will show the files like this
+
+![image](./images-1/image-29-2.png)
+
+Step 7: So, we can use pipe means this symbole | , Then we will use cat command to ditectly get contents of a file, along with null charecters, It shows like this
+
+    |cat /etc/natas_webpass/natas30%00
+
+![image](./images-1/image-29-3.png)   
+
+Step 8: But we will not get contents, We need some filteration to check index.pl file , use pipe , and cat command, %20 is url encode of space , index.pl along with null charecters
+
+    |cat%20 index.pl%00
+
+![image](./images-1/image-29-4.png)
+
+ Step 9: It  has source code, In that if we use natas it will show like this   "meeeep!", if we will not use natas rather than this we will use ? wild charecters, which indicates any charecter takes placeby ? 
+
+Step 10: Again use cat command, along with ? wild charecters, we will get password for Natas30
+
+![image](./images-1/image-29-5.png)
+
+## Level-30
++ Username : natas30
++  Password :  WQhx1BvcmP9irs2MP9tRnLsNaDI76YrH
++ Domain : http://natas30.natas.labs.overthewire.org
+
+## Explanation
+
+
+
+
+
+
 
 
 
